@@ -1076,7 +1076,7 @@ section {
 /* Simple Dropdown Variant (for Wiedza, O nas) */
 .dropdown-simple {
   width: auto;
-  min-width: 200px;
+  min-width: 260px;
 }
 
 .dropdown-simple-content {
@@ -1092,4 +1092,5 @@ section {
 
 .dropdown-simple .dropdown-item-title {
   font-weight: 400;
+  white-space: nowrap;
 }
