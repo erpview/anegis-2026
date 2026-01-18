@@ -1072,3 +1072,24 @@ section {
   color: #737373;
   line-height: 1.4;
 }
+
+/* Simple Dropdown Variant (for Wiedza, O nas) */
+.dropdown-simple {
+  width: auto;
+  min-width: 200px;
+}
+
+.dropdown-simple-content {
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.dropdown-simple .dropdown-item {
+  padding: 8px 0;
+}
+
+.dropdown-simple .dropdown-item-title {
+  font-weight: 400;
+}
