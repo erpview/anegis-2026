@@ -270,4 +270,28 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+// Triangle Arrow Scroll Animation
+document.addEventListener('DOMContentLoaded', () => {
+    const triangleContainer = document.getElementById('triangle-accents');
+
+    if (triangleContainer) {
+        const triangles = triangleContainer.querySelectorAll('.triangle-arrow');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    triangles.forEach(triangle => {
+                        triangle.classList.add('animate');
+                    });
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.3
+        });
+
+        observer.observe(triangleContainer);
+    }
+});
+
 console.log('ANEGIS 2026 Website - Scripts Loaded');
