@@ -1316,3 +1316,210 @@ section {
     filter: blur(3px);
   }
 }
+
+/* ===== Case Study Slider ===== */
+.case-study-slider {
+  position: relative;
+  margin-bottom: 48px;
+}
+
+.slider-track {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider-slide {
+  display: none;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.slider-slide.active {
+  display: block;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slider-slide.slide-out-left {
+  display: block;
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.slider-slide.slide-in-right {
+  display: block;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Slider Card Styles */
+.slider-card {
+  background: white;
+  display: flex;
+  border: 1px solid #e5e7eb;
+  overflow: hidden;
+}
+
+.slider-card-content {
+  flex: 1;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.slider-card-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #0c0c0c;
+  margin: 0 0 16px 0;
+}
+
+.slider-card-tags {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.tag-filled {
+  padding: 4px 12px;
+  background: #65AAAB;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.tag-outline {
+  padding: 4px 12px;
+  border: 1px solid #e5e7eb;
+  color: #6b7280;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.slider-card-quote {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.slider-card-quote img {
+  width: 32px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.slider-card-quote p {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #6b7280;
+  font-style: italic;
+  margin: 0;
+}
+
+.slider-card-author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.slider-card-author img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.author-name {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #0c0c0c;
+}
+
+.author-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.slider-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.company-logo {
+  height: 32px;
+}
+
+.slider-card-image {
+  flex: 0 0 50%;
+  overflow: hidden;
+}
+
+.slider-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Slider Navigation */
+.slider-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 48px;
+}
+
+.slider-prev,
+.slider-next {
+  width: 48px;
+  height: 48px;
+  border: 1px solid #e5e7eb;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 18px;
+  color: #0c0c0c;
+  transition: all 0.3s ease;
+}
+
+.slider-prev:hover,
+.slider-next:hover {
+  background: #0c0c0c;
+  color: white;
+  border-color: #0c0c0c;
+}
+
+.slider-progress {
+  width: 120px;
+  height: 4px;
+  background: #e5e7eb;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider-progress-bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: #0c0c0c;
+  width: 33.33%;
+  transition: width 0.3s ease;
+}

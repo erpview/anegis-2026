@@ -294,4 +294,114 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+// ===== Case Study Slider =====
+document.addEventListener('DOMContentLoaded', () => {
+    const slider = document.getElementById('case-study-slider');
+    if (!slider) return;
+
+    const slides = slider.querySelectorAll('.slider-slide');
+    const prevBtn = slider.querySelector('#slider-prev');
+    const nextBtn = slider.querySelector('#slider-next');
+    const progressBar = slider.querySelector('#slider-progress-bar');
+
+    let currentSlide = 0;
+    const totalSlides = slides.length;
+    const autoAdvanceInterval = 5000; // 5 seconds
+    let autoAdvanceTimer;
+
+    // Update progress bar
+    function updateProgressBar() {
+        const progressWidth = ((currentSlide + 1) / totalSlides) * 100;
+        progressBar.style.width = progressWidth + '%';
+    }
+
+    // Go to specific slide
+    function goToSlide(index, direction = 'next') {
+        if (index < 0) index = totalSlides - 1;
+        if (index >= totalSlides) index = 0;
+
+        const currentSlideEl = slides[currentSlide];
+        const nextSlideEl = slides[index];
+
+        // Remove all transition classes
+        slides.forEach(slide => {
+            slide.classList.remove('active', 'slide-out-left', 'slide-in-right');
+        });
+
+        // Apply transition based on direction
+        if (direction === 'next') {
+            currentSlideEl.style.transform = 'translateX(-100%)';
+            nextSlideEl.style.transform = 'translateX(100%)';
+        } else {
+            currentSlideEl.style.transform = 'translateX(100%)';
+            nextSlideEl.style.transform = 'translateX(-100%)';
+        }
+
+        // Force reflow
+        nextSlideEl.offsetHeight;
+
+        // Apply active state
+        nextSlideEl.classList.add('active');
+        nextSlideEl.style.transform = 'translateX(0)';
+
+        currentSlide = index;
+        updateProgressBar();
+    }
+
+    // Next slide
+    function nextSlide() {
+        goToSlide(currentSlide + 1, 'next');
+    }
+
+    // Previous slide
+    function prevSlide() {
+        goToSlide(currentSlide - 1, 'prev');
+    }
+
+    // Reset auto-advance timer
+    function resetAutoAdvance() {
+        clearInterval(autoAdvanceTimer);
+        autoAdvanceTimer = setInterval(nextSlide, autoAdvanceInterval);
+    }
+
+    // Event listeners
+    if (nextBtn) {
+        nextBtn.addEventListener('click', () => {
+            nextSlide();
+            resetAutoAdvance();
+        });
+    }
+
+    if (prevBtn) {
+        prevBtn.addEventListener('click', () => {
+            prevSlide();
+            resetAutoAdvance();
+        });
+    }
+
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight') {
+            nextSlide();
+            resetAutoAdvance();
+        } else if (e.key === 'ArrowLeft') {
+            prevSlide();
+            resetAutoAdvance();
+        }
+    });
+
+    // Pause auto-advance on hover
+    slider.addEventListener('mouseenter', () => {
+        clearInterval(autoAdvanceTimer);
+    });
+
+    slider.addEventListener('mouseleave', () => {
+        resetAutoAdvance();
+    });
+
+    // Initialize
+    updateProgressBar();
+    autoAdvanceTimer = setInterval(nextSlide, autoAdvanceInterval);
+});
+
 console.log('ANEGIS 2026 Website - Scripts Loaded');
