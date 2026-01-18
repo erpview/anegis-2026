@@ -878,22 +878,23 @@ section {
   transform: rotate(180deg);
 }
 
+/* Mega Menu Container - Exact Figma Match */
 .dropdown-mega-menu {
   position: absolute;
-  top: 100%;
+  top: calc(100% + 10px);
   left: 50%;
   transform: translateX(-50%) translateY(10px);
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  background: #fafafa;
+  border: 1px solid #f4f4f4;
+  box-shadow: 0px 20px 24px -4px rgba(0, 0, 0, 0.08), 0px 8px 8px -4px rgba(0, 0, 0, 0.03);
   display: flex;
-  min-width: 700px;
+  width: 980px;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: all 0.3s ease;
+  transition: all 0.25s ease;
   z-index: 1000;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .nav-dropdown:hover .dropdown-mega-menu {
@@ -907,65 +908,83 @@ section {
 .dropdown-mega-menu::before {
   content: '';
   position: absolute;
-  top: -8px;
+  top: -10px;
   left: 50%;
   transform: translateX(-50%);
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-bottom: 10px solid #1a3a4d;
+  width: 21px;
+  height: 11px;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 21.5 10.75' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.75 0L0 10.75H21.5L10.75 0Z' fill='%23f4f4f4'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
-/* Left Sidebar */
+/* Left Sidebar - Exact Figma: 289px, #f4f4f4 */
 .dropdown-sidebar {
-  background: #1a3a4d;
-  padding: 16px;
+  background: #f4f4f4;
+  border-right: 1px solid #e6e8ea;
+  padding: 24px;
   display: flex;
   flex-direction: column;
-  gap: 4px;
-  min-width: 180px;
+  gap: 0;
+  width: 289px;
+  flex-shrink: 0;
+  align-self: stretch;
 }
 
+.dropdown-menu-list {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  border: 1px solid #e6e8ea;
+}
+
+/* Tab Buttons - Exact Figma */
 .dropdown-tab {
   background: transparent;
   border: none;
-  color: rgba(255, 255, 255, 0.7);
-  padding: 12px 16px;
+  color: #0b0b0b;
+  padding: 8px 16px;
   text-align: left;
+  font-family: 'Inter', sans-serif;
   font-size: 14px;
   font-weight: 500;
+  line-height: 1.5;
   cursor: pointer;
-  border-radius: 4px;
   transition: all 0.2s ease;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 8px;
+  height: 40px;
+  width: 100%;
 }
 
 .dropdown-tab:hover {
-  color: white;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(26, 53, 116, 0.1);
 }
 
+/* Active Tab - Exact Figma: #1a3574 */
 .dropdown-tab.active {
-  background: #2d5a73;
-  color: white;
+  background: #1a3574;
+  color: #fafafa;
 }
 
-.dropdown-tab svg {
+.dropdown-tab .tab-arrow {
+  width: 5px;
+  height: 10px;
   opacity: 0;
   transition: opacity 0.2s ease;
 }
 
-.dropdown-tab.active svg {
+.dropdown-tab.active .tab-arrow {
   opacity: 1;
 }
 
-/* Right Content */
+/* Right Content Area */
 .dropdown-content {
   flex: 1;
-  padding: 24px;
-  background: white;
+  padding: 32px;
+  background: #fafafa;
 }
 
 .dropdown-tab-content {
@@ -976,52 +995,64 @@ section {
   display: block;
 }
 
+/* Grid Layout - 2 columns */
 .dropdown-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
+  gap: 24px;
 }
 
+/* Solution Item - Exact Figma Match */
 .dropdown-item {
   display: flex;
   align-items: flex-start;
-  gap: 12px;
-  padding: 12px;
-  border-radius: 6px;
+  gap: 16px;
+  padding: 0;
   text-decoration: none;
   color: #0b0b0b;
   transition: all 0.2s ease;
 }
 
-.dropdown-item:hover {
-  background: #f5f5f5;
+.dropdown-item:hover .dropdown-item-title {
+  color: #1a3574;
 }
 
+/* Document Icon Container */
 .dropdown-item-icon {
   flex-shrink: 0;
-  width: 40px;
-  height: 40px;
+  width: 24px;
+  height: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #f0f0f0;
-  border-radius: 6px;
 }
 
+.dropdown-item-icon svg,
+.dropdown-item-icon img {
+  width: 17px;
+  height: 18px;
+}
+
+/* Text Content */
 .dropdown-item-text {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 2px;
 }
 
 .dropdown-item-title {
+  font-family: 'Inter', sans-serif;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   color: #0b0b0b;
+  line-height: 1.5;
+  transition: color 0.2s ease;
 }
 
 .dropdown-item-desc {
+  font-family: 'Inter', sans-serif;
   font-size: 12px;
-  color: #717f92;
+  font-weight: 400;
+  color: #737373;
   line-height: 1.4;
 }
