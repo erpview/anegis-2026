@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="ANEGIS - Finanse i Operacje - Zautomatyzuj procesy finansowe z Microsoft Dynamics 365">
+    <title>Finanse i Operacje | ANEGIS - Microsoft Dynamics 365</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="finanse.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/images/logo-anegis.svg" alt="ANEGIS" style="height: 24px;">
+                </a>
+            </div>
+            <nav class="nav">
+                <!-- Co robimy Dropdown -->
+                <div class="nav-dropdown" id="co-robimy-dropdown">
+                    <a href="#co-robimy" class="nav-item nav-dropdown-trigger">
+                        Co robimy
+                        <img src="assets/images/icon-chevron-nav.svg" alt="" class="nav-chevron"
+                            style="width: 10px; height: 6px;">
+                    </a>
+                    <!-- Dropdown Mega Menu -->
+                    <div class="dropdown-mega-menu">
+                        <div class="dropdown-sidebar">
+                            <div class="dropdown-menu-list">
+                                <button class="dropdown-tab active" data-tab="rozwiazania">
+                                    Rozwiązania
+                                    <svg class="tab-arrow" width="5" height="10" viewBox="0 0 5 10" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 0L5 5L0 10" fill="currentColor" />
+                                    </svg>
+                                </button>
+                                <button class="dropdown-tab" data-tab="uslugi">
+                                    Usługi
+                                    <svg class="tab-arrow" width="5" height="10" viewBox="0 0 5 10" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 0L5 5L0 10" fill="currentColor" />
+                                    </svg>
+                                </button>
+                                <button class="dropdown-tab" data-tab="branze">
+                                    Branże
+                                    <svg class="tab-arrow" width="5" height="10" viewBox="0 0 5 10" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 0L5 5L0 10" fill="currentColor" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="dropdown-content">
+                            <div class="dropdown-tab-content active" id="tab-rozwiazania">
+                                <div class="dropdown-grid">
+                                    <a href="finanse.html" class="dropdown-item">
+                                        <div class="dropdown-item-icon">
+                                            <img src="assets/images/mega-menu-document-icon.svg" alt="">
+                                        </div>
+                                        <div class="dropdown-item-text">
+                                            <span class="dropdown-item-title">Finanse i Operacje</span>
+                                            <span class="dropdown-item-desc">Zautomatyzuj finanse i łańcuch
+                                                dostaw</span>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="dropdown-item">
+                                        <div class="dropdown-item-icon">
+                                            <img src="assets/images/mega-menu-document-icon.svg" alt="">
+                                        </div>
+                                        <div class="dropdown-item-text">
+                                            <span class="dropdown-item-title">Sprzedaż i Obsługa Klienta</span>
+                                            <span class="dropdown-item-desc">Lorem ipsum dolor sit amet</span>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="dropdown-item">
+                                        <div class="dropdown-item-icon">
+                                            <img src="assets/images/mega-menu-document-icon.svg" alt="">
+                                        </div>
+                                        <div class="dropdown-item-text">
+                                            <span class="dropdown-item-title">Analityka Biznesowa i AI</span>
+                                            <span class="dropdown-item-desc">Lorem ipsum dolor sit amet</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="dropdown-tab-content" id="tab-uslugi">
+                                <div class="dropdown-grid">
+                                    <a href="#" class="dropdown-item">
+                                        <div class="dropdown-item-icon">
+                                            <img src="assets/images/mega-menu-document-icon.svg" alt="">
+                                        </div>
+                                        <div class="dropdown-item-text">
+                                            <span class="dropdown-item-title">Wdrożenia ERP</span>
+                                            <span class="dropdown-item-desc">Lorem ipsum dolor sit amet</span>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="dropdown-item">
+                                        <div class="dropdown-item-icon">
+                                            <img src="assets/images/mega-menu-document-icon.svg" alt="">
+                                        </div>
+                                        <div class="dropdown-item-text">
+                                            <span class="dropdown-item-title">Wsparcie i Rozwój</span>
+                                            <span class="dropdown-item-desc">Lorem ipsum dolor sit amet</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="dropdown-tab-content" id="tab-branze">
+                                <div class="dropdown-grid">
+                                    <a href="#" class="dropdown-item">
+                                        <div class="dropdown-item-icon">
+                                            <img src="assets/images/mega-menu-document-icon.svg" alt="">
+                                        </div>
+                                        <div class="dropdown-item-text">
+                                            <span class="dropdown-item-title">Produkcja</span>
+                                            <span class="dropdown-item-desc">Lorem ipsum dolor sit amet</span>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="dropdown-item">
+                                        <div class="dropdown-item-icon">
+                                            <img src="assets/images/mega-menu-document-icon.svg" alt="">
+                                        </div>
+                                        <div class="dropdown-item-text">
+                                            <span class="dropdown-item-title">Handel i Dystrybucja</span>
+                                            <span class="dropdown-item-desc">Lorem ipsum dolor sit amet</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#case-studies" class="nav-item">Case studies</a>
+                <!-- Wiedza Dropdown -->
+                <div class="nav-dropdown" id="wiedza-dropdown">
+                    <a href="#wiedza" class="nav-item nav-dropdown-trigger">
+                        Wiedza
+                        <img src="assets/images/icon-chevron-nav.svg" alt="" class="nav-chevron"
+                            style="width: 10px; height: 6px;">
+                    </a>
+                    <div class="dropdown-mega-menu dropdown-simple">
+                        <div class="dropdown-content dropdown-simple-content">
+                            <a href="#" class="dropdown-item">
+                                <div class="dropdown-item-icon">
+                                    <img src="assets/images/mega-menu-document-icon.svg" alt="">
+                                </div>
+                                <div class="dropdown-item-text">
+                                    <span class="dropdown-item-title">Artykuły</span>
+                                </div>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <div class="dropdown-item-icon">
+                                    <img src="assets/images/mega-menu-document-icon.svg" alt="">
+                                </div>
+                                <div class="dropdown-item-text">
+                                    <span class="dropdown-item-title">Ebooki</span>
+                                </div>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <div class="dropdown-item-icon">
+                                    <img src="assets/images/mega-menu-document-icon.svg" alt="">
+                                </div>
+                                <div class="dropdown-item-text">
+                                    <span class="dropdown-item-title">Wydarzenia</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- O nas Dropdown -->
+                <div class="nav-dropdown" id="onas-dropdown">
+                    <a href="#o-nas" class="nav-item nav-dropdown-trigger">
+                        O nas
+                        <img src="assets/images/icon-chevron-nav.svg" alt="" class="nav-chevron"
+                            style="width: 10px; height: 6px;">
+                    </a>
+                    <div class="dropdown-mega-menu dropdown-simple">
+                        <div class="dropdown-content dropdown-simple-content">
+                            <a href="#" class="dropdown-item">
+                                <div class="dropdown-item-icon">
+                                    <img src="assets/images/mega-menu-document-icon.svg" alt="">
+                                </div>
+                                <div class="dropdown-item-text">
+                                    <span class="dropdown-item-title">Nasza historia i misja</span>
+                                </div>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <div class="dropdown-item-icon">
+                                    <img src="assets/images/mega-menu-document-icon.svg" alt="">
+                                </div>
+                                <div class="dropdown-item-text">
+                                    <span class="dropdown-item-title">Zespół i eksperci</span>
+                                </div>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <div class="dropdown-item-icon">
+                                    <img src="assets/images/mega-menu-document-icon.svg" alt="">
+                                </div>
+                                <div class="dropdown-item-text">
+                                    <span class="dropdown-item-title">Kariera</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="header-right">
+                <div class="lang-selector">
+                    <img src="assets/images/icon-flag-pl-standard.svg" alt="PL" style="width: 20px; height: auto;">
+                    <span>PL</span>
+                    <img src="assets/images/icon-chevron-nav.svg" alt="" style="width: 10px; height: 6px;">
+                </div>
+                <button class="btn btn-teal">
+                    Umów bezpłatną konsultację
+                    <div class="btn-icon-box">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </button>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-subpage">
+        <div class="hero-subpage-content">
+            <!-- Breadcrumbs -->
+            <div class="breadcrumbs">
+                <a href="index.html">Rozwiązania</a>
+                <span class="breadcrumb-separator">›</span>
+                <span>Finanse i Operacje</span>
+            </div>
+
+            <!-- Hero Text -->
+            <h1 class="hero-subpage-title">
+                Zautomatyzuj Finanse<br>
+                i Zoptymalizuj Łańcuch Dostaw
+            </h1>
+            <p class="hero-subpage-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+                tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae
+                erat.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="hero-subpage-actions">
+                <button class="btn btn-teal">
+                    Umów bezpłatną konsultację
+                    <div class="btn-icon-box">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </button>
+                <a href="#rozwiazanie" class="btn-text-arrow">
+                    Dowiedz się więcej
+                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
+                        <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <!-- Hero Decorations -->
+        <div class="hero-subpage-decorations">
+            <img src="assets/images/hero-cubes-decoration.svg" alt="" class="hero-cubes">
+        </div>
+    </section>
+
+    <!-- Problems Section -->
+    <section class="problems-section" id="rozwiazanie">
+        <!-- Background blur effects -->
+        <div class="problems-blur-teal"></div>
+        <img src="assets/images/problems-blur-gradient.png" alt="" class="problems-blur-gradient">
+        <div class="problems-container">
+            <h2 class="section-title-center">
+                Rozumiemy problemy<br>
+                <span class="text-regular">z którymi się mierzysz</span>
+            </h2>
+
+            <div class="problems-grid">
+                <!-- Problems Column -->
+                <div class="problems-column">
+                    <div class="problem-card">
+                        <button class="problem-toggle toggle-top">
+                            <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
+                                <path d="M1 5L5 1L9 5" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </button>
+                        <span class="problem-text">Brak wglądu w rentowność<br><strong>w czasie
+                                rzeczywistym</strong></span>
+                    </div>
+                    <div class="problem-card active">
+                        <span class="problem-text">Brak wglądu w rentowność<br><strong>w czasie
+                                rzeczywistym</strong></span>
+                        <div class="problem-connector">
+                            <div class="connector-line"></div>
+                            <span class="connector-badge">ANEGIS</span>
+                        </div>
+                    </div>
+                    <div class="problem-card">
+                        <span class="problem-text">Brak wglądu w rentowność<br><strong>w czasie
+                                rzeczywistym</strong></span>
+                        <button class="problem-toggle toggle-bottom">
+                            <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
+                                <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Solution Column -->
+                <div class="solution-column">
+                    <span class="solution-tag">ROZWIĄZANIE</span>
+                    <h3 class="solution-title">Podejmuj decyzje w oparciu o dane dzięki <span>zintegrowanej
+                            analityce</span></h3>
+                    <div class="solution-icons">
+                        <img src="assets/images/product-icon-1.svg" alt="Power Apps">
+                        <img src="assets/images/product-icon-2.svg" alt="Power BI">
+                        <img src="assets/images/product-icon-3.svg" alt="Dynamics 365">
+                        <img src="assets/images/product-icon-4.svg" alt="Azure">
+                        <img src="assets/images/product-icon-5.svg" alt="Dataverse">
+                    </div>
+                </div>
+
+                <!-- Benefits Column -->
+                <div class="benefits-column">
+                    <span class="benefits-tag">KORZYŚCI</span>
+                    <h3 class="benefits-title">Podejmuj decyzje w oparciu o dane dzięki zintegrowanej analityce</h3>
+                    <div class="benefits-arrows">
+                        <img src="assets/images/benefits-arrows-pattern.svg" alt="" class="arrows-pattern">
+                    </div>
+                </div>
+            </div>
+
+            <p class="problems-footer-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+                tristique. <strong>Duis cursus, mi quis viverra ornare.</strong>
+            </p>
+        </div>
+    </section>
+
+    <!-- Solution Photo Section -->
+    <section class="solution-photo-section">
+        <div class="solution-photo-container">
+            <!-- Left: Image with Quote -->
+            <div class="solution-photo-image">
+                <img src="assets/images/a1f9dc7fc7103e7a19cfcc74bb229544334152f0.png" alt="Solution Expert"
+                    class="solution-person-img">
+                <div class="solution-photo-overlay"></div>
+                <img src="assets/images/solution-blur-overlay.png" alt="" class="solution-blur-effect">
+                <div class="solution-photo-quote">
+                    <div class="quote-content">
+                        <img src="assets/images/quote-marks-white.svg" alt="" class="quote-icon">
+                        <p class="quote-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                            varius enim in eros elementum tristique. varius enim in eros elementum tristique..."</p>
+                    </div>
+                    <div class="quote-author">
+                        <span class="author-name">John Doe</span> / <span class="author-title">Solutions Expert,
+                            Anegis</span>
+                        <span class="quote-divider"></span>
+                        <button class="video-button">
+                            <img src="assets/images/play-button-white.svg" alt="" class="play-icon">
+                            Odtwórz wideo
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Content -->
+            <div class="solution-photo-content">
+                <span class="section-tag">
+                    <svg width="8" height="10" viewBox="0 0 8 10" fill="none">
+                        <path d="M0 0L8 5L0 10V0Z" fill="currentColor" />
+                    </svg>
+                    DLA KOGO
+                </span>
+                <h2 class="section-title">Rozwiązanie dla Ciebie</h2>
+                <p class="solution-photo-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+                    tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero
+                    vitae erat.
+                </p>
+                <ul class="solution-benefits-list">
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid Section -->
+    <section class="products-grid-section">
+        <img src="assets/images/products-navy-blur.png" alt="" class="products-navy-blur">
+        <div class="products-grid-container">
+            <div class="products-grid-content">
+                <h2 class="products-grid-title">
+                    Produkty, które pomagają nam <strong>realizować zmianę</strong>
+                </h2>
+                <p class="products-grid-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+                    tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero
+                    vitae erat.
+                </p>
+            </div>
+            <div class="products-grid-icons">
+                <!-- Row 1 -->
+                <div class="product-grid-item">
+                    <img src="assets/images/0376093237e53c5855d739d99596083b115d3715.svg" alt="Product">
+                </div>
+                <div class="product-grid-item">
+                    <img src="assets/images/0b50e021bb7590a75b07b12f2378d58ef2b05583.svg" alt="Product">
+                </div>
+                <div class="product-grid-item">
+                    <img src="assets/images/32c29e03c54ec654d7a9b9a5d99f016653d17425.svg" alt="Product">
+                </div>
+                <div class="product-grid-item">
+                    <img src="assets/images/37e2894a3a59ad52947acce24e80fd2a7b9b2852.svg" alt="Product">
+                </div>
+                <!-- Row 2 -->
+                <div class="product-grid-item">
+                    <img src="assets/images/4629962a401ca41580aeb05217377f840715fc79.svg" alt="Product">
+                </div>
+                <div class="product-grid-item">
+                    <img src="assets/images/4c1ce4c13beecfd5a620bbe5417862b3243b319b.svg" alt="Product">
+                </div>
+                <div class="product-grid-item">
+                    <img src="assets/images/6217e776abf0fcc4645f9083f836a8f6017bd97b.svg" alt="Product">
+                </div>
+                <div class="product-grid-item">
+                    <img src="assets/images/78f8d8aaa10d190ab995bdc7df66cf7e2d0e9ba7.svg" alt="Product">
+                </div>
+                <!-- Row 3 -->
+                <div class="product-grid-item">
+                    <img src="assets/images/9625325a79594d10156371fceb9e560fa9be7c9e.svg" alt="Product">
+                </div>
+                <div class="product-grid-item">
+                    <img src="assets/images/af6b253a120c012ea09d262e6e293aba8422936a.svg" alt="Product">
+                </div>
+                <div class="product-grid-item">
+                    <img src="assets/images/de1d4633f2e39472328597e0ab0e48c45862688c.svg" alt="Product">
+                </div>
+                <div class="product-grid-item">
+                    <img src="assets/images/0376093237e53c5855d739d99596083b115d3715.svg" alt="Product">
+                </div>
+                <!-- Row 4 -->
+                <div class="product-grid-item">
+                    <img src="assets/images/0b50e021bb7590a75b07b12f2378d58ef2b05583.svg" alt="Product">
+                </div>
+                <div class="product-grid-item">
+                    <img src="assets/images/32c29e03c54ec654d7a9b9a5d99f016653d17425.svg" alt="Product">
+                </div>
+                <div class="product-grid-item">
+                    <img src="assets/images/37e2894a3a59ad52947acce24e80fd2a7b9b2852.svg" alt="Product">
+                </div>
+                <div class="product-grid-item">
+                    <img src="assets/images/4629962a401ca41580aeb05217377f840715fc79.svg" alt="Product">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Timeline Section -->
+    <section class="process-section">
+        <div class="process-container">
+            <span class="section-tag">PROCES</span>
+            <h2 class="section-title">Jasna i klarowna ścieżka<br>zmiany w Twojej firmie</h2>
+
+            <div class="process-timeline">
+                <div class="timeline-step">
+                    <div class="step-icon">
+                        <img src="assets/images/icon1.svg" alt="">
+                    </div>
+                    <h3 class="step-title">Analiza potrzeb</h3>
+                    <p class="step-description">Lorem ipsum dolor sit amet consectetur</p>
+                </div>
+                <div class="timeline-connector"></div>
+                <div class="timeline-step">
+                    <div class="step-icon">
+                        <img src="assets/images/icon2.svg" alt="">
+                    </div>
+                    <h3 class="step-title">Model rozwiązania i wycena</h3>
+                    <p class="step-description">Lorem ipsum dolor sit amet consectetur</p>
+                </div>
+                <div class="timeline-connector"></div>
+                <div class="timeline-step">
+                    <div class="step-icon">
+                        <img src="assets/images/icon3.svg" alt="">
+                    </div>
+                    <h3 class="step-title">Wdrożenie</h3>
+                    <p class="step-description">Lorem ipsum dolor sit amet consectetur</p>
+                </div>
+                <div class="timeline-connector"></div>
+                <div class="timeline-step">
+                    <div class="step-icon">
+                        <img src="assets/images/icon1.svg" alt="">
+                    </div>
+                    <h3 class="step-title">Wsparcie i rozwój rozwiązania</h3>
+                    <p class="step-description">Lorem ipsum dolor sit amet consectetur</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section class="case-studies-section" style="background: #fafafa; padding: 80px 64px; position: relative;">
+        <div style="max-width: 1312px; margin: 0 auto;">
+            <span class="section-tag" style="color: #0c0c0c;">CASE STUDIES</span>
+            <h2
+                style="font-family: 'Inter', sans-serif; font-size: 40px; font-weight: 600; color: #0c0c0c; margin: 16px 0 48px;">
+                Zobacz jak zmieniamy<br>firmy technologiczne
+            </h2>
+
+            <!-- Slider - reuse from index.html -->
+            <div class="case-study-slider" id="case-study-slider">
+                <div class="slider-track">
+                    <div class="slider-slide active" data-slide="0">
+                        <div class="slider-card">
+                            <div class="slider-card-content">
+                                <h3 class="slider-card-title">Cyfrowa transformacja NCC</h3>
+                                <div class="slider-card-tags">
+                                    <span class="tag-filled">FINANSE I OPERACJE</span>
+                                    <span class="tag-outline">SPRZEDAŻ I OBSŁUGA KLIENTA</span>
+                                </div>
+                                <div class="slider-card-quote">
+                                    <img src="assets/images/icon-quote.svg" alt="">
+                                    <p>Dzięki wdrożeniu Dynamics 365 zoptymalizowaliśmy procesy finansowe i operacyjne.
+                                    </p>
+                                </div>
+                                <div class="slider-card-author">
+                                    <img src="assets/images/case-study-author.png" alt="John Doe">
+                                    <div>
+                                        <div class="author-name">John Doe</div>
+                                        <div class="author-title">CEO Facebook</div>
+                                    </div>
+                                </div>
+                                <div class="slider-card-footer">
+                                    <a href="#" class="solution-card-button">Zobacz Case Study <span>→</span></a>
+                                    <img src="assets/images/ncc-logo.svg" alt="NCC" class="company-logo">
+                                </div>
+                            </div>
+                            <div class="slider-card-image">
+                                <img src="assets/images/case-study-card-image.png" alt="NCC Project">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-nav">
+                    <button class="slider-prev" id="slider-prev">←</button>
+                    <div class="slider-progress">
+                        <div class="slider-progress-bar" id="slider-progress-bar"></div>
+                    </div>
+                    <button class="slider-next" id="slider-next">→</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner Section -->
+    <section
+        style="background: linear-gradient(135deg, #0b0b0b 0%, #1a1a1a 100%); padding: 80px 64px; text-align: center;">
+        <h2
+            style="font-family: 'Inter', sans-serif; font-size: 40px; font-weight: 600; color: white; margin-bottom: 16px;">
+            Wprowadź swoją firmę do XXI wieku
+        </h2>
+        <p
+            style="font-family: 'Inter', sans-serif; font-size: 18px; color: rgba(255,255,255,0.7); margin-bottom: 32px; max-width: 600px; margin-left: auto; margin-right: auto;">
+            Skontaktuj się z nami już dziś i przekonaj się jak partnerstwo z ANEGIS może pomóc Twojemu biznesowi.
+        </p>
+        <a href="#kontakt" class="simple-button">
+            Umów bezpłatną konsultację
+            <span class="btn-icon-box">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </span>
+        </a>
+    </section>
+
+    <!-- Related Solutions Section -->
+    <section class="related-solutions-section">
+        <div class="related-solutions-container">
+            <span class="section-tag">▶ ROZWIĄZANIA</span>
+            <h2 class="section-title">Zobacz inne rozwiązania</h2>
+
+            <div class="related-solutions-grid">
+                <div class="related-solution-card">
+                    <div class="related-solution-icon">
+                        <img src="assets/images/icon-briefcase.svg" alt="">
+                    </div>
+                    <h3 class="related-solution-title">Finanse i Operacje</h3>
+                    <p class="related-solution-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Suspendisse varius enim in eros elementum tristique.</p>
+                    <a href="#" class="solution-card-button">Dowiedz się więcej <span>›</span></a>
+                </div>
+                <div class="related-solution-card">
+                    <div class="related-solution-icon">
+                        <img src="assets/images/icon-briefcase.svg" alt="">
+                    </div>
+                    <h3 class="related-solution-title">Finanse i Operacje</h3>
+                    <p class="related-solution-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Suspendisse varius enim in eros elementum tristique.</p>
+                    <a href="#" class="solution-card-button">Dowiedz się więcej <span>›</span></a>
+                </div>
+                <div class="related-solution-card">
+                    <div class="related-solution-icon">
+                        <img src="assets/images/icon-briefcase.svg" alt="">
+                    </div>
+                    <h3 class="related-solution-title">Finanse i Operacje</h3>
+                    <p class="related-solution-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Suspendisse varius enim in eros elementum tristique.</p>
+                    <a href="#" class="solution-card-button">Dowiedz się więcej <span>›</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="faq-container">
+            <h2 class="faq-title">FAQs</h2>
+            <p class="faq-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
+                in eros elementum tristique.</p>
+
+            <div class="accordion-container">
+                <div class="accordion-item active">
+                    <button class="accordion-header">
+                        <span>Question text goes here</span>
+                        <span class="accordion-icon">−</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                            elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+                            commodo diam libero vitae erat.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>Question text goes here</span>
+                        <span class="accordion-icon">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>Question text goes here</span>
+                        <span class="accordion-icon">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>Question text goes here</span>
+                        <span class="accordion-icon">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>Question text goes here</span>
+                        <span class="accordion-icon">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bottom CTA Section -->
+    <section id="kontakt" style="background: #fafafa; padding: 120px 64px; text-align: center;">
+        <h2
+            style="font-family: 'Inter', sans-serif; font-size: 48px; font-weight: 600; color: #0c0c0c; margin-bottom: 16px;">
+            Wprowadź swoją firmę<br>do XXI wieku
+        </h2>
+        <p style="font-family: 'Inter', sans-serif; font-size: 18px; color: #6b7280; margin-bottom: 32px;">
+            Skontaktuj się z nami już dziś i przekonaj się jak partnerstwo z ANEGIS może pomóc Twojemu biznesowi.
+        </p>
+        <a href="#" class="simple-button">
+            Umów bezpłatną konsultację
+            <span class="btn-icon-box">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </span>
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: #0b0b0b; position: relative; overflow: hidden; padding: 80px 64px 40px;">
+        <div style="position: absolute; top: 78px; right: -100px; width: 447px; height: 472px; pointer-events: none;">
+            <img src="assets/images/footer-teal-blur.png" alt=""
+                style="width: 100%; height: 100%; object-fit: contain;">
+        </div>
+        <div style="max-width: 1312px; margin: 0 auto; position: relative; z-index: 1;">
+            <div style="display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 48px;">
+                <div>
+                    <div
+                        style="font-family: 'Inter', sans-serif; font-size: 24px; font-weight: 600; color: #f6f8fc; letter-spacing: 0.15em; margin-bottom: 24px;">
+                        ANEGIS</div>
+                    <p
+                        style="font-family: 'Inter', sans-serif; font-size: 14px; line-height: 1.5; color: rgba(246,248,252,0.5); margin: 0 0 24px 0; max-width: 280px;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                        elementum tristique.
+                    </p>
+                    <div
+                        style="font-family: 'Inter', sans-serif; font-size: 12px; letter-spacing: 0.1em; color: rgba(246,248,252,0.4); text-transform: uppercase;">
+                        LONDYN &nbsp;•&nbsp; WARSZAWA &nbsp;•&nbsp; WROCŁAW &nbsp;•&nbsp; SIERADZ
+                    </div>
+                </div>
+                <div>
+                    <div
+                        style="font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 500; color: #f6f8fc; margin-bottom: 24px;">
+                        Co robimy</div>
+                    <div style="display: flex; flex-direction: column; gap: 16px;">
+                        <a href="#"
+                            style="font-family: 'Inter', sans-serif; font-size: 14px; color: rgba(246,248,252,0.7); text-decoration: none;">Rozwiązania</a>
+                        <a href="#"
+                            style="font-family: 'Inter', sans-serif; font-size: 14px; color: rgba(246,248,252,0.7); text-decoration: none;">Branże</a>
+                        <a href="#"
+                            style="font-family: 'Inter', sans-serif; font-size: 14px; color: rgba(246,248,252,0.7); text-decoration: none;">Usługi</a>
+                    </div>
+                </div>
+                <div>
+                    <div
+                        style="font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 500; color: #f6f8fc; margin-bottom: 24px;">
+                        Wiedza</div>
+                    <div style="display: flex; flex-direction: column; gap: 16px;">
+                        <a href="#"
+                            style="font-family: 'Inter', sans-serif; font-size: 14px; color: rgba(246,248,252,0.7); text-decoration: none;">Artykuły</a>
+                        <a href="#"
+                            style="font-family: 'Inter', sans-serif; font-size: 14px; color: rgba(246,248,252,0.7); text-decoration: none;">Raporty</a>
+                        <a href="#"
+                            style="font-family: 'Inter', sans-serif; font-size: 14px; color: rgba(246,248,252,0.7); text-decoration: none;">Ebooki</a>
+                    </div>
+                </div>
+                <div>
+                    <div
+                        style="font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 500; color: #f6f8fc; margin-bottom: 24px;">
+                        O nas</div>
+                    <div style="display: flex; flex-direction: column; gap: 16px;">
+                        <a href="#"
+                            style="font-family: 'Inter', sans-serif; font-size: 14px; color: rgba(246,248,252,0.7); text-decoration: none;">Nasza
+                            historia</a>
+                        <a href="#"
+                            style="font-family: 'Inter', sans-serif; font-size: 14px; color: rgba(246,248,252,0.7); text-decoration: none;">Zespół</a>
+                        <a href="#"
+                            style="font-family: 'Inter', sans-serif; font-size: 14px; color: rgba(246,248,252,0.7); text-decoration: none;">Kariera</a>
+                    </div>
+                </div>
+            </div>
+            <div
+                style="border-top: 1px solid rgba(246,248,252,0.1); padding-top: 24px; display: flex; justify-content: space-between; align-items: center;">
+                <span style="font-family: 'Inter', sans-serif; font-size: 12px; color: rgba(246,248,252,0.4);">© 2025
+                    ANEGIS. All rights reserved.</span>
+                <div style="display: flex; gap: 32px;">
+                    <a href="#"
+                        style="font-family: 'Inter', sans-serif; font-size: 12px; color: rgba(246,248,252,0.4); text-decoration: none;">Polityka
+                        prywatności</a>
+                    <a href="#"
+                        style="font-family: 'Inter', sans-serif; font-size: 12px; color: rgba(246,248,252,0.4); text-decoration: none;">Regulamin</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
