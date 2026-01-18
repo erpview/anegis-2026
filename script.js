@@ -181,4 +181,33 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
+// Dropdown Menu Tab Switching
+document.addEventListener('DOMContentLoaded', () => {
+    const dropdownTabs = document.querySelectorAll('.dropdown-tab');
+
+    dropdownTabs.forEach(tab => {
+        tab.addEventListener('mouseenter', function () {
+            const tabId = this.getAttribute('data-tab');
+            const dropdown = this.closest('.nav-dropdown');
+
+            // Remove active class from all tabs
+            dropdown.querySelectorAll('.dropdown-tab').forEach(t => t.classList.remove('active'));
+
+            // Add active class to hovered tab
+            this.classList.add('active');
+
+            // Hide all tab content
+            dropdown.querySelectorAll('.dropdown-tab-content').forEach(content => {
+                content.classList.remove('active');
+            });
+
+            // Show the corresponding content
+            const targetContent = dropdown.querySelector(`#tab-${tabId}`);
+            if (targetContent) {
+                targetContent.classList.add('active');
+            }
+        });
+    });
+});
+
 console.log('ANEGIS 2026 Website - Scripts Loaded');
