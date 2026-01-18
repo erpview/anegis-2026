@@ -1,0 +1,1677 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="ANEGIS - Finanse i Operacje - Zautomatyzuj procesy finansowe z Microsoft Dynamics 365">
+    <title>Finanse i Operacje | ANEGIS - Microsoft Dynamics 365</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Polymath Font Family from Adobe Typekit -->
+    <link rel="stylesheet" href="https://use.typekit.net/ood3ktp.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="branza-produkcja.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/images/logo-anegis.svg" alt="ANEGIS" style="height: 24px;">
+                </a>
+            </div>
+            <nav class="nav">
+                <!-- Co robimy Dropdown -->
+                <div class="nav-dropdown" id="co-robimy-dropdown">
+                    <a href="#co-robimy" class="nav-item nav-dropdown-trigger">
+                        Co robimy
+                        <img src="assets/images/icon-chevron-nav.svg" alt="" class="nav-chevron"
+                            style="width: 10px; height: 6px;">
+                    </a>
+                    <!-- Dropdown Mega Menu -->
+                    <div class="dropdown-mega-menu">
+                        <div class="dropdown-sidebar">
+                            <div class="dropdown-menu-list">
+                                <button class="dropdown-tab active" data-tab="rozwiazania">
+                                    Rozwiązania
+                                    <svg class="tab-arrow" width="5" height="10" viewBox="0 0 5 10" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 0L5 5L0 10" fill="currentColor" />
+                                    </svg>
+                                </button>
+                                <button class="dropdown-tab" data-tab="uslugi">
+                                    Usługi
+                                    <svg class="tab-arrow" width="5" height="10" viewBox="0 0 5 10" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 0L5 5L0 10" fill="currentColor" />
+                                    </svg>
+                                </button>
+                                <button class="dropdown-tab" data-tab="branze">
+                                    Branże
+                                    <svg class="tab-arrow" width="5" height="10" viewBox="0 0 5 10" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 0L5 5L0 10" fill="currentColor" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="dropdown-content">
+                            <div class="dropdown-tab-content active" id="tab-rozwiazania">
+                                <div class="dropdown-grid">
+                                    <a href="finanse.html" class="dropdown-item">
+                                        <div class="dropdown-item-icon">
+                                            <img src="assets/images/mega-menu-document-icon.svg" alt="">
+                                        </div>
+                                        <div class="dropdown-item-text">
+                                            <span class="dropdown-item-title">Finanse i Operacje</span>
+                                            <span class="dropdown-item-desc">Zautomatyzuj finanse i łańcuch
+                                                dostaw</span>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="dropdown-item">
+                                        <div class="dropdown-item-icon">
+                                            <img src="assets/images/mega-menu-document-icon.svg" alt="">
+                                        </div>
+                                        <div class="dropdown-item-text">
+                                            <span class="dropdown-item-title">Sprzedaż i Obsługa Klienta</span>
+                                            <span class="dropdown-item-desc">Lorem ipsum dolor sit amet</span>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="dropdown-item">
+                                        <div class="dropdown-item-icon">
+                                            <img src="assets/images/mega-menu-document-icon.svg" alt="">
+                                        </div>
+                                        <div class="dropdown-item-text">
+                                            <span class="dropdown-item-title">Analityka Biznesowa i AI</span>
+                                            <span class="dropdown-item-desc">Lorem ipsum dolor sit amet</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="dropdown-tab-content" id="tab-uslugi">
+                                <div class="dropdown-grid">
+                                    <a href="wdrozenie-erp.html" class="dropdown-item">
+                                        <div class="dropdown-item-icon">
+                                            <img src="assets/images/mega-menu-document-icon.svg" alt="">
+                                        </div>
+                                        <div class="dropdown-item-text">
+                                            <span class="dropdown-item-title">Wdrożenia ERP</span>
+                                            <span class="dropdown-item-desc">Lorem ipsum dolor sit amet</span>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="dropdown-item">
+                                        <div class="dropdown-item-icon">
+                                            <img src="assets/images/mega-menu-document-icon.svg" alt="">
+                                        </div>
+                                        <div class="dropdown-item-text">
+                                            <span class="dropdown-item-title">Wsparcie i Rozwój</span>
+                                            <span class="dropdown-item-desc">Lorem ipsum dolor sit amet</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="dropdown-tab-content" id="tab-branze">
+                                <div class="dropdown-grid">
+                                    <a href="branza-produkcja.html" class="dropdown-item">
+                                        <div class="dropdown-item-icon">
+                                            <img src="assets/images/mega-menu-document-icon.svg" alt="">
+                                        </div>
+                                        <div class="dropdown-item-text">
+                                            <span class="dropdown-item-title">Produkcja</span>
+                                            <span class="dropdown-item-desc">Lorem ipsum dolor sit amet</span>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="dropdown-item">
+                                        <div class="dropdown-item-icon">
+                                            <img src="assets/images/mega-menu-document-icon.svg" alt="">
+                                        </div>
+                                        <div class="dropdown-item-text">
+                                            <span class="dropdown-item-title">Handel i Dystrybucja</span>
+                                            <span class="dropdown-item-desc">Lorem ipsum dolor sit amet</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#case-studies" class="nav-item">Case studies</a>
+                <!-- Wiedza Dropdown -->
+                <div class="nav-dropdown" id="wiedza-dropdown">
+                    <a href="#wiedza" class="nav-item nav-dropdown-trigger">
+                        Wiedza
+                        <img src="assets/images/icon-chevron-nav.svg" alt="" class="nav-chevron"
+                            style="width: 10px; height: 6px;">
+                    </a>
+                    <div class="dropdown-mega-menu dropdown-simple">
+                        <div class="dropdown-content dropdown-simple-content">
+                            <a href="#" class="dropdown-item">
+                                <div class="dropdown-item-icon">
+                                    <img src="assets/images/mega-menu-document-icon.svg" alt="">
+                                </div>
+                                <div class="dropdown-item-text">
+                                    <span class="dropdown-item-title">Artykuły</span>
+                                </div>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <div class="dropdown-item-icon">
+                                    <img src="assets/images/mega-menu-document-icon.svg" alt="">
+                                </div>
+                                <div class="dropdown-item-text">
+                                    <span class="dropdown-item-title">Ebooki</span>
+                                </div>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <div class="dropdown-item-icon">
+                                    <img src="assets/images/mega-menu-document-icon.svg" alt="">
+                                </div>
+                                <div class="dropdown-item-text">
+                                    <span class="dropdown-item-title">Wydarzenia</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- O nas Dropdown -->
+                <div class="nav-dropdown" id="onas-dropdown">
+                    <a href="#o-nas" class="nav-item nav-dropdown-trigger">
+                        O nas
+                        <img src="assets/images/icon-chevron-nav.svg" alt="" class="nav-chevron"
+                            style="width: 10px; height: 6px;">
+                    </a>
+                    <div class="dropdown-mega-menu dropdown-simple">
+                        <div class="dropdown-content dropdown-simple-content">
+                            <a href="#" class="dropdown-item">
+                                <div class="dropdown-item-icon">
+                                    <img src="assets/images/mega-menu-document-icon.svg" alt="">
+                                </div>
+                                <div class="dropdown-item-text">
+                                    <span class="dropdown-item-title">Nasza historia i misja</span>
+                                </div>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <div class="dropdown-item-icon">
+                                    <img src="assets/images/mega-menu-document-icon.svg" alt="">
+                                </div>
+                                <div class="dropdown-item-text">
+                                    <span class="dropdown-item-title">Zespół i eksperci</span>
+                                </div>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <div class="dropdown-item-icon">
+                                    <img src="assets/images/mega-menu-document-icon.svg" alt="">
+                                </div>
+                                <div class="dropdown-item-text">
+                                    <span class="dropdown-item-title">Kariera</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="header-right">
+                <div class="lang-selector">
+                    <img src="assets/images/icon-flag-pl-standard.svg" alt="PL" style="width: 20px; height: auto;">
+                    <span>PL</span>
+                    <img src="assets/images/icon-chevron-nav.svg" alt="" style="width: 10px; height: 6px;">
+                </div>
+                <button class="btn btn-teal">
+                    Umów bezpłatną konsultację
+                    <div class="btn-icon-box">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </button>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section (from Figma Node 1:1845) -->
+    <section class="hero-industry" style="
+        display: flex;
+        min-height: 600px;
+        background: #0b0b0b;
+        position: relative;
+        overflow: hidden;
+        padding-bottom: 0;
+    ">
+        <!-- Navy Blur Background -->
+        <div style="
+            position: absolute;
+            left: 243px;
+            top: -675px;
+            width: 896px;
+            height: 1113px;
+            background: radial-gradient(ellipse at center, rgba(20, 30, 50, 0.8) 0%, transparent 70%);
+            pointer-events: none;
+            z-index: 0;
+        "></div>
+
+        <!-- Left Content Column -->
+        <div style="
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 0 80px 80px 205px;
+            position: relative;
+            z-index: 1;
+            max-width: 768px;
+        ">
+            <!-- Breadcrumbs -->
+            <div style="position: absolute; top: 100px; left: 205px;">
+                <div style="display: flex; gap: 8px; align-items: center;">
+                    <a href="#"
+                        style="font-family: 'Inter', sans-serif; font-size: 14px; color: #b3b2b1; text-decoration: none;">Branże</a>
+                    <span style="color: #b3b2b1;">›</span>
+                    <span style="font-family: 'Inter', sans-serif; font-size: 14px; color: #65AAAB;">Przemysł</span>
+                </div>
+            </div>
+
+            <!-- Content -->
+            <div style="display: flex; flex-direction: column; gap: 24px;">
+                <!-- Title -->
+                <h1 style="
+                    font-family: 'Inter', sans-serif;
+                    font-size: 48px;
+                    font-weight: 600;
+                    line-height: 1.2;
+                    margin: 0;
+                    background: linear-gradient(90deg, #fbfbfb, #dfdfdf);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                ">
+                    Cyfrowa Transformacja dla Przemysłu 4.0
+                </h1>
+
+                <!-- Description -->
+                <p style="
+                    font-family: 'Inter', sans-serif;
+                    font-size: 18px;
+                    line-height: 1.5;
+                    color: #b3b2b1;
+                    margin: 0;
+                    max-width: 600px;
+                ">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+                    tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero
+                    vitae erat.
+                </p>
+
+                <!-- CTA Buttons -->
+                <div style="display: flex; gap: 24px; align-items: center; margin-top: 8px;">
+                    <button class="btn btn-teal">
+                        Umów bezpłatną konsultację
+                        <div class="btn-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </button>
+                    <a href="#rozwiazanie" class="btn-text-arrow" style="color: #ffffff;">
+                        Dowiedz się więcej
+                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
+                            <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Image Column -->
+        <div style="
+            flex: 1;
+            position: relative;
+            min-height: 600px;
+        ">
+            <img src="assets/images/416c3e75eff3c90c368603d9a90ebde2a4494086.png"
+                alt="Industrial buildings with orange tanks" style="
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            ">
+        </div>
+    </section>
+
+    <!-- O BRANŻY Section (from Figma node 1:1869) -->
+    <section class="section"
+        style="background: #fafafa; padding: 100px 55px 48px 64px; position: relative; overflow: hidden;">
+        <!-- Yellow/Green Gradient Blur Background (Left) -->
+        <style>
+            @keyframes morphYellowGreen {
+                0% {
+                    transform: translate(0, 0) scale(1) rotate(0deg);
+                    opacity: 0.7;
+                }
+
+                25% {
+                    transform: translate(60px, 80px) scale(1.15) rotate(12deg);
+                    opacity: 0.85;
+                }
+
+                50% {
+                    transform: translate(-40px, 40px) scale(0.9) rotate(-8deg);
+                    opacity: 0.6;
+                }
+
+                75% {
+                    transform: translate(50px, -30px) scale(1.1) rotate(6deg);
+                    opacity: 0.8;
+                }
+
+                100% {
+                    transform: translate(0, 0) scale(1) rotate(0deg);
+                    opacity: 0.7;
+                }
+            }
+        </style>
+        <div
+            style="position: absolute; left: -100px; top: 0; width: 500px; height: 500px; pointer-events: none; z-index: 0; overflow: visible; animation: morphYellowGreen 25s ease-in-out infinite;">
+            <img src="assets/images/solution-bg-blur.png" alt=""
+                style="width: 100%; height: 100%; object-fit: contain;">
+        </div>
+
+        <div
+            style="display: flex; gap: 64px; align-items: flex-end; max-width: 1312px; margin: 0 auto; position: relative; z-index: 1;">
+            <!-- Left: Content -->
+            <div
+                style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; max-width: 980px;">
+                <!-- Tag -->
+                <div style="display: flex; gap: 10px; align-items: center; padding: 4px 0; margin-bottom: 24px;">
+                    <span style="color: #0c0c0c;">▶</span>
+                    <span
+                        style="font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #0c0c0c;">O
+                        BRANŻY</span>
+                </div>
+
+                <!-- Heading with mixed weights -->
+                <h2 style="
+                    font-family: 'Polymath Display', serif;
+                    font-size: 40px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 120%;
+                    color: #0c0c0c;
+                    margin: 0;
+                ">
+                    <span style="font-weight: 600;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                        varius enim in eros. </span><span style="font-weight: 400;">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Suspendisse varius enim in eros.</span>
+                </h2>
+            </div>
+
+            <!-- Right: Interactive Triangle Pattern with GSAP -->
+            <div id="triangle-grid"
+                style="width: 396px; height: 369px; flex-shrink: 0; display: grid; grid-template-columns: repeat(8, 1fr); grid-template-rows: repeat(8, 1fr); gap: 2px;">
+            </div>
+
+            <!-- GSAP Library -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+            <script>
+                (function () {
+                    var grid = document.getElementById('triangle-grid');
+                    if (!grid) return;
+
+                    var totalArrows = 64;
+                    var arrowElements = [];
+
+                    // Create 64 arrows (8x8 grid)
+                    // Exact arrow path from Figma node 1:1891
+                    var arrowPath = 'M19.4429 24.5599L0 0L32.2278 6.1389L31.3565 6.71227C28.2535 8.7557 25.7561 11.1699 23.7294 14.097C21.698 17.0199 20.3654 20.1282 19.6479 23.5899L19.4476 24.5599H19.4429ZM2.18048 1.29762L18.9444 22.4734C19.7224 19.2832 21.0364 16.3819 22.942 13.6315C24.8476 10.8853 27.1539 8.57031 29.9634 6.58724L2.17582 1.29331L2.18048 1.29762Z';
+
+                    for (var i = 0; i < totalArrows; i++) {
+                        var wrapper = document.createElement('div');
+                        wrapper.style.cssText = 'width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;';
+
+                        var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+                        svg.setAttribute('width', '32');
+                        svg.setAttribute('height', '26');
+                        svg.setAttribute('viewBox', '0 0 32.2278 24.5599');
+                        svg.style.transition = 'transform 0.15s ease-out';
+
+                        var path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+                        path.setAttribute('d', arrowPath);
+
+                        // One filled gradient arrow at position 45 - uses DIFFERENT shape from Figma node 1:1890
+                        if (i === 45) {
+                            // Filled arrow has different path and viewBox - SOLID fill (only outer path)
+                            svg.setAttribute('viewBox', '0 0 29.1481 28.5692');
+                            var filledArrowPath = 'M11.3732 28.5692L0 0L29.1481 14.1229L28.1417 14.4506C24.5495 15.6232 21.4324 17.3088 18.6089 19.6023C15.7854 21.8957 13.577 24.5384 11.8577 27.6854L11.3732 28.5692Z';
+                            path.setAttribute('d', filledArrowPath);
+
+                            // Create gradient matching Figma exactly
+                            var defs = document.createElementNS('http://www.w3.org/2000/svg', 'defs');
+                            var gradient = document.createElementNS('http://www.w3.org/2000/svg', 'linearGradient');
+                            gradient.setAttribute('id', 'filledArrowGradient');
+                            gradient.setAttribute('x1', '70%');
+                            gradient.setAttribute('y1', '70%');
+                            gradient.setAttribute('x2', '5%');
+                            gradient.setAttribute('y2', '-5%');
+                            var stop1 = document.createElementNS('http://www.w3.org/2000/svg', 'stop');
+                            stop1.setAttribute('offset', '0%');
+                            stop1.setAttribute('stop-color', '#1A3574');
+                            var stop2 = document.createElementNS('http://www.w3.org/2000/svg', 'stop');
+                            stop2.setAttribute('offset', '100%');
+                            stop2.setAttribute('stop-color', '#65AAAB');
+                            gradient.appendChild(stop1);
+                            gradient.appendChild(stop2);
+                            defs.appendChild(gradient);
+                            svg.appendChild(defs);
+                            path.setAttribute('fill', 'url(#filledArrowGradient)');
+                        } else {
+                            path.setAttribute('fill', 'none');
+                            path.setAttribute('stroke', '#0E0E0E');
+                            path.setAttribute('stroke-width', '0.8');
+                        }
+
+                        svg.appendChild(path);
+                        wrapper.appendChild(svg);
+                        grid.appendChild(wrapper);
+
+                        // Store with random initial rotation
+                        var initRot = Math.floor(Math.random() * 360);
+                        svg.style.transform = 'rotate(' + initRot + 'deg)';
+                        arrowElements.push({ svg: svg, initRot: initRot });
+                    }
+
+                    // Mouse move handler
+                    grid.addEventListener('mousemove', function (e) {
+                        var gridRect = grid.getBoundingClientRect();
+
+                        for (var j = 0; j < arrowElements.length; j++) {
+                            var item = arrowElements[j];
+                            var rect = item.svg.getBoundingClientRect();
+                            var cx = rect.left + rect.width / 2;
+                            var cy = rect.top + rect.height / 2;
+
+                            var dx = e.clientX - cx;
+                            var dy = e.clientY - cy;
+                            var angle = Math.atan2(dy, dx) * (180 / Math.PI) + 90;
+
+                            gsap.to(item.svg, { rotation: angle, duration: 0.2, ease: 'power2.out' });
+                        }
+                    });
+
+                    // Reset on mouse leave
+                    grid.addEventListener('mouseleave', function () {
+                        for (var k = 0; k < arrowElements.length; k++) {
+                            var item = arrowElements[k];
+                            gsap.to(item.svg, { rotation: item.initRot, duration: 0.5, ease: 'power2.out' });
+                        }
+                    });
+                })();
+            </script>
+        </div>
+    </section>
+
+    <!-- Stats Section (from Figma node 1:1978) -->
+    <section class="section" style="background: #fafafa; padding: 1px 64px 80px 64px; position: relative;">
+        <!-- Stats Container with glassmorphism -->
+        <div style="
+            max-width: 1300px;
+            margin: 0 auto;
+            background: rgba(250, 250, 250, 0.5);
+            backdrop-filter: blur(2px);
+            border: 1px solid #e5e7ea;
+        ">
+            <!-- Stats Row - 3 columns -->
+            <div style="display: flex; width: 100%;">
+
+                <!-- Stat 1 -->
+                <div style="flex: 1; padding: 32px; border-right: 1px solid #e5e7ea;">
+                    <div style="display: flex; flex-direction: column; gap: 16px;">
+                        <p
+                            style="font-family: 'Polymath Display', Georgia, 'Times New Roman', serif; font-size: 56px; font-style: normal; font-weight: 600; line-height: 120%; color: #1F2226; margin: 0;">
+                            30%</p>
+                        <div style="width: 100%; height: 1px; background: #e5e7ea;"></div>
+                        <p
+                            style="font-family: 'Polymath', 'Inter', sans-serif; font-size: 16px; font-weight: 400; line-height: 1.5; color: #696a6b; margin: 0;">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+
+                <!-- Stat 2 -->
+                <div style="flex: 1; padding: 32px; border-right: 1px solid #e5e7ea;">
+                    <div style="display: flex; flex-direction: column; gap: 16px;">
+                        <p
+                            style="font-family: 'Polymath Display', Georgia, 'Times New Roman', serif; font-size: 56px; font-style: normal; font-weight: 600; line-height: 120%; color: #1F2226; margin: 0;">
+                            30%</p>
+                        <div style="width: 100%; height: 1px; background: #e5e7ea;"></div>
+                        <p
+                            style="font-family: 'Polymath', 'Inter', sans-serif; font-size: 16px; font-weight: 400; line-height: 1.5; color: #696a6b; margin: 0;">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+
+                <!-- Stat 3 -->
+                <div style="flex: 1; padding: 32px;">
+                    <div style="display: flex; flex-direction: column; gap: 16px;">
+                        <p
+                            style="font-family: 'Polymath Display', Georgia, 'Times New Roman', serif; font-size: 56px; font-style: normal; font-weight: 600; line-height: 120%; color: #1F2226; margin: 0;">
+                            30%</p>
+                        <div style="width: 100%; height: 1px; background: #e5e7ea;"></div>
+                        <p
+                            style="font-family: 'Polymath', 'Inter', sans-serif; font-size: 16px; font-weight: 400; line-height: 1.5; color: #696a6b; margin: 0;">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Kluczowe Wyzwania Section (from Figma node 1:1999) -->
+    <section style="background: #fafafa; padding: 125px 205px 64px; position: relative; overflow: hidden;">
+        <!-- Teal/Navy gradient blur decoration - animated morphing -->
+        <style>
+            @keyframes morphBlur {
+                0% {
+                    transform: translate(0, 0) scale(1) rotate(0deg);
+                    opacity: 0.6;
+                }
+
+                25% {
+                    transform: translate(-200px, -100px) scale(1.2) rotate(15deg);
+                    opacity: 0.8;
+                }
+
+                50% {
+                    transform: translate(-400px, 50px) scale(0.9) rotate(-10deg);
+                    opacity: 0.5;
+                }
+
+                75% {
+                    transform: translate(-150px, 150px) scale(1.1) rotate(5deg);
+                    opacity: 0.7;
+                }
+
+                100% {
+                    transform: translate(0, 0) scale(1) rotate(0deg);
+                    opacity: 0.6;
+                }
+            }
+        </style>
+        <div
+            style="position: absolute; right: -100px; top: 200px; width: 600px; height: 600px; overflow: visible; pointer-events: none; animation: morphBlur 65s ease-in-out infinite;">
+            <img src="assets/images/f86e24fcfad0378888c44a529e8167e4b987bca6.png" alt=""
+                style="width: 100%; height: 100%; object-fit: cover; filter: blur(10px);">
+        </div>
+
+        <!-- Main container - 3 columns, 2 rows with 32px gap -->
+        <div
+            style="display: flex; flex-direction: column; gap: 32px; max-width: 1400px; margin: 0 auto; position: relative; z-index: 1;">
+
+            <!-- Row 1: Title + Card1 + Card2 -->
+            <div style="display: flex; gap: 32px;">
+                <!-- Content (Title Section) -->
+                <div style="flex: 1; padding: 24px;">
+                    <div style="display: flex; flex-direction: column; gap: 16px; max-width: 768px;">
+                        <!-- Tag -->
+                        <div style="display: flex; gap: 10px; align-items: center; padding: 4px 0;">
+                            <span style="color: #0c0c0c; font-size: 10px;">▶</span>
+                            <span
+                                style="font-family: 'polymath', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #0c0c0c;">WYZWANIA</span>
+                        </div>
+                        <!-- Heading -->
+                        <h2
+                            style="font-family: 'polymath-display', Georgia, serif; font-size: 48px; font-weight: 600; line-height: 1.2; color: #1F2226; margin: 0;">
+                            Kluczowe<br>Wyzwania</h2>
+                        <!-- Description -->
+                        <p
+                            style="font-family: 'polymath', sans-serif; font-size: 18px; font-weight: 400; line-height: 1.5; color: #696a6b; margin: 0;">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in</p>
+                    </div>
+                </div>
+
+                <!-- Card 1 -->
+                <div
+                    style="flex: 1; aspect-ratio: 1; background: #ffffff; border: 1px solid #e5e7ea; padding: 32px; display: flex; flex-direction: column; gap: 24px;">
+                    <span style="font-family: 'polymath', sans-serif; font-size: 14px; color: #696a6b;">01</span>
+                    <h3
+                        style="font-family: 'polymath-display', serif; font-size: 32px; font-weight: 600; line-height: 1.2; color: #1F2226; margin: 0;">
+                        Planowanie produkcji w czasie rzeczywistym</h3>
+                    <p
+                        style="font-family: 'polymath', sans-serif; font-size: 14px; line-height: 1.5; color: #696a6b; margin: 0;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur adipiscing elit. Lorem
+                        ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                    style="flex: 1; aspect-ratio: 1; background: #ffffff; border: 1px solid #e5e7ea; padding: 32px; display: flex; flex-direction: column; gap: 24px;">
+                    <span style="font-family: 'polymath', sans-serif; font-size: 14px; color: #696a6b;">01</span>
+                    <h3
+                        style="font-family: 'polymath-display', serif; font-size: 32px; font-weight: 600; line-height: 1.2; color: #1F2226; margin: 0;">
+                        Planowanie produkcji w czasie rzeczywistym</h3>
+                    <p
+                        style="font-family: 'polymath', sans-serif; font-size: 14px; line-height: 1.5; color: #696a6b; margin: 0;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur adipiscing elit. Lorem
+                        ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+
+            <!-- Row 2: Card3 + Card4 + CTA -->
+            <div style="display: flex; gap: 32px;">
+                <!-- Card 3 -->
+                <div
+                    style="flex: 1; aspect-ratio: 1; background: #ffffff; border: 1px solid #e5e7ea; padding: 32px; display: flex; flex-direction: column; gap: 24px;">
+                    <span style="font-family: 'polymath', sans-serif; font-size: 14px; color: #696a6b;">01</span>
+                    <h3
+                        style="font-family: 'polymath-display', serif; font-size: 32px; font-weight: 600; line-height: 1.2; color: #1F2226; margin: 0;">
+                        Śledzenie partii i zgodność z normami</h3>
+                    <p
+                        style="font-family: 'polymath', sans-serif; font-size: 14px; line-height: 1.5; color: #696a6b; margin: 0;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur adipiscing elit. Lorem
+                        ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div
+                    style="flex: 1; aspect-ratio: 1; background: #ffffff; border: 1px solid #e5e7ea; padding: 32px; display: flex; flex-direction: column; gap: 24px;">
+                    <span style="font-family: 'polymath', sans-serif; font-size: 14px; color: #696a6b;">01</span>
+                    <h3
+                        style="font-family: 'polymath-display', serif; font-size: 32px; font-weight: 600; line-height: 1.2; color: #1F2226; margin: 0;">
+                        Planowanie produkcji w czasie rzeczywistym</h3>
+                    <p
+                        style="font-family: 'polymath', sans-serif; font-size: 14px; line-height: 1.5; color: #696a6b; margin: 0;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur adipiscing elit. Lorem
+                        ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+
+                <!-- CTA Card -->
+                <div
+                    style="flex: 1; aspect-ratio: 1; background: #0c0c0c; padding: 32px; display: flex; flex-direction: column; align-items: center; justify-content: space-between; text-align: center; position: relative; overflow: hidden;">
+
+                    <!-- Background SVG decoration -->
+                    <img src="assets/images/f1503e43d90536282dd02e703773bf30d682cd70.svg" alt=""
+                        style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
+
+                    <!-- Profile Image with border -->
+                    <div
+                        style="width: 64px; height: 64px; border-radius: 50%; overflow: hidden; border: 2px solid #65AAAB; flex-shrink: 0; z-index: 1;">
+                        <img src="assets/images/094bba9bc4912bb2c339842887ed2a40af04dab4.png" alt="Konsultant"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+
+                    <!-- Spacer for middle area -->
+                    <div style="flex: 1;"></div>
+
+                    <!-- Content -->
+                    <div style="display: flex; flex-direction: column; gap: 24px; align-items: center; z-index: 1;">
+                        <!-- Heading -->
+                        <div
+                            style="font-family: 'polymath-display', serif; font-size: 32px; line-height: 1.2; color: #f5f5f5; text-align: center;">
+                            <span style="font-weight: 400;">Pomożemy Ci</span><br>
+                            <span style="font-weight: 600;">w transformacji</span>
+                        </div>
+
+                        <!-- Button -->
+                        <a href="#kontakt"
+                            style="display: inline-flex; align-items: center; background: #65AAAB; border: 1px solid #65AAAB; color: #0c0c0c; text-decoration: none; font-family: 'polymath', sans-serif; font-size: 16px; font-weight: 500;">
+                            <span style="padding: 12px 20px;">Umów bezpłatną konsultację</span>
+                            <div
+                                style="width: 44px; height: 44px; background: #0c0c0c; display: flex; align-items: center; justify-content: center;">
+                                <svg width="18" height="16" viewBox="0 0 18 16" fill="none">
+                                    <rect x="1" y="1" width="16" height="14" rx="1" stroke="#65AAAB"
+                                        stroke-width="1.5" />
+                                    <path d="M4 5H14M4 8H10" stroke="#65AAAB" stroke-width="1.5"
+                                        stroke-linecap="round" />
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+    </section>
+
+    <!-- Products Grid Section -->
+    <section class="products-grid-section">
+        <img src="assets/images/products-navy-blur.png" alt="" class="products-navy-blur">
+        <div class="products-grid-container">
+            <div class="products-grid-content">
+                <h2 class="products-grid-title">
+                    Produkty, które pomagają nam <strong>realizować zmianę</strong>
+                </h2>
+                <p class="products-grid-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+                    tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero
+                    vitae erat.
+                </p>
+            </div>
+            <div class="products-grid-icons">
+                <!-- Row 1 -->
+                <div class="product-grid-item">
+                    <img src="assets/images/0376093237e53c5855d739d99596083b115d3715.svg" alt="Product">
+                </div>
+                <div class="product-grid-item">
+                    <img src="assets/images/0b50e021bb7590a75b07b12f2378d58ef2b05583.svg" alt="Product">
+                </div>
+                <div class="product-grid-item">
+                    <img src="assets/images/32c29e03c54ec654d7a9b9a5d99f016653d17425.svg" alt="Product">
+                </div>
+                <div class="product-grid-item">
+                    <img src="assets/images/37e2894a3a59ad52947acce24e80fd2a7b9b2852.svg" alt="Product">
+                </div>
+                <!-- Row 2 -->
+                <div class="product-grid-item">
+                    <img src="assets/images/4629962a401ca41580aeb05217377f840715fc79.svg" alt="Product">
+                </div>
+                <div class="product-grid-item">
+                    <img src="assets/images/4c1ce4c13beecfd5a620bbe5417862b3243b319b.svg" alt="Product">
+                </div>
+                <div class="product-grid-item">
+                    <img src="assets/images/6217e776abf0fcc4645f9083f836a8f6017bd97b.svg" alt="Product">
+                </div>
+                <div class="product-grid-item">
+                    <img src="assets/images/78f8d8aaa10d190ab995bdc7df66cf7e2d0e9ba7.svg" alt="Product">
+                </div>
+                <!-- Row 3 -->
+                <div class="product-grid-item">
+                    <img src="assets/images/9625325a79594d10156371fceb9e560fa9be7c9e.svg" alt="Product">
+                </div>
+                <div class="product-grid-item">
+                    <img src="assets/images/af6b253a120c012ea09d262e6e293aba8422936a.svg" alt="Product">
+                </div>
+                <div class="product-grid-item">
+                    <img src="assets/images/de1d4633f2e39472328597e0ab0e48c45862688c.svg" alt="Product">
+                </div>
+                <div class="product-grid-item">
+                    <img src="assets/images/0376093237e53c5855d739d99596083b115d3715.svg" alt="Product">
+                </div>
+                <!-- Row 4 -->
+                <div class="product-grid-item">
+                    <img src="assets/images/0b50e021bb7590a75b07b12f2378d58ef2b05583.svg" alt="Product">
+                </div>
+                <div class="product-grid-item">
+                    <img src="assets/images/32c29e03c54ec654d7a9b9a5d99f016653d17425.svg" alt="Product">
+                </div>
+                <div class="product-grid-item">
+                    <img src="assets/images/37e2894a3a59ad52947acce24e80fd2a7b9b2852.svg" alt="Product">
+                </div>
+                <div class="product-grid-item">
+                    <img src="assets/images/4629962a401ca41580aeb05217377f840715fc79.svg" alt="Product">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- METODYKA Section (from Figma node 1:2890) -->
+    <section class="section" style="background: #fafafa; padding: 80px 128px 0 128px; position: relative;">
+        <!-- Teal Navy Gradient Blur (top right) - Animated -->
+        <div class="animated-gradient"
+            style="position: absolute; right: 0; top: -111px; width: 370px; height: 373px; overflow: visible; pointer-events: none; z-index: 0;">
+            <img src="assets/images/f86e24fcfad0378888c44a529e8167e4b987bca6.png" alt=""
+                style="width: 100%; height: 100%; object-fit: contain; animation: morphGradient 20s ease-in-out infinite, floatGradient 15s ease-in-out infinite;">
+        </div>
+
+        <!-- Main Container with Glassmorphism -->
+        <div style="max-width: 1280px; margin: 0 auto; position: relative; z-index: 1;">
+            <div
+                style="backdrop-filter: blur(2px); background: rgba(250, 250, 250, 0.5); border: 1px solid #e5e7ea; padding: 100px 48px; position: relative; overflow: hidden;">
+
+                <!-- Content Grid -->
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 80px;">
+
+                    <!-- Left: Header -->
+                    <div style="flex: 1;">
+                        <!-- Tag -->
+                        <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 16px;">
+                            <span style="color: #0c0c0c;">▶</span>
+                            <span
+                                style="font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #0c0c0c;">METODYKA</span>
+                        </div>
+
+                        <!-- Heading -->
+                        <h2
+                            style="font-family: 'Inter', sans-serif; font-size: 48px; font-weight: 600; line-height: 1.2; color: #0c0c0c; margin: 0;">
+                            Sprawdzone działanie,<br>pewne rezultaty
+                        </h2>
+                    </div>
+
+                    <!-- Right: Description + Button -->
+                    <div style="flex: 1; display: flex; flex-direction: column; gap: 24px;">
+                        <p
+                            style="font-family: 'Inter', sans-serif; font-size: 18px; line-height: 1.5; color: #6b7280; margin: 0;">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                            elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+                            commodo diam libero vitae erat.
+                        </p>
+
+                        <!-- Button -->
+                        <a href="#" class="simple-button">
+                            Więcej o naszej metodyce
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Arrow Graphics (decorative, bottom) -->
+                <div
+                    style="position: absolute; bottom: 0; left: 48px; right: 48px; height: 200px; pointer-events: none; display: flex; align-items: flex-end; justify-content: space-around; opacity: 0.3;">
+                    <!-- Arrow 1 (outline) -->
+                    <svg width="40" height="120" viewBox="0 0 40 120" fill="none" style="transform: translateY(20px);">
+                        <path d="M20 120V20M20 20L5 35M20 20L35 35" stroke="#0c0c0c" stroke-width="1" />
+                    </svg>
+                    <!-- Arrow 2 (outline, taller) -->
+                    <svg width="40" height="160" viewBox="0 0 40 160" fill="none" style="transform: translateY(10px);">
+                        <path d="M20 160V20M20 20L5 35M20 20L35 35" stroke="#0c0c0c" stroke-width="1" />
+                    </svg>
+                    <!-- Arrow 3 (filled green) -->
+                    <svg width="40" height="180" viewBox="0 0 40 180" fill="none">
+                        <path d="M20 180V20M20 20L5 35M20 20L35 35" stroke="#10b981" stroke-width="2" />
+                    </svg>
+                    <!-- Arrow 4 (outline, tallest) -->
+                    <svg width="40" height="200" viewBox="0 0 40 200" fill="none" style="transform: translateY(-10px);">
+                        <path d="M20 200V20M20 20L5 35M20 20L35 35" stroke="#10b981" stroke-width="2" />
+                    </svg>
+                    <!-- Arrow 5 (filled teal) -->
+                    <svg width="40" height="140" viewBox="0 0 40 140" fill="none" style="transform: translateY(30px);">
+                        <path d="M20 140V20M20 20L5 35M20 20L35 35" stroke="#14b8a6" stroke-width="2" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Section (Exact Match: Figma Node 1:1227) -->
+    <section id="case-studies" class="section"
+        style="background: linear-gradient(to bottom, #ffffff 0%, #f3f3f4 100%); padding: 80px 205px 64px; border-bottom: 1px solid #f1f2f3; position: relative; overflow: visible;">
+
+        <!-- Multicolor Gradient Blur (Figma Node 1:1090) - positioned at top-left, extends upward -->
+        <style>
+            @keyframes morphGradientFast {
+                0% {
+                    transform: translate(0, 0) scale(1) rotate(0deg);
+                    opacity: 0.9;
+                }
+
+                20% {
+                    transform: translate(80px, 60px) scale(1.3) rotate(20deg);
+                    opacity: 1;
+                }
+
+                40% {
+                    transform: translate(-50px, 120px) scale(0.85) rotate(-15deg);
+                    opacity: 0.8;
+                }
+
+                60% {
+                    transform: translate(100px, -40px) scale(1.15) rotate(10deg);
+                    opacity: 0.95;
+                }
+
+                80% {
+                    transform: translate(-30px, 80px) scale(1.05) rotate(-8deg);
+                    opacity: 0.85;
+                }
+
+                100% {
+                    transform: translate(0, 0) scale(1) rotate(0deg);
+                    opacity: 0.9;
+                }
+            }
+        </style>
+        <div
+            style="position: absolute; left: -100px; top: -250px; width: 450px; height: 550px; pointer-events: none; z-index: 0; animation: morphGradientFast 15s ease-in-out infinite;">
+            <img src="assets/images/gradient-blur-multicolor.png" alt=""
+                style="width: 100%; height: 100%; object-fit: contain;">
+        </div>
+
+        <div style="max-width: 1312px; margin: 0 auto; position: relative; z-index: 1;">
+
+            <!-- Section Header -->
+            <div
+                style="display: flex; justify-content: space-between; align-items: flex-start; gap: 48px; margin-bottom: 48px;">
+                <!-- Left Side -->
+                <div style="max-width: 500px;">
+                    <!-- Tag -->
+                    <div style="display: flex; gap: 8px; align-items: center; margin-bottom: 16px;">
+                        <span style="color: #0c0c0c;">▶</span>
+                        <span
+                            style="font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #0c0c0c;">CASE
+                            STUDIES</span>
+                    </div>
+                    <!-- Heading -->
+                    <h2
+                        style="font-family: 'Inter', sans-serif; font-size: 40px; font-weight: 600; line-height: 1.2; color: #0c0c0c; margin: 0;">
+                        Zobacz jak zmieniamy<br>firmy technologiczne
+                    </h2>
+                </div>
+                <!-- Right Side -->
+                <div style="max-width: 500px; padding-top: 40px;">
+                    <p
+                        style="font-family: 'Inter', sans-serif; font-size: 16px; line-height: 1.5; color: #6b7280; margin: 0 0 24px 0;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                        elementum
+                        tristique. <em style="font-style: italic;">Duis cursus, mi quis viverra ornare, eros dolor</em>
+                        interdum
+                        nulla, ut commodo diam libero vitae erat.
+                    </p>
+                    <a href="#" class="simple-button">
+                        Zobacz wszystkie case studies
+                    </a>
+                </div>
+            </div>
+
+            <!-- Case Study Slider -->
+            <div class="case-study-slider" id="case-study-slider">
+
+                <!-- Slider Track -->
+                <div class="slider-track">
+
+                    <!-- Slide 1 -->
+                    <div class="slider-slide active" data-slide="0">
+                        <div class="slider-card">
+                            <!-- Left Content -->
+                            <div class="slider-card-content">
+                                <h3 class="slider-card-title">Cyfrowa transformacja NCC</h3>
+                                <div class="slider-card-tags">
+                                    <span class="tag-filled">FINANSE I OPERACJE</span>
+                                    <span class="tag-outline">SPRZEDAŻ I OBSŁUGA KLIENTA</span>
+                                </div>
+                                <div class="slider-card-quote">
+                                    <img src="assets/images/icon-quote.svg" alt="">
+                                    <p>Dzięki wdrożeniu Dynamics 365 zoptymalizowaliśmy procesy finansowe i operacyjne,
+                                        co przełożyło się
+                                        na 40% wzrost efektywności zespołu.</p>
+                                </div>
+                                <div class="slider-card-author">
+                                    <img src="assets/images/case-study-author.png" alt="John Doe">
+                                    <div>
+                                        <div class="author-name">John Doe</div>
+                                        <div class="author-title">CEO Facebook</div>
+                                    </div>
+                                </div>
+                                <div class="slider-card-footer">
+                                    <a href="#" class="solution-card-button">
+                                        Zobacz Case Study
+                                        <span>→</span>
+                                    </a>
+                                    <img src="assets/images/ncc-logo.svg" alt="NCC" class="company-logo">
+                                </div>
+                            </div>
+                            <!-- Right Image -->
+                            <div class="slider-card-image">
+                                <img src="assets/images/case-study-card-image.png" alt="NCC Project">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="slider-slide" data-slide="1">
+                        <div class="slider-card">
+                            <!-- Left Content -->
+                            <div class="slider-card-content">
+                                <h3 class="slider-card-title">Automatyzacja procesów Budimex</h3>
+                                <div class="slider-card-tags">
+                                    <span class="tag-filled" style="background: #5B8DEF;">PRODUKCJA</span>
+                                    <span class="tag-outline">ZARZĄDZANIE PROJEKTAMI</span>
+                                </div>
+                                <div class="slider-card-quote">
+                                    <img src="assets/images/icon-quote.svg" alt="">
+                                    <p>Implementacja Power Platform pozwoliła nam zautomatyzować kluczowe procesy
+                                        biznesowe i zaoszczędzić
+                                        setki godzin pracy miesięcznie.</p>
+                                </div>
+                                <div class="slider-card-author">
+                                    <img src="assets/images/case-study-author.png" alt="Anna Kowalska">
+                                    <div>
+                                        <div class="author-name">Anna Kowalska</div>
+                                        <div class="author-title">CTO Budimex</div>
+                                    </div>
+                                </div>
+                                <div class="slider-card-footer">
+                                    <a href="#" class="solution-card-button">
+                                        Zobacz Case Study
+                                        <span>→</span>
+                                    </a>
+                                    <img src="assets/images/ncc-logo.svg" alt="Budimex" class="company-logo">
+                                </div>
+                            </div>
+                            <!-- Right Image -->
+                            <div class="slider-card-image">
+                                <img src="assets/images/case-study-slide-2.jpg" alt="Budimex Project">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="slider-slide" data-slide="2">
+                        <div class="slider-card">
+                            <!-- Left Content -->
+                            <div class="slider-card-content">
+                                <h3 class="slider-card-title">Integracja systemów Orlen</h3>
+                                <div class="slider-card-tags">
+                                    <span class="tag-filled" style="background: #E94E1B;">ENERGIA</span>
+                                    <span class="tag-outline">ANALITYKA I RAPORTOWANIE</span>
+                                </div>
+                                <div class="slider-card-quote">
+                                    <img src="assets/images/icon-quote.svg" alt="">
+                                    <p>ANEGIS pomógł nam zintegrować rozproszone systemy ERP w jedną spójną platformę
+                                        Microsoft,
+                                        zapewniając pełną widoczność danych.</p>
+                                </div>
+                                <div class="slider-card-author">
+                                    <img src="assets/images/case-study-author.png" alt="Piotr Nowak">
+                                    <div>
+                                        <div class="author-name">Piotr Nowak</div>
+                                        <div class="author-title">Dyrektor IT Orlen</div>
+                                    </div>
+                                </div>
+                                <div class="slider-card-footer">
+                                    <a href="#" class="solution-card-button">
+                                        Zobacz Case Study
+                                        <span>→</span>
+                                    </a>
+                                    <img src="assets/images/ncc-logo.svg" alt="Orlen" class="company-logo">
+                                </div>
+                            </div>
+                            <!-- Right Image -->
+                            <div class="slider-card-image">
+                                <img src="assets/images/case-study-slide-3.jpg" alt="Orlen Project">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Carousel Navigation -->
+                <div class="slider-nav">
+                    <button class="slider-prev" id="slider-prev">←</button>
+                    <div class="slider-progress">
+                        <div class="slider-progress-bar" id="slider-progress-bar"></div>
+                    </div>
+                    <button class="slider-next" id="slider-next">→</button>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CTA Banner Section (Exact Match: Figma Node 1:1241) -->
+    <section class="section"
+        style="background: #0b0b0b; color: white; padding: 80px 64px; position: relative; overflow: hidden;">
+
+        <!-- Background Vector Lines - Triangular Arrow Outlines (Figma Node 41:487) -->
+        <div
+            style="position: absolute; top: -4px; left: -269px; width: 827px; height: 695px; pointer-events: none; z-index: 1;">
+            <img src="assets/images/cta-banner-vectors.png" alt=""
+                style="width: 100%; height: 100%; object-fit: cover; opacity: 0.8;">
+        </div>
+
+        <!-- Orange Blur (Left Side) - Animated -->
+        <div class="animated-gradient"
+            style="position: absolute; top: -83px; left: 147px; width: 207px; height: 261px; pointer-events: none; overflow: visible; z-index: 0;">
+            <img src="assets/images/cta-banner-blur-orange.png" alt=""
+                style="width: 100%; height: 100%; object-fit: contain; opacity: 0.5; animation: morphGradient 18s ease-in-out infinite, floatGradient 12s ease-in-out infinite;">
+        </div>
+
+        <!-- Teal Blur (Right Side) - Animated -->
+        <div class="animated-gradient"
+            style="position: absolute; bottom: 0; right: -100px; width: 500px; height: 400px; pointer-events: none; overflow: visible; z-index: 0;">
+            <img src="assets/images/cta-banner-blur-teal.png" alt=""
+                style="width: 100%; height: 100%; object-fit: contain; animation: morphGradient 20s ease-in-out infinite, floatGradient 15s ease-in-out infinite;">
+        </div>
+
+        <!-- Decorative Diagonal Dashed Line (Figma Node 1:686) - spans from top-left to bottom-right -->
+        <div
+            style="position: absolute; left: calc(50% + 50px); top: calc(50% - 120px); transform: rotate(45deg); transform-origin: left top; pointer-events: none; z-index: 0; width: 700px; height: 2px;">
+            <img src="assets/images/cta-diagonal-line.svg" alt="" style="width: 100%; height: 100%;">
+        </div>
+
+        <!-- Decorative Blue Arrow/Cursor (Figma Node 41:495) - solid blue filled arrow at top of diagonal line -->
+        <div
+            style="position: absolute; left: calc(50% + 23px); top: calc(50% - 149px); pointer-events: none; z-index: 3; transform: rotate(312deg);">
+            <img src="assets/images/cta-blue-arrow-solid.svg" alt="" style="width: 30px; height: 36px;">
+        </div>
+
+        <div class="container" style="position: relative; z-index: 1; max-width: 1312px; margin: 0 auto;">
+            <div
+                style="text-align: center; max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 24px; align-items: center;">
+
+                <!-- Heading (Exact Match: Figma Node 1:1241) -->
+                <h2
+                    style="font-family: 'Inter', sans-serif; font-size: 48px; font-weight: 600; line-height: 1.2; color: white; margin: 0;">
+                    <span style="font-weight: 600;">Wprowadź swoją firmę</span>
+                    <span style="font-weight: 400;"> do XXI wieku</span>
+                </h2>
+
+                <!-- Description -->
+                <p
+                    style="font-family: 'Inter', sans-serif; font-size: 14px; line-height: 1.5; color: rgba(255,255,255,0.7); margin: 0; max-width: 600px;">
+                    Specjalizujemy się we wdrożeniach ERP i CRM dla firm produkcyjnych i <em
+                        style="font-style: italic;">usługowych, optymalizując procesy i napędzając wzrost.</em>
+                </p>
+
+                <!-- CTA Button -->
+                <a href="#kontakt"
+                    style="display: inline-flex; align-items: center; gap: 20px; background: #65AAAB; border: 1px solid #65AAAB; color: #fafafa; padding: 4px 4px 4px 20px; text-decoration: none; font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 500; margin-top: 16px; line-height: 1.5;">
+                    Umów bezpłatną konsultację
+                    <span
+                        style="width: 32px; height: 32px; background: #fafafa; display: flex; align-items: center; justify-content: center;">
+                        <img src="assets/images/icon-chat.svg" alt="" style="width: 20px; height: 20px;">
+                    </span>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Trusted By Section -->
+    <section class="trusted-section">
+        <div class="container">
+            <div class="trusted-content">
+                <div class="trusted-label">Zaufali nam:</div>
+                <div class="trusted-logos">
+                    <img src="assets/images/trusted-logos-full.svg" alt="Trusted Partners"
+                        style="height: 27px; width: auto; max-width: none;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Solutions Section -->
+    <section class="related-solutions-section">
+        <div class="related-solutions-container">
+            <!-- Section Header -->
+            <div class="section-header"
+                style="display: flex; flex-direction: column; gap: 16px; align-items: flex-start; text-align: left; margin-bottom: 48px;">
+                <div class="section-tag" style="display: flex; gap: 8px; align-items: center; padding: 4px 0;">
+                    <span style="color: #0c0c0c;">▶</span>
+                    <span
+                        style="font-family: 'Inter', sans-serif; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: #0c0c0c;">ROZWIĄZANIA</span>
+                </div>
+                <h2 class="section-title"
+                    style="font-family: 'Inter', sans-serif; font-size: 48px; font-weight: 600; line-height: 1.2; color: #0c0c0c; margin: 0;">
+                    Zobacz nasze rozwiązania dla Twojej branży
+                </h2>
+            </div>
+
+            <!-- 4 Cards Grid -->
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px;">
+
+                <!-- Card 1: Finanse i Operacje -->
+                <div class="solution-card">
+                    <div style="width: 32px; height: 32px;">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20 7H4C2.9 7 2 7.9 2 9V19C2 20.1 2.9 21 4 21H20C21.1 21 22 20.1 22 19V9C22 7.9 21.1 7 20 7Z"
+                                stroke="#0c0c0c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M16 7V5C16 3.9 15.1 3 14 3H10C8.9 3 8 3.9 8 5V7" stroke="#0c0c0c"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3
+                        style="font-family: 'Inter', sans-serif; font-size: 20px; font-weight: 600; color: #0c0c0c; margin: 0;">
+                        Finanse i Operacje</h3>
+                    <p
+                        style="font-family: 'Inter', sans-serif; font-size: 14px; line-height: 1.6; color: #6b7280; margin: 0; flex-grow: 1;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                        elementum
+                        tristique.
+                    </p>
+                    <a href="finanse.html" class="solution-card-button">
+                        Dowiedz się więcej <span>→</span>
+                    </a>
+                </div>
+
+                <!-- Card 2: Sprzedaż i Obsługa Klienta -->
+                <div class="solution-card">
+                    <div style="width: 32px; height: 32px;">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20 7H4C2.9 7 2 7.9 2 9V19C2 20.1 2.9 21 4 21H20C21.1 21 22 20.1 22 19V9C22 7.9 21.1 7 20 7Z"
+                                stroke="#0c0c0c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M16 7V5C16 3.9 15.1 3 14 3H10C8.9 3 8 3.9 8 5V7" stroke="#0c0c0c"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3
+                        style="font-family: 'Inter', sans-serif; font-size: 20px; font-weight: 600; color: #0c0c0c; margin: 0;">
+                        Sprzedaż i Obsługa Klienta</h3>
+                    <p
+                        style="font-family: 'Inter', sans-serif; font-size: 14px; line-height: 1.6; color: #6b7280; margin: 0; flex-grow: 1;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                        elementum
+                        tristique.
+                    </p>
+                    <a href="#" class="solution-card-button">
+                        Dowiedz się więcej <span>→</span>
+                    </a>
+                </div>
+
+                <!-- Card 3: Rozwiązania Autorskie -->
+                <div class="solution-card">
+                    <div style="width: 32px; height: 32px;">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20 7H4C2.9 7 2 7.9 2 9V19C2 20.1 2.9 21 4 21H20C21.1 21 22 20.1 22 19V9C22 7.9 21.1 7 20 7Z"
+                                stroke="#0c0c0c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M16 7V5C16 3.9 15.1 3 14 3H10C8.9 3 8 3.9 8 5V7" stroke="#0c0c0c"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3
+                        style="font-family: 'Inter', sans-serif; font-size: 20px; font-weight: 600; color: #0c0c0c; margin: 0;">
+                        Rozwiązania Autorskie</h3>
+                    <p
+                        style="font-family: 'Inter', sans-serif; font-size: 14px; line-height: 1.6; color: #6b7280; margin: 0; flex-grow: 1;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                        elementum
+                        tristique.
+                    </p>
+                    <a href="#" class="solution-card-button">
+                        Dowiedz się więcej <span>→</span>
+                    </a>
+                </div>
+
+                <!-- Card 4: Analityka i AI -->
+                <div class="solution-card">
+                    <div style="width: 32px; height: 32px;">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20 7H4C2.9 7 2 7.9 2 9V19C2 20.1 2.9 21 4 21H20C21.1 21 22 20.1 22 19V9C22 7.9 21.1 7 20 7Z"
+                                stroke="#0c0c0c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M16 7V5C16 3.9 15.1 3 14 3H10C8.9 3 8 3.9 8 5V7" stroke="#0c0c0c"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3
+                        style="font-family: 'Inter', sans-serif; font-size: 20px; font-weight: 600; color: #0c0c0c; margin: 0;">
+                        Analityka i AI</h3>
+                    <p
+                        style="font-family: 'Inter', sans-serif; font-size: 14px; line-height: 1.6; color: #6b7280; margin: 0; flex-grow: 1;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                        elementum
+                        tristique.
+                    </p>
+                    <a href="#" class="solution-card-button">
+                        Dowiedz się więcej <span>→</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="faq-container">
+            <h2 class="faq-title">FAQs</h2>
+            <p class="faq-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
+                in eros elementum tristique.</p>
+
+            <div class="accordion-container">
+                <div class="accordion-item active">
+                    <button class="accordion-header">
+                        <span>Question text goes here</span>
+                        <span class="accordion-icon">−</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                            elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+                            commodo diam libero vitae erat.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>Question text goes here</span>
+                        <span class="accordion-icon">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>Question text goes here</span>
+                        <span class="accordion-icon">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>Question text goes here</span>
+                        <span class="accordion-icon">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>Question text goes here</span>
+                        <span class="accordion-icon">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section (Exact Match: Figma Node 1:1228) -->
+    <section id="kontakt"
+        style="background: #fafafa; padding: 120px 64px; display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+
+        <!-- Decorative Arrow Pattern (Background) -->
+        <div
+            style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, calc(-50% + 40px)); width: 594px; height: 594px; pointer-events: none;">
+            <img src="assets/images/cta-arrow-pattern.svg" alt="" style="width: 100%; height: 100%; opacity: 0.15;">
+        </div>
+
+        <!-- Interactive Cursor Arrow (Figma Node 1:1237) -->
+        <div id="cursor-arrow-container"
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 5;">
+            <!-- SVG Canvas for dashed trail line -->
+            <svg id="cursor-trail-svg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+                <path id="cursor-trail-path" fill="none" stroke="#1a4a6e" stroke-width="2" stroke-dasharray="6,6"
+                    stroke-linecap="round" />
+            </svg>
+            <!-- Arrow head -->
+            <div id="cursor-arrow"
+                style="position: absolute; width: 24px; height: 24px; opacity: 0; transition: opacity 0.3s ease;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 12L22 2L18 12L22 22L2 12Z" fill="#1a4a6e" />
+                </svg>
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div
+            style="display: flex; flex-direction: column; align-items: center; gap: 25px; position: relative; z-index: 1;">
+            <!-- Heading -->
+            <div style="text-align: center;">
+                <h2
+                    style="font-family: 'Inter', sans-serif; font-size: 48px; font-weight: 600; line-height: 1.2; color: #0b0b0b; margin: 0;">
+                    <span style="font-weight: 600;">Wprowadź swoją firmę</span><br>
+                    <span style="font-weight: 400;">do XXI wieku</span>
+                </h2>
+            </div>
+
+            <!-- CTA Button (Exact Match: Figma Node 1:1235) -->
+            <a href="#"
+                style="display: inline-flex; align-items: center; gap: 20px; background: #65AAAB; border: 1px solid #65AAAB; color: #fafafa; padding: 4px 4px 4px 20px; text-decoration: none; font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 500; line-height: 1.5;">
+                Umów bezpłatną konsultację
+                <span
+                    style="width: 32px; height: 32px; background: #fafafa; display: flex; align-items: center; justify-content: center;">
+                    <img src="assets/images/icon-chat.svg" alt="" style="width: 20px; height: 20px;">
+                </span>
+            </a>
+        </div>
+
+        <!-- Cursor Arrow Animation Script -->
+        <script>
+            (function () {
+                const section = document.getElementById('kontakt');
+                const arrow = document.getElementById('cursor-arrow');
+                const trailPath = document.getElementById('cursor-trail-path');
+
+                let isInSection = false;
+
+                // Store trail points (tail follows behind arrow)
+                const trailPoints = [];
+                const maxPoints = 30; // Length of the tail
+                const smoothing = 0.15; // How smoothly tail follows (0-1)
+
+                section.addEventListener('mouseenter', function () {
+                    isInSection = true;
+                    arrow.style.opacity = '1';
+                    trailPoints.length = 0; // Clear trail on enter
+                });
+
+                section.addEventListener('mouseleave', function () {
+                    isInSection = false;
+                    arrow.style.opacity = '0';
+                    trailPath.setAttribute('d', '');
+                    trailPoints.length = 0;
+                });
+
+                section.addEventListener('mousemove', function (e) {
+                    if (!isInSection) return;
+
+                    const rect = section.getBoundingClientRect();
+                    const cursorX = e.clientX - rect.left;
+                    const cursorY = e.clientY - rect.top;
+
+                    // Update arrow position (follows cursor)
+                    arrow.style.left = (cursorX - 12) + 'px';
+                    arrow.style.top = (cursorY - 12) + 'px';
+
+                    // Calculate arrow rotation based on movement direction
+                    if (trailPoints.length > 0) {
+                        const lastPoint = trailPoints[trailPoints.length - 1];
+                        const dx = cursorX - lastPoint.x;
+                        const dy = cursorY - lastPoint.y;
+                        if (Math.abs(dx) > 2 || Math.abs(dy) > 2) {
+                            const rotation = Math.atan2(dy, dx) * (180 / Math.PI);
+                            arrow.style.transform = `rotate(${rotation - 180}deg)`;
+                        }
+                    }
+
+                    // Add current cursor position to trail
+                    trailPoints.push({ x: cursorX, y: cursorY });
+
+                    // Keep trail at max length
+                    while (trailPoints.length > maxPoints) {
+                        trailPoints.shift();
+                    }
+
+                    // Generate smooth curve path through trail points
+                    if (trailPoints.length >= 2) {
+                        let pathData = `M ${trailPoints[0].x} ${trailPoints[0].y}`;
+
+                        for (let i = 1; i < trailPoints.length; i++) {
+                            const prev = trailPoints[i - 1];
+                            const curr = trailPoints[i];
+
+                            // Use quadratic curves for smoothness
+                            const midX = (prev.x + curr.x) / 2;
+                            const midY = (prev.y + curr.y) / 2;
+
+                            pathData += ` Q ${prev.x} ${prev.y}, ${midX} ${midY}`;
+                        }
+
+                        // Connect to last point
+                        const last = trailPoints[trailPoints.length - 1];
+                        pathData += ` L ${last.x} ${last.y}`;
+
+                        trailPath.setAttribute('d', pathData);
+                    }
+                });
+            })();
+        </script>
+
+    </section>
+
+    <!-- Footer (Exact Match: Figma Node 1:1236) -->
+    <footer style="background: #0b0b0b; position: relative; overflow: hidden; padding: 80px 64px 40px;">
+
+        <!-- Teal Blur Background -->
+        <div style="position: absolute; top: 78px; right: -100px; width: 447px; height: 472px; pointer-events: none;">
+            <img src="assets/images/footer-teal-blur.png" alt=""
+                style="width: 100%; height: 100%; object-fit: contain;">
+        </div>
+
+        <!-- Main Footer Content -->
+        <div style="max-width: 1312px; margin: 0 auto; position: relative; z-index: 1;">
+            <div style="display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 48px;">
+
+                <!-- Column 1: ANEGIS -->
+                <div>
+                    <div
+                        style="font-family: 'Inter', sans-serif; font-size: 24px; font-weight: 600; color: #f6f8fc; letter-spacing: 0.15em; margin-bottom: 24px;">
+                        ANEGIS</div>
+                    <p
+                        style="font-family: 'Inter', sans-serif; font-size: 14px; line-height: 1.5; color: rgba(246,248,252,0.5); margin: 0 0 24px 0; max-width: 280px;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                        elementum
+                        tristique.
+                    </p>
+                    <div
+                        style="font-family: 'Inter', sans-serif; font-size: 12px; letter-spacing: 0.1em; color: rgba(246,248,252,0.4); text-transform: uppercase;">
+                        LONDYN &nbsp;•&nbsp; WARSZAWA &nbsp;•&nbsp; WROCŁAW &nbsp;•&nbsp; SIERADZ
+                    </div>
+
+                    <!-- Contact Section -->
+                    <div style="margin-top: 48px;">
+                        <div
+                            style="font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 500; color: #f6f8fc; margin-bottom: 16px;">
+                            Kontakt</div>
+                        <div style="display: flex; flex-direction: column; gap: 12px;">
+                            <a href="tel:+47716619025"
+                                style="display: flex; align-items: center; gap: 12px; color: rgba(246,248,252,0.7); text-decoration: none; font-family: 'Inter', sans-serif; font-size: 14px;">
+                                <img src="assets/images/icon-phone.svg" alt=""
+                                    style="width: 16px; height: 16px; opacity: 0.7;">
+                                +47 71 661 9025
+                            </a>
+                            <a href="mailto:Sales@anegis.com"
+                                style="display: flex; align-items: center; gap: 12px; color: rgba(246,248,252,0.7); text-decoration: none; font-family: 'Inter', sans-serif; font-size: 14px;">
+                                <img src="assets/images/icon-email.svg" alt=""
+                                    style="width: 16px; height: 16px; opacity: 0.7;">
+                                Sales@anegis.com
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2: Co robimy -->
+                <div>
+                    <div
+                        style="font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 500; color: #f6f8fc; margin-bottom: 24px;">
+                        Co robimy</div>
+                    <div style="display: flex; flex-direction: column; gap: 16px;">
+                        <a href="#"
+                            style="font-family: 'Inter', sans-serif; font-size: 14px; color: rgba(246,248,252,0.7); text-decoration: none;">Rozwiązania</a>
+                        <a href="#"
+                            style="font-family: 'Inter', sans-serif; font-size: 14px; color: rgba(246,248,252,0.7); text-decoration: none;">Branże</a>
+                        <a href="#"
+                            style="font-family: 'Inter', sans-serif; font-size: 14px; color: rgba(246,248,252,0.7); text-decoration: none;">Usługi</a>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div style="margin-top: 48px;">
+                        <div
+                            style="font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 500; color: #f6f8fc; margin-bottom: 16px;">
+                            Śledź nas</div>
+                        <div style="display: flex; gap: 16px;">
+                            <a href="#"
+                                style="display: flex; align-items: center; justify-content: center; width: 32px; height: 32px;">
+                                <img src="assets/images/icon-youtube.svg" alt="YouTube"
+                                    style="width: 20px; height: 20px;">
+                            </a>
+                            <a href="#"
+                                style="display: flex; align-items: center; justify-content: center; width: 32px; height: 32px;">
+                                <img src="assets/images/icon-linkedin.svg" alt="LinkedIn"
+                                    style="width: 20px; height: 20px;">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 3: Wiedza -->
+                <div>
+                    <div
+                        style="font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 500; color: #f6f8fc; margin-bottom: 24px;">
+                        Wiedza</div>
+                    <div style="display: flex; flex-direction: column; gap: 16px;">
+                        <a href="#"
+                            style="font-family: 'Inter', sans-serif; font-size: 14px; color: rgba(246,248,252,0.7); text-decoration: none;">Artykuły</a>
+                        <a href="#"
+                            style="font-family: 'Inter', sans-serif; font-size: 14px; color: rgba(246,248,252,0.7); text-decoration: none;">Raporty</a>
+                        <a href="#"
+                            style="font-family: 'Inter', sans-serif; font-size: 14px; color: rgba(246,248,252,0.7); text-decoration: none;">Ebooki</a>
+                        <a href="#"
+                            style="font-family: 'Inter', sans-serif; font-size: 14px; color: rgba(246,248,252,0.7); text-decoration: none;">Wydarzenia</a>
+                    </div>
+                </div>
+
+                <!-- Column 4: O nas -->
+                <div>
+                    <div
+                        style="font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 500; color: #f6f8fc; margin-bottom: 24px;">
+                        O nas</div>
+                    <div style="display: flex; flex-direction: column; gap: 16px;">
+                        <a href="#"
+                            style="font-family: 'Inter', sans-serif; font-size: 14px; color: rgba(246,248,252,0.7); text-decoration: none;">Nasza
+                            historia i misja</a>
+                        <a href="#"
+                            style="font-family: 'Inter', sans-serif; font-size: 14px; color: rgba(246,248,252,0.7); text-decoration: none;">Zespół
+                            i eksperci</a>
+                        <a href="#"
+                            style="font-family: 'Inter', sans-serif; font-size: 14px; color: rgba(246,248,252,0.7); text-decoration: none;">Partnerstwa
+                            i certyfikaty</a>
+                        <a href="#"
+                            style="font-family: 'Inter', sans-serif; font-size: 14px; color: rgba(246,248,252,0.7); text-decoration: none;">Kariera</a>
+                        <a href="#"
+                            style="font-family: 'Inter', sans-serif; font-size: 14px; color: rgba(246,248,252,0.7); text-decoration: none;">Komunikaty
+                            prasowe</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Footer Bottom -->
+            <div
+                style="border-top: 1px solid rgba(246,248,252,0.1); padding-top: 24px; display: flex; justify-content: space-between; align-items: center;">
+                <div style="display: flex; align-items: center; gap: 24px;">
+                    <span style="font-family: 'Inter', sans-serif; font-size: 12px; color: rgba(246,248,252,0.4);">©
+                        2025
+                        ANEGIS. All rights reserved.</span>
+                    <span
+                        style="font-family: 'Inter', sans-serif; font-size: 12px; color: rgba(246,248,252,0.4);">•</span>
+                    <span style="font-family: 'Inter', sans-serif; font-size: 12px; color: rgba(246,248,252,0.4);">Made
+                        by
+                        zu.agency</span>
+                </div>
+                <div style="display: flex; gap: 32px;">
+                    <a href="#"
+                        style="font-family: 'Inter', sans-serif; font-size: 12px; color: rgba(246,248,252,0.4); text-decoration: none;">Polityka
+                        prywatności</a>
+                    <a href="#"
+                        style="font-family: 'Inter', sans-serif; font-size: 12px; color: rgba(246,248,252,0.4); text-decoration: none;">Regulamin</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+    <script src="slider-logic.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
