@@ -292,78 +292,172 @@
     </section>
 
     <!-- Problems Section -->
-    <section class="problems-section" id="rozwiazanie">
+    <!-- Problems-Solutions Slider Component -->
+    <section class="problems-slider-component" id="rozwiazanie">
         <!-- Background blur effects -->
         <div class="problems-blur-teal"></div>
         <img src="assets/images/problems-blur-gradient.png" alt="" class="problems-blur-gradient">
+
         <div class="problems-container">
+            <!-- Section Header -->
             <h2 class="section-title-center">
                 Rozumiemy problemy<br>
                 <span class="text-regular">z którymi się mierzysz</span>
             </h2>
 
-            <div class="problems-grid">
-                <!-- Problems Column -->
-                <div class="problems-column">
-                    <div class="problem-card">
-                        <button class="problem-toggle toggle-top">
-                            <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
-                                <path d="M1 5L5 1L9 5" stroke="currentColor" stroke-width="1.5"
-                                    stroke-linecap="round" />
-                            </svg>
-                        </button>
-                        <span class="problem-text">Brak wglądu w rentowność<br><strong>w czasie
-                                rzeczywistym</strong></span>
-                    </div>
-                    <div class="problem-card active">
-                        <span class="problem-text">Brak wglądu w rentowność<br><strong>w czasie
-                                rzeczywistym</strong></span>
-                        <div class="problem-connector">
-                            <div class="connector-line"></div>
-                            <span class="connector-badge">ANEGIS</span>
+            <!-- Main Slider Grid -->
+            <div class="problems-slider-grid">
+
+                <!-- LEFT COLUMN: Problems Slider -->
+                <div class="problems-slider-wrapper">
+                    <!-- Up Arrow - FIXED POSITION -->
+                    <button class="slider-nav-arrow arrow-up" data-direction="up" aria-label="Previous problem">
+                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
+                            <path d="M1 5L5 1L9 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                        </svg>
+                    </button>
+
+                    <!-- Slider Track with 3 visible cards -->
+                    <div class="problems-slider-track">
+                        <!-- Card 1 -->
+                        <div class="problem-slide" data-slide="0">
+                            <div class="problem-card">
+                                <span class="problem-text">Brak wglądu w rentowność<br><strong>w czasie
+                                        rzeczywistym</strong></span>
+                                <div class="problem-connector">
+                                    <div class="connector-line"></div>
+                                    <span class="connector-badge">ANEGIS</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 - ACTIVE in middle with connector -->
+                        <div class="problem-slide active-slide" data-slide="1">
+                            <div class="problem-card active">
+                                <span class="problem-text active-text">Trudności w zarządzaniu<br><strong>wieloma
+                                        systemami</strong></span>
+                                <div class="problem-connector">
+                                    <div class="connector-line"></div>
+                                    <span class="connector-badge">ANEGIS</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="problem-slide" data-slide="2">
+                            <div class="problem-card">
+                                <span class="problem-text">Brak automatyzacji<br><strong>kluczowych
+                                        procesów</strong></span>
+                                <div class="problem-connector">
+                                    <div class="connector-line"></div>
+                                    <span class="connector-badge">ANEGIS</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="problem-card">
-                        <span class="problem-text">Brak wglądu w rentowność<br><strong>w czasie
-                                rzeczywistym</strong></span>
-                        <button class="problem-toggle toggle-bottom">
-                            <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
-                                <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5"
-                                    stroke-linecap="round" />
-                            </svg>
-                        </button>
+
+                    <!-- Down Arrow - FIXED POSITION -->
+                    <button class="slider-nav-arrow arrow-down" data-direction="down" aria-label="Next problem">
+                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
+                            <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- MIDDLE COLUMN: Solution Circle -->
+                <div class="solution-circle-wrapper">
+                    <div class="solution-circle-content">
+                        <span class="circle-tag">ROZWIĄZANIE</span>
+                        <h3 class="circle-title">Podejmuj decyzje w oparciu o dane dzięki <span>zintegrowanej
+                                analityce</span></h3>
+                        <div class="solution-icons">
+                            <img src="assets/images/product-icon-1.svg" alt="Power Apps">
+                            <img src="assets/images/product-icon-2.svg" alt="Power BI">
+                            <img src="assets/images/product-icon-3.svg" alt="Dynamics 365">
+                            <img src="assets/images/product-icon-4.svg" alt="Azure">
+                            <img src="assets/images/product-icon-5.svg" alt="Dataverse">
+                        </div>
                     </div>
                 </div>
 
-                <!-- Solution Column -->
-                <div class="solution-column">
-                    <span class="solution-tag">ROZWIĄZANIE</span>
-                    <h3 class="solution-title">Podejmuj decyzje w oparciu o dane dzięki <span>zintegrowanej
-                            analityce</span></h3>
-                    <div class="solution-icons">
-                        <img src="assets/images/product-icon-1.svg" alt="Power Apps">
-                        <img src="assets/images/product-icon-2.svg" alt="Power BI">
-                        <img src="assets/images/product-icon-3.svg" alt="Dynamics 365">
-                        <img src="assets/images/product-icon-4.svg" alt="Azure">
-                        <img src="assets/images/product-icon-5.svg" alt="Dataverse">
+                <!-- RIGHT COLUMN: Benefits Circle -->
+                <div class="benefits-circle-wrapper">
+                    <div class="benefits-circle-content">
+                        <span class="circle-tag">KORZYŚCI</span>
+                        <h3 class="circle-title">Podejmuj decyzje w oparciu o dane dzięki zintegrowanej analityce</h3>
+                        <div class="benefits-visualization">
+                            <img src="assets/images/benefits-arrows-pattern.svg" alt="" class="arrows-pattern">
+                        </div>
                     </div>
                 </div>
 
-                <!-- Benefits Column -->
-                <div class="benefits-column">
-                    <span class="benefits-tag">KORZYŚCI</span>
-                    <h3 class="benefits-title">Podejmuj decyzje w oparciu o dane dzięki zintegrowanej analityce</h3>
-                    <div class="benefits-arrows">
-                        <img src="assets/images/benefits-arrows-pattern.svg" alt="" class="arrows-pattern">
-                    </div>
-                </div>
             </div>
 
+            <!-- Footer Text -->
             <p class="problems-footer-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
                 tristique. <strong>Duis cursus, mi quis viverra ornare.</strong>
             </p>
         </div>
+
+        <!-- Component Data Configuration -->
+        <script>
+            window.problemsSolutionsData = [
+                {
+                    id: 0,
+                    problem: { text: "Brak wglądu w rentowność", highlight: "w czasie rzeczywistym" },
+                    solution: {
+                        title: "Podejmuj decyzje w oparciu o dane dzięki",
+                        highlight: "zintegrowanej analityce",
+                        icons: [
+                            "assets/images/product-icon-1.svg",
+                            "assets/images/product-icon-2.svg",
+                            "assets/images/product-icon-3.svg",
+                            "assets/images/product-icon-4.svg",
+                            "assets/images/product-icon-5.svg"
+                        ]
+                    },
+                    benefits: {
+                        title: "Podejmuj decyzje w oparciu o dane dzięki zintegrowanej analityce",
+                        visualization: "assets/images/benefits-arrows-pattern.svg"
+                    }
+                },
+                {
+                    id: 1,
+                    problem: { text: "Trudności w zarządzaniu", highlight: "wieloma systemami" },
+                    solution: {
+                        title: "Zunifikuj wszystkie dane w",
+                        highlight: "jednym miejscu",
+                        icons: [
+                            "assets/images/product-icon-2.svg",
+                            "assets/images/product-icon-3.svg",
+                            "assets/images/product-icon-4.svg"
+                        ]
+                    },
+                    benefits: {
+                        title: "Oszczędź czas dzięki centralizacji systemów",
+                        visualization: "assets/images/benefits-arrows-pattern.svg"
+                    }
+                },
+                {
+                    id: 2,
+                    problem: { text: "Brak automatyzacji", highlight: "kluczowych procesów" },
+                    solution: {
+                        title: "Automatyzuj procesy dzięki",
+                        highlight: "zaawansowanym narzędziom",
+                        icons: [
+                            "assets/images/product-icon-1.svg",
+                            "assets/images/product-icon-3.svg",
+                            "assets/images/product-icon-5.svg"
+                        ]
+                    },
+                    benefits: {
+                        title: "Zwiększ efektywność poprzez automatyzację",
+                        visualization: "assets/images/benefits-arrows-pattern.svg"
+                    }
+                }
+            ];
+        </script>
     </section>
 
     <!-- Solution Photo Section -->
@@ -488,61 +582,141 @@
     </section>
 
     <!-- Process Timeline Section -->
-    <section class="process-section">
+    <!-- Process Timeline Section -->
+    <section id="proces" class="process-section">
+        <!-- Blur Background -->
+        <div class="process-blur-bg"></div>
+
         <div class="process-container">
-            <span class="section-tag">PROCES</span>
-            <h2 class="section-title">Jasna i klarowna ścieżka<br>zmiany w Twojej firmie</h2>
+            <div class="process-header">
+                <div class="process-header-left">
+                    <span class="section-tag">PROCES</span>
+                    <h2 class="section-title section-title-gradient">
+                        <span class="title-bold">Jasny i klarowna ścieżka </span><span class="title-regular">zmiany w
+                            Twojej
+                            firmie</span>
+                    </h2>
+                </div>
+                <div class="process-header-right">
+                    <p class="process-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                        varius enim in eros elementum tristique.</p>
+                </div>
+            </div>
 
             <div class="process-timeline">
+
+                <!-- Step 1 -->
                 <div class="timeline-step">
-                    <div class="step-icon">
-                        <img src="assets/images/icon1.svg" alt="">
+                    <div class="timeline-progress">
+                        <div class="progress-circle filled"></div>
+                        <div class="progress-line"></div>
                     </div>
-                    <h3 class="step-title">Analiza potrzeb</h3>
-                    <p class="step-description">Lorem ipsum dolor sit amet consectetur</p>
+                    <div class="timeline-content">
+                        <h3 class="step-title-gradient">Analiza potrzeb</h3>
+                        <p class="step-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                            varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.</p>
+                    </div>
                 </div>
-                <div class="timeline-connector"></div>
+
+                <!-- Step 2 -->
                 <div class="timeline-step">
-                    <div class="step-icon">
-                        <img src="assets/images/icon2.svg" alt="">
+                    <div class="timeline-progress">
+                        <div class="progress-circle filled"></div>
+                        <div class="progress-line"></div>
                     </div>
-                    <h3 class="step-title">Model rozwiązania i wycena</h3>
-                    <p class="step-description">Lorem ipsum dolor sit amet consectetur</p>
+                    <div class="timeline-content">
+                        <h3 class="step-title-gradient">Wybór odpowiednich rozwiązań</h3>
+                        <p class="step-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                            varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.</p>
+                    </div>
                 </div>
-                <div class="timeline-connector"></div>
+
+                <!-- Step 3 -->
                 <div class="timeline-step">
-                    <div class="step-icon">
-                        <img src="assets/images/icon3.svg" alt="">
+                    <div class="timeline-progress">
+                        <div class="progress-circle filled"></div>
+                        <div class="progress-line"></div>
                     </div>
-                    <h3 class="step-title">Wdrożenie</h3>
-                    <p class="step-description">Lorem ipsum dolor sit amet consectetur</p>
+                    <div class="timeline-content">
+                        <h3 class="step-title-gradient">Plan zmian</h3>
+                        <p class="step-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                            varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.</p>
+                    </div>
                 </div>
-                <div class="timeline-connector"></div>
+
+                <!-- Step 4 -->
                 <div class="timeline-step">
-                    <div class="step-icon">
-                        <img src="assets/images/icon1.svg" alt="">
+                    <div class="timeline-progress">
+                        <div class="progress-circle filled"></div>
                     </div>
-                    <h3 class="step-title">Wsparcie i rozwój rozwiązania</h3>
-                    <p class="step-description">Lorem ipsum dolor sit amet consectetur</p>
+                    <div class="timeline-content">
+                        <h3 class="step-title-gradient">Realizacja i monitorowanie wdrożenia</h3>
+                        <p class="step-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                            varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.</p>
+                    </div>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <!-- Case Studies Section -->
-    <section class="case-studies-section" style="background: #fafafa; padding: 80px 64px; position: relative;">
-        <div style="max-width: 1312px; margin: 0 auto;">
-            <span class="section-tag" style="color: #0c0c0c;">CASE STUDIES</span>
-            <h2
-                style="font-family: 'Inter', sans-serif; font-size: 40px; font-weight: 600; color: #0c0c0c; margin: 16px 0 48px;">
-                Zobacz jak zmieniamy<br>firmy technologiczne
-            </h2>
+    <!-- Case Studies Section (Exact Match: Figma Node 1:1227) -->
+    <section id="case-studies" class="section"
+        style="background: linear-gradient(to bottom, #ffffff 0%, #f3f3f4 100%); padding: 80px 64px; border-bottom: 1px solid #f1f2f3; position: relative; overflow: visible;">
 
-            <!-- Slider - reuse from index.html -->
+        <!-- Multicolor Gradient Blur (Figma Node 1:1090) - positioned at top-left, extends upward -->
+        <div class="animated-gradient"
+            style="position: absolute; left: -100px; top: -250px; width: 450px; height: 550px; pointer-events: none; z-index: 0;">
+            <img src="assets/images/gradient-blur-multicolor.png" alt=""
+                style="width: 100%; height: 100%; object-fit: contain;">
+        </div>
+
+        <div style="max-width: 1312px; margin: 0 auto; position: relative; z-index: 1;">
+
+            <!-- Section Header -->
+            <div
+                style="display: flex; justify-content: space-between; align-items: flex-start; gap: 48px; margin-bottom: 48px;">
+                <!-- Left Side -->
+                <div style="max-width: 500px;">
+                    <!-- Tag -->
+                    <div style="display: flex; gap: 8px; align-items: center; margin-bottom: 16px;">
+                        <span style="color: #0c0c0c;">▶</span>
+                        <span
+                            style="font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #0c0c0c;">CASE
+                            STUDIES</span>
+                    </div>
+                    <!-- Heading -->
+                    <h2
+                        style="font-family: 'Inter', sans-serif; font-size: 40px; font-weight: 600; line-height: 1.2; color: #0c0c0c; margin: 0;">
+                        Zobacz jak zmieniamy<br>firmy technologiczne
+                    </h2>
+                </div>
+                <!-- Right Side -->
+                <div style="max-width: 500px; padding-top: 40px;">
+                    <p
+                        style="font-family: 'Inter', sans-serif; font-size: 16px; line-height: 1.5; color: #6b7280; margin: 0 0 24px 0;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                        elementum
+                        tristique. <em style="font-style: italic;">Duis cursus, mi quis viverra ornare, eros dolor</em>
+                        interdum
+                        nulla, ut commodo diam libero vitae erat.
+                    </p>
+                    <a href="#" class="simple-button">
+                        Zobacz wszystkie case studies
+                    </a>
+                </div>
+            </div>
+
+            <!-- Case Study Slider -->
             <div class="case-study-slider" id="case-study-slider">
+
+                <!-- Slider Track -->
                 <div class="slider-track">
+
+                    <!-- Slide 1 -->
                     <div class="slider-slide active" data-slide="0">
                         <div class="slider-card">
+                            <!-- Left Content -->
                             <div class="slider-card-content">
                                 <h3 class="slider-card-title">Cyfrowa transformacja NCC</h3>
                                 <div class="slider-card-tags">
@@ -551,8 +725,9 @@
                                 </div>
                                 <div class="slider-card-quote">
                                     <img src="assets/images/icon-quote.svg" alt="">
-                                    <p>Dzięki wdrożeniu Dynamics 365 zoptymalizowaliśmy procesy finansowe i operacyjne.
-                                    </p>
+                                    <p>Dzięki wdrożeniu Dynamics 365 zoptymalizowaliśmy procesy finansowe i operacyjne,
+                                        co przełożyło się
+                                        na 40% wzrost efektywności zespołu.</p>
                                 </div>
                                 <div class="slider-card-author">
                                     <img src="assets/images/case-study-author.png" alt="John Doe">
@@ -562,16 +737,99 @@
                                     </div>
                                 </div>
                                 <div class="slider-card-footer">
-                                    <a href="#" class="solution-card-button">Zobacz Case Study <span>→</span></a>
+                                    <a href="#" class="solution-card-button">
+                                        Zobacz Case Study
+                                        <span>→</span>
+                                    </a>
                                     <img src="assets/images/ncc-logo.svg" alt="NCC" class="company-logo">
                                 </div>
                             </div>
+                            <!-- Right Image -->
                             <div class="slider-card-image">
                                 <img src="assets/images/case-study-card-image.png" alt="NCC Project">
                             </div>
                         </div>
                     </div>
+
+                    <!-- Slide 2 -->
+                    <div class="slider-slide" data-slide="1">
+                        <div class="slider-card">
+                            <!-- Left Content -->
+                            <div class="slider-card-content">
+                                <h3 class="slider-card-title">Automatyzacja procesów Budimex</h3>
+                                <div class="slider-card-tags">
+                                    <span class="tag-filled" style="background: #5B8DEF;">PRODUKCJA</span>
+                                    <span class="tag-outline">ZARZĄDZANIE PROJEKTAMI</span>
+                                </div>
+                                <div class="slider-card-quote">
+                                    <img src="assets/images/icon-quote.svg" alt="">
+                                    <p>Implementacja Power Platform pozwoliła nam zautomatyzować kluczowe procesy
+                                        biznesowe i zaoszczędzić
+                                        setki godzin pracy miesięcznie.</p>
+                                </div>
+                                <div class="slider-card-author">
+                                    <img src="assets/images/case-study-author.png" alt="Anna Kowalska">
+                                    <div>
+                                        <div class="author-name">Anna Kowalska</div>
+                                        <div class="author-title">CTO Budimex</div>
+                                    </div>
+                                </div>
+                                <div class="slider-card-footer">
+                                    <a href="#" class="solution-card-button">
+                                        Zobacz Case Study
+                                        <span>→</span>
+                                    </a>
+                                    <img src="assets/images/ncc-logo.svg" alt="Budimex" class="company-logo">
+                                </div>
+                            </div>
+                            <!-- Right Image -->
+                            <div class="slider-card-image">
+                                <img src="assets/images/case-study-slide-2.jpg" alt="Budimex Project">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="slider-slide" data-slide="2">
+                        <div class="slider-card">
+                            <!-- Left Content -->
+                            <div class="slider-card-content">
+                                <h3 class="slider-card-title">Integracja systemów Orlen</h3>
+                                <div class="slider-card-tags">
+                                    <span class="tag-filled" style="background: #E94E1B;">ENERGIA</span>
+                                    <span class="tag-outline">ANALITYKA I RAPORTOWANIE</span>
+                                </div>
+                                <div class="slider-card-quote">
+                                    <img src="assets/images/icon-quote.svg" alt="">
+                                    <p>ANEGIS pomógł nam zintegrować rozproszone systemy ERP w jedną spójną platformę
+                                        Microsoft,
+                                        zapewniając pełną widoczność danych.</p>
+                                </div>
+                                <div class="slider-card-author">
+                                    <img src="assets/images/case-study-author.png" alt="Piotr Nowak">
+                                    <div>
+                                        <div class="author-name">Piotr Nowak</div>
+                                        <div class="author-title">Dyrektor IT Orlen</div>
+                                    </div>
+                                </div>
+                                <div class="slider-card-footer">
+                                    <a href="#" class="solution-card-button">
+                                        Zobacz Case Study
+                                        <span>→</span>
+                                    </a>
+                                    <img src="assets/images/ncc-logo.svg" alt="Orlen" class="company-logo">
+                                </div>
+                            </div>
+                            <!-- Right Image -->
+                            <div class="slider-card-image">
+                                <img src="assets/images/case-study-slide-3.jpg" alt="Orlen Project">
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
+
+                <!-- Carousel Navigation -->
                 <div class="slider-nav">
                     <button class="slider-prev" id="slider-prev">←</button>
                     <div class="slider-progress">
@@ -579,66 +837,201 @@
                     </div>
                     <button class="slider-next" id="slider-next">→</button>
                 </div>
+
             </div>
+
         </div>
     </section>
 
-    <!-- CTA Banner Section -->
-    <section
-        style="background: linear-gradient(135deg, #0b0b0b 0%, #1a1a1a 100%); padding: 80px 64px; text-align: center;">
-        <h2
-            style="font-family: 'Inter', sans-serif; font-size: 40px; font-weight: 600; color: white; margin-bottom: 16px;">
-            Wprowadź swoją firmę do XXI wieku
-        </h2>
-        <p
-            style="font-family: 'Inter', sans-serif; font-size: 18px; color: rgba(255,255,255,0.7); margin-bottom: 32px; max-width: 600px; margin-left: auto; margin-right: auto;">
-            Skontaktuj się z nami już dziś i przekonaj się jak partnerstwo z ANEGIS może pomóc Twojemu biznesowi.
-        </p>
-        <a href="#kontakt" class="simple-button">
-            Umów bezpłatną konsultację
-            <span class="btn-icon-box">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                </svg>
-            </span>
-        </a>
+    <!-- CTA Banner Section (Exact Match: Figma Node 1:1241) -->
+    <section class="section"
+        style="background: #0b0b0b; color: white; padding: 80px 64px; position: relative; overflow: hidden;">
+
+        <!-- Background Vector Lines - Triangular Arrow Outlines (Figma Node 41:487) -->
+        <div
+            style="position: absolute; top: -4px; left: -269px; width: 827px; height: 695px; pointer-events: none; z-index: 1;">
+            <img src="assets/images/cta-banner-vectors.png" alt=""
+                style="width: 100%; height: 100%; object-fit: cover; opacity: 0.8;">
+        </div>
+
+        <!-- Orange Blur (Left Side) -->
+        <div
+            style="position: absolute; top: -83px; left: 147px; width: 207px; height: 261px; pointer-events: none; z-index: 0;">
+            <img src="assets/images/cta-banner-blur-orange.png" alt=""
+                style="width: 100%; height: 100%; object-fit: contain; opacity: 0.5;">
+        </div>
+
+        <!-- Teal Blur (Right Side) -->
+        <div
+            style="position: absolute; bottom: 0; right: -100px; width: 500px; height: 400px; pointer-events: none; overflow: hidden; z-index: 0;">
+            <img src="assets/images/cta-banner-blur-teal.png" alt=""
+                style="width: 100%; height: 100%; object-fit: contain;">
+        </div>
+
+        <!-- Decorative Diagonal Dashed Line (Figma Node 1:686) - spans from top-left to bottom-right -->
+        <div
+            style="position: absolute; left: calc(50% + 50px); top: calc(50% - 120px); transform: rotate(45deg); transform-origin: left top; pointer-events: none; z-index: 0; width: 700px; height: 2px;">
+            <img src="assets/images/cta-diagonal-line.svg" alt="" style="width: 100%; height: 100%;">
+        </div>
+
+        <!-- Decorative Blue Arrow/Cursor (Figma Node 41:495) - solid blue filled arrow at top of diagonal line -->
+        <div
+            style="position: absolute; left: calc(50% + 23px); top: calc(50% - 149px); pointer-events: none; z-index: 3; transform: rotate(312deg);">
+            <img src="assets/images/cta-blue-arrow-solid.svg" alt="" style="width: 30px; height: 36px;">
+        </div>
+
+        <div class="container" style="position: relative; z-index: 1; max-width: 1312px; margin: 0 auto;">
+            <div
+                style="text-align: center; max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 24px; align-items: center;">
+
+                <!-- Heading (Exact Match: Figma Node 1:1241) -->
+                <h2
+                    style="font-family: 'Inter', sans-serif; font-size: 48px; font-weight: 600; line-height: 1.2; color: white; margin: 0;">
+                    <span style="font-weight: 600;">Wprowadź swoją firmę</span>
+                    <span style="font-weight: 400;"> do XXI wieku</span>
+                </h2>
+
+                <!-- Description -->
+                <p
+                    style="font-family: 'Inter', sans-serif; font-size: 14px; line-height: 1.5; color: rgba(255,255,255,0.7); margin: 0; max-width: 600px;">
+                    Specjalizujemy się we wdrożeniach ERP i CRM dla firm produkcyjnych i <em
+                        style="font-style: italic;">usługowych, optymalizując procesy i napędzając wzrost.</em>
+                </p>
+
+                <!-- CTA Button -->
+                <a href="#kontakt"
+                    style="display: inline-flex; align-items: center; gap: 20px; background: #65AAAB; border: 1px solid #65AAAB; color: #fafafa; padding: 4px 4px 4px 20px; text-decoration: none; font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 500; margin-top: 16px; line-height: 1.5;">
+                    Umów bezpłatną konsultację
+                    <span
+                        style="width: 32px; height: 32px; background: #fafafa; display: flex; align-items: center; justify-content: center;">
+                        <img src="assets/images/icon-chat.svg" alt="" style="width: 20px; height: 20px;">
+                    </span>
+                </a>
+
+            </div>
+        </div>
     </section>
 
     <!-- Related Solutions Section -->
     <section class="related-solutions-section">
         <div class="related-solutions-container">
-            <span class="section-tag">▶ ROZWIĄZANIA</span>
-            <h2 class="section-title">Zobacz inne rozwiązania</h2>
+            <!-- Section Header -->
+            <div class="section-header"
+                style="display: flex; flex-direction: column; gap: 16px; align-items: flex-start; text-align: left; margin-bottom: 48px;">
+                <div class="section-tag" style="display: flex; gap: 8px; align-items: center; padding: 4px 0;">
+                    <span style="color: #0c0c0c;">▶</span>
+                    <span
+                        style="font-family: 'Inter', sans-serif; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: #0c0c0c;">ROZWIĄZANIA</span>
+                </div>
+                <h2 class="section-title"
+                    style="font-family: 'Inter', sans-serif; font-size: 48px; font-weight: 600; line-height: 1.2; color: #0c0c0c; margin: 0;">
+                    Zobacz inne rozwiązania
+                </h2>
+            </div>
 
-            <div class="related-solutions-grid">
-                <div class="related-solution-card">
-                    <div class="related-solution-icon">
-                        <img src="assets/images/icon-briefcase.svg" alt="">
+            <!-- 3 Cards Grid -->
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px;">
+
+                <!-- Card 1: Finanse i Operacje -->
+                <div class="solution-card">
+                    <div style="width: 32px; height: 32px;">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20 7H4C2.9 7 2 7.9 2 9V19C2 20.1 2.9 21 4 21H20C21.1 21 22 20.1 22 19V9C22 7.9 21.1 7 20 7Z"
+                                stroke="#0c0c0c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M16 7V5C16 3.9 15.1 3 14 3H10C8.9 3 8 3.9 8 5V7" stroke="#0c0c0c"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
                     </div>
-                    <h3 class="related-solution-title">Finanse i Operacje</h3>
-                    <p class="related-solution-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Suspendisse varius enim in eros elementum tristique.</p>
-                    <a href="#" class="solution-card-button">Dowiedz się więcej <span>›</span></a>
+                    <h3
+                        style="font-family: 'Inter', sans-serif; font-size: 20px; font-weight: 600; color: #0c0c0c; margin: 0;">
+                        Finanse i Operacje</h3>
+                    <p
+                        style="font-family: 'Inter', sans-serif; font-size: 14px; line-height: 1.6; color: #6b7280; margin: 0; flex-grow: 1;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                        elementum
+                        tristique.
+                    </p>
+                    <a href="#" class="solution-card-button">
+                        Dowiedz się więcej <span>→</span>
+                    </a>
                 </div>
-                <div class="related-solution-card">
-                    <div class="related-solution-icon">
-                        <img src="assets/images/icon-briefcase.svg" alt="">
+
+                <!-- Card 2: Sprzedaż i Obsługa Klienta -->
+                <div class="solution-card">
+                    <div style="width: 32px; height: 32px;">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20 7H4C2.9 7 2 7.9 2 9V19C2 20.1 2.9 21 4 21H20C21.1 21 22 20.1 22 19V9C22 7.9 21.1 7 20 7Z"
+                                stroke="#0c0c0c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M16 7V5C16 3.9 15.1 3 14 3H10C8.9 3 8 3.9 8 5V7" stroke="#0c0c0c"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
                     </div>
-                    <h3 class="related-solution-title">Finanse i Operacje</h3>
-                    <p class="related-solution-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Suspendisse varius enim in eros elementum tristique.</p>
-                    <a href="#" class="solution-card-button">Dowiedz się więcej <span>›</span></a>
+                    <h3
+                        style="font-family: 'Inter', sans-serif; font-size: 20px; font-weight: 600; color: #0c0c0c; margin: 0;">
+                        Sprzedaż i Obsługa Klienta</h3>
+                    <p
+                        style="font-family: 'Inter', sans-serif; font-size: 14px; line-height: 1.6; color: #6b7280; margin: 0; flex-grow: 1;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                        elementum
+                        tristique.
+                    </p>
+                    <a href="#" class="solution-card-button">
+                        Dowiedz się więcej <span>→</span>
+                    </a>
                 </div>
-                <div class="related-solution-card">
-                    <div class="related-solution-icon">
-                        <img src="assets/images/icon-briefcase.svg" alt="">
+
+                <!-- Card 3: Rozwiązania Autorskie -->
+                <div class="solution-card">
+                    <div style="width: 32px; height: 32px;">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20 7H4C2.9 7 2 7.9 2 9V19C2 20.1 2.9 21 4 21H20C21.1 21 22 20.1 22 19V9C22 7.9 21.1 7 20 7Z"
+                                stroke="#0c0c0c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M16 7V5C16 3.9 15.1 3 14 3H10C8.9 3 8 3.9 8 5V7" stroke="#0c0c0c"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
                     </div>
-                    <h3 class="related-solution-title">Finanse i Operacje</h3>
-                    <p class="related-solution-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Suspendisse varius enim in eros elementum tristique.</p>
-                    <a href="#" class="solution-card-button">Dowiedz się więcej <span>›</span></a>
+                    <h3
+                        style="font-family: 'Inter', sans-serif; font-size: 20px; font-weight: 600; color: #0c0c0c; margin: 0;">
+                        Rozwiązania Autorskie</h3>
+                    <p
+                        style="font-family: 'Inter', sans-serif; font-size: 14px; line-height: 1.6; color: #6b7280; margin: 0; flex-grow: 1;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                        elementum
+                        tristique.
+                    </p>
+                    <a href="#" class="solution-card-button">
+                        Dowiedz się więcej <span>→</span>
+                    </a>
                 </div>
+
+                <!-- Card 4: Analityka i AI -->
+                <div class="solution-card">
+                    <div style="width: 32px; height: 32px;">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20 7H4C2.9 7 2 7.9 2 9V19C2 20.1 2.9 21 4 21H20C21.1 21 22 20.1 22 19V9C22 7.9 21.1 7 20 7Z"
+                                stroke="#0c0c0c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M16 7V5C16 3.9 15.1 3 14 3H10C8.9 3 8 3.9 8 5V7" stroke="#0c0c0c"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3
+                        style="font-family: 'Inter', sans-serif; font-size: 20px; font-weight: 600; color: #0c0c0c; margin: 0;">
+                        Analityka i AI</h3>
+                    <p
+                        style="font-family: 'Inter', sans-serif; font-size: 14px; line-height: 1.6; color: #6b7280; margin: 0; flex-grow: 1;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                        elementum
+                        tristique.
+                    </p>
+                    <a href="#" class="solution-card-button">
+                        Dowiedz się więcej <span>→</span>
+                    </a>
+                </div>
+
             </div>
         </div>
     </section>
@@ -702,34 +1095,154 @@
         </div>
     </section>
 
-    <!-- Bottom CTA Section -->
-    <section id="kontakt" style="background: #fafafa; padding: 120px 64px; text-align: center;">
-        <h2
-            style="font-family: 'Inter', sans-serif; font-size: 48px; font-weight: 600; color: #0c0c0c; margin-bottom: 16px;">
-            Wprowadź swoją firmę<br>do XXI wieku
-        </h2>
-        <p style="font-family: 'Inter', sans-serif; font-size: 18px; color: #6b7280; margin-bottom: 32px;">
-            Skontaktuj się z nami już dziś i przekonaj się jak partnerstwo z ANEGIS może pomóc Twojemu biznesowi.
-        </p>
-        <a href="#" class="simple-button">
-            Umów bezpłatną konsultację
-            <span class="btn-icon-box">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" />
+    <!-- Final CTA Section (Exact Match: Figma Node 1:1228) -->
+    <section id="kontakt"
+        style="background: #fafafa; padding: 120px 64px; display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+
+        <!-- Decorative Arrow Pattern (Background) -->
+        <div
+            style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, calc(-50% + 40px)); width: 594px; height: 594px; pointer-events: none;">
+            <img src="assets/images/cta-arrow-pattern.svg" alt="" style="width: 100%; height: 100%; opacity: 0.15;">
+        </div>
+
+        <!-- Interactive Cursor Arrow (Figma Node 1:1237) -->
+        <div id="cursor-arrow-container"
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 5;">
+            <!-- SVG Canvas for dashed trail line -->
+            <svg id="cursor-trail-svg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+                <path id="cursor-trail-path" fill="none" stroke="#1a4a6e" stroke-width="2" stroke-dasharray="6,6"
+                    stroke-linecap="round" />
+            </svg>
+            <!-- Arrow head -->
+            <div id="cursor-arrow"
+                style="position: absolute; width: 24px; height: 24px; opacity: 0; transition: opacity 0.3s ease;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 12L22 2L18 12L22 22L2 12Z" fill="#1a4a6e" />
                 </svg>
-            </span>
-        </a>
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div
+            style="display: flex; flex-direction: column; align-items: center; gap: 25px; position: relative; z-index: 1;">
+            <!-- Heading -->
+            <div style="text-align: center;">
+                <h2
+                    style="font-family: 'Inter', sans-serif; font-size: 48px; font-weight: 600; line-height: 1.2; color: #0b0b0b; margin: 0;">
+                    <span style="font-weight: 600;">Wprowadź swoją firmę</span><br>
+                    <span style="font-weight: 400;">do XXI wieku</span>
+                </h2>
+            </div>
+
+            <!-- CTA Button (Exact Match: Figma Node 1:1235) -->
+            <a href="#"
+                style="display: inline-flex; align-items: center; gap: 20px; background: #65AAAB; border: 1px solid #65AAAB; color: #fafafa; padding: 4px 4px 4px 20px; text-decoration: none; font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 500; line-height: 1.5;">
+                Umów bezpłatną konsultację
+                <span
+                    style="width: 32px; height: 32px; background: #fafafa; display: flex; align-items: center; justify-content: center;">
+                    <img src="assets/images/icon-chat.svg" alt="" style="width: 20px; height: 20px;">
+                </span>
+            </a>
+        </div>
+
+        <!-- Cursor Arrow Animation Script -->
+        <script>
+            (function () {
+                const section = document.getElementById('kontakt');
+                const arrow = document.getElementById('cursor-arrow');
+                const trailPath = document.getElementById('cursor-trail-path');
+
+                let isInSection = false;
+
+                // Store trail points (tail follows behind arrow)
+                const trailPoints = [];
+                const maxPoints = 30; // Length of the tail
+                const smoothing = 0.15; // How smoothly tail follows (0-1)
+
+                section.addEventListener('mouseenter', function () {
+                    isInSection = true;
+                    arrow.style.opacity = '1';
+                    trailPoints.length = 0; // Clear trail on enter
+                });
+
+                section.addEventListener('mouseleave', function () {
+                    isInSection = false;
+                    arrow.style.opacity = '0';
+                    trailPath.setAttribute('d', '');
+                    trailPoints.length = 0;
+                });
+
+                section.addEventListener('mousemove', function (e) {
+                    if (!isInSection) return;
+
+                    const rect = section.getBoundingClientRect();
+                    const cursorX = e.clientX - rect.left;
+                    const cursorY = e.clientY - rect.top;
+
+                    // Update arrow position (follows cursor)
+                    arrow.style.left = (cursorX - 12) + 'px';
+                    arrow.style.top = (cursorY - 12) + 'px';
+
+                    // Calculate arrow rotation based on movement direction
+                    if (trailPoints.length > 0) {
+                        const lastPoint = trailPoints[trailPoints.length - 1];
+                        const dx = cursorX - lastPoint.x;
+                        const dy = cursorY - lastPoint.y;
+                        if (Math.abs(dx) > 2 || Math.abs(dy) > 2) {
+                            const rotation = Math.atan2(dy, dx) * (180 / Math.PI);
+                            arrow.style.transform = `rotate(${rotation - 180}deg)`;
+                        }
+                    }
+
+                    // Add current cursor position to trail
+                    trailPoints.push({ x: cursorX, y: cursorY });
+
+                    // Keep trail at max length
+                    while (trailPoints.length > maxPoints) {
+                        trailPoints.shift();
+                    }
+
+                    // Generate smooth curve path through trail points
+                    if (trailPoints.length >= 2) {
+                        let pathData = `M ${trailPoints[0].x} ${trailPoints[0].y}`;
+
+                        for (let i = 1; i < trailPoints.length; i++) {
+                            const prev = trailPoints[i - 1];
+                            const curr = trailPoints[i];
+
+                            // Use quadratic curves for smoothness
+                            const midX = (prev.x + curr.x) / 2;
+                            const midY = (prev.y + curr.y) / 2;
+
+                            pathData += ` Q ${prev.x} ${prev.y}, ${midX} ${midY}`;
+                        }
+
+                        // Connect to last point
+                        const last = trailPoints[trailPoints.length - 1];
+                        pathData += ` L ${last.x} ${last.y}`;
+
+                        trailPath.setAttribute('d', pathData);
+                    }
+                });
+            })();
+        </script>
+
     </section>
 
-    <!-- Footer -->
+    <!-- Footer (Exact Match: Figma Node 1:1236) -->
     <footer style="background: #0b0b0b; position: relative; overflow: hidden; padding: 80px 64px 40px;">
+
+        <!-- Teal Blur Background -->
         <div style="position: absolute; top: 78px; right: -100px; width: 447px; height: 472px; pointer-events: none;">
             <img src="assets/images/footer-teal-blur.png" alt=""
                 style="width: 100%; height: 100%; object-fit: contain;">
         </div>
+
+        <!-- Main Footer Content -->
         <div style="max-width: 1312px; margin: 0 auto; position: relative; z-index: 1;">
             <div style="display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 48px;">
+
+                <!-- Column 1: ANEGIS -->
                 <div>
                     <div
                         style="font-family: 'Inter', sans-serif; font-size: 24px; font-weight: 600; color: #f6f8fc; letter-spacing: 0.15em; margin-bottom: 24px;">
@@ -737,13 +1250,37 @@
                     <p
                         style="font-family: 'Inter', sans-serif; font-size: 14px; line-height: 1.5; color: rgba(246,248,252,0.5); margin: 0 0 24px 0; max-width: 280px;">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
-                        elementum tristique.
+                        elementum
+                        tristique.
                     </p>
                     <div
                         style="font-family: 'Inter', sans-serif; font-size: 12px; letter-spacing: 0.1em; color: rgba(246,248,252,0.4); text-transform: uppercase;">
                         LONDYN &nbsp;•&nbsp; WARSZAWA &nbsp;•&nbsp; WROCŁAW &nbsp;•&nbsp; SIERADZ
                     </div>
+
+                    <!-- Contact Section -->
+                    <div style="margin-top: 48px;">
+                        <div
+                            style="font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 500; color: #f6f8fc; margin-bottom: 16px;">
+                            Kontakt</div>
+                        <div style="display: flex; flex-direction: column; gap: 12px;">
+                            <a href="tel:+47716619025"
+                                style="display: flex; align-items: center; gap: 12px; color: rgba(246,248,252,0.7); text-decoration: none; font-family: 'Inter', sans-serif; font-size: 14px;">
+                                <img src="assets/images/icon-phone.svg" alt=""
+                                    style="width: 16px; height: 16px; opacity: 0.7;">
+                                +47 71 661 9025
+                            </a>
+                            <a href="mailto:Sales@anegis.com"
+                                style="display: flex; align-items: center; gap: 12px; color: rgba(246,248,252,0.7); text-decoration: none; font-family: 'Inter', sans-serif; font-size: 14px;">
+                                <img src="assets/images/icon-email.svg" alt=""
+                                    style="width: 16px; height: 16px; opacity: 0.7;">
+                                Sales@anegis.com
+                            </a>
+                        </div>
+                    </div>
                 </div>
+
+                <!-- Column 2: Co robimy -->
                 <div>
                     <div
                         style="font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 500; color: #f6f8fc; margin-bottom: 24px;">
@@ -756,7 +1293,28 @@
                         <a href="#"
                             style="font-family: 'Inter', sans-serif; font-size: 14px; color: rgba(246,248,252,0.7); text-decoration: none;">Usługi</a>
                     </div>
+
+                    <!-- Social Links -->
+                    <div style="margin-top: 48px;">
+                        <div
+                            style="font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 500; color: #f6f8fc; margin-bottom: 16px;">
+                            Śledź nas</div>
+                        <div style="display: flex; gap: 16px;">
+                            <a href="#"
+                                style="display: flex; align-items: center; justify-content: center; width: 32px; height: 32px;">
+                                <img src="assets/images/icon-youtube.svg" alt="YouTube"
+                                    style="width: 20px; height: 20px;">
+                            </a>
+                            <a href="#"
+                                style="display: flex; align-items: center; justify-content: center; width: 32px; height: 32px;">
+                                <img src="assets/images/icon-linkedin.svg" alt="LinkedIn"
+                                    style="width: 20px; height: 20px;">
+                            </a>
+                        </div>
+                    </div>
                 </div>
+
+                <!-- Column 3: Wiedza -->
                 <div>
                     <div
                         style="font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 500; color: #f6f8fc; margin-bottom: 24px;">
@@ -768,8 +1326,12 @@
                             style="font-family: 'Inter', sans-serif; font-size: 14px; color: rgba(246,248,252,0.7); text-decoration: none;">Raporty</a>
                         <a href="#"
                             style="font-family: 'Inter', sans-serif; font-size: 14px; color: rgba(246,248,252,0.7); text-decoration: none;">Ebooki</a>
+                        <a href="#"
+                            style="font-family: 'Inter', sans-serif; font-size: 14px; color: rgba(246,248,252,0.7); text-decoration: none;">Wydarzenia</a>
                     </div>
                 </div>
+
+                <!-- Column 4: O nas -->
                 <div>
                     <div
                         style="font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 500; color: #f6f8fc; margin-bottom: 24px;">
@@ -777,18 +1339,36 @@
                     <div style="display: flex; flex-direction: column; gap: 16px;">
                         <a href="#"
                             style="font-family: 'Inter', sans-serif; font-size: 14px; color: rgba(246,248,252,0.7); text-decoration: none;">Nasza
-                            historia</a>
+                            historia i misja</a>
                         <a href="#"
-                            style="font-family: 'Inter', sans-serif; font-size: 14px; color: rgba(246,248,252,0.7); text-decoration: none;">Zespół</a>
+                            style="font-family: 'Inter', sans-serif; font-size: 14px; color: rgba(246,248,252,0.7); text-decoration: none;">Zespół
+                            i eksperci</a>
+                        <a href="#"
+                            style="font-family: 'Inter', sans-serif; font-size: 14px; color: rgba(246,248,252,0.7); text-decoration: none;">Partnerstwa
+                            i certyfikaty</a>
                         <a href="#"
                             style="font-family: 'Inter', sans-serif; font-size: 14px; color: rgba(246,248,252,0.7); text-decoration: none;">Kariera</a>
+                        <a href="#"
+                            style="font-family: 'Inter', sans-serif; font-size: 14px; color: rgba(246,248,252,0.7); text-decoration: none;">Komunikaty
+                            prasowe</a>
                     </div>
                 </div>
+
             </div>
+
+            <!-- Footer Bottom -->
             <div
                 style="border-top: 1px solid rgba(246,248,252,0.1); padding-top: 24px; display: flex; justify-content: space-between; align-items: center;">
-                <span style="font-family: 'Inter', sans-serif; font-size: 12px; color: rgba(246,248,252,0.4);">© 2025
-                    ANEGIS. All rights reserved.</span>
+                <div style="display: flex; align-items: center; gap: 24px;">
+                    <span style="font-family: 'Inter', sans-serif; font-size: 12px; color: rgba(246,248,252,0.4);">©
+                        2025
+                        ANEGIS. All rights reserved.</span>
+                    <span
+                        style="font-family: 'Inter', sans-serif; font-size: 12px; color: rgba(246,248,252,0.4);">•</span>
+                    <span style="font-family: 'Inter', sans-serif; font-size: 12px; color: rgba(246,248,252,0.4);">Made
+                        by
+                        zu.agency</span>
+                </div>
                 <div style="display: flex; gap: 32px;">
                     <a href="#"
                         style="font-family: 'Inter', sans-serif; font-size: 12px; color: rgba(246,248,252,0.4); text-decoration: none;">Polityka
@@ -797,9 +1377,13 @@
                         style="font-family: 'Inter', sans-serif; font-size: 12px; color: rgba(246,248,252,0.4); text-decoration: none;">Regulamin</a>
                 </div>
             </div>
+
         </div>
     </footer>
 
+
+
+    <script src="slider-logic.js"></script>
     <script src="script.js"></script>
 </body>
 
