@@ -1094,3 +1094,117 @@ section {
   font-weight: 400;
   white-space: nowrap;
 }
+
+/* Solution Cards - Hover Animation */
+.solution-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.solution-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  border-color: #0c0c0c;
+}
+
+.solution-card:hover .solution-card-button {
+  background: #0c0c0c;
+  color: white;
+  border-color: #0c0c0c;
+}
+
+.solution-card-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  color: #0c0c0c;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: auto;
+  transition: all 0.3s ease;
+}
+
+.solution-card-button span {
+  background: #0c0c0c;
+  color: white;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.solution-card:hover .solution-card-button span {
+  background: white;
+  color: #0c0c0c;
+}
+
+/* Industry Tabs - Hover and Active States */
+.industry-tabs {
+  display: flex;
+  border-bottom: 1px solid #e5e7eb;
+  margin-bottom: 48px;
+}
+
+.industry-tab {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px 24px;
+  background: transparent;
+  color: #0c0c0c;
+  border: none;
+  border-bottom: 1px solid #e5e7eb;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.industry-tab:hover {
+  background: #f5f5f5;
+}
+
+.industry-tab.active {
+  background: #0c0c0c;
+  color: white;
+  border-bottom-color: #0c0c0c;
+}
+
+.industry-tab-content {
+  display: none;
+}
+
+.industry-tab-content.active {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: stretch;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

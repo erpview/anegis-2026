@@ -210,4 +210,64 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+// Accordion Toggle Functionality
+document.addEventListener('DOMContentLoaded', () => {
+    const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+    accordionHeaders.forEach(header => {
+        header.addEventListener('click', function () {
+            const accordionItem = this.closest('.accordion-item');
+            const content = accordionItem.querySelector('.accordion-content');
+            const toggle = accordionItem.querySelector('.accordion-toggle');
+            const icon = accordionItem.querySelector('.accordion-icon');
+            const isActive = accordionItem.classList.contains('active');
+
+            if (isActive) {
+                // Close this accordion
+                accordionItem.classList.remove('active');
+                content.style.display = 'none';
+                icon.textContent = '+';
+                icon.style.color = '#0c0c0c';
+                toggle.style.background = 'transparent';
+                toggle.style.border = '1px solid #e5e7eb';
+            } else {
+                // Open this accordion
+                accordionItem.classList.add('active');
+                content.style.display = 'block';
+                icon.textContent = '−';
+                icon.style.color = 'white';
+                toggle.style.background = '#0c0c0c';
+                toggle.style.border = 'none';
+            }
+        });
+    });
+});
+
+// Industry Tabs Switching
+document.addEventListener('DOMContentLoaded', () => {
+    const industryTabs = document.querySelectorAll('.industry-tab');
+    const industryContents = document.querySelectorAll('.industry-tab-content');
+
+    industryTabs.forEach(tab => {
+        tab.addEventListener('click', function () {
+            const tabId = this.getAttribute('data-tab');
+
+            // Remove active from all tabs
+            industryTabs.forEach(t => t.classList.remove('active'));
+
+            // Add active to clicked tab
+            this.classList.add('active');
+
+            // Hide all content panels
+            industryContents.forEach(content => content.classList.remove('active'));
+
+            // Show the target content panel
+            const targetContent = document.getElementById(`tab-${tabId}`);
+            if (targetContent) {
+                targetContent.classList.add('active');
+            }
+        });
+    });
+});
+
 console.log('ANEGIS 2026 Website - Scripts Loaded');
