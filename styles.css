@@ -882,8 +882,8 @@ section {
 .dropdown-mega-menu {
   position: absolute;
   top: calc(100% + 10px);
-  left: 50%;
-  transform: translateX(-50%) translateY(10px);
+  left: 0;
+  transform: translateY(10px);
   background: #fafafa;
   border: 1px solid #f4f4f4;
   box-shadow: 0px 20px 24px -4px rgba(0, 0, 0, 0.08), 0px 8px 8px -4px rgba(0, 0, 0, 0.03);
@@ -901,16 +901,15 @@ section {
   opacity: 1;
   visibility: visible;
   pointer-events: all;
-  transform: translateX(-50%) translateY(0);
+  transform: translateY(0);
 }
 
-/* Triangle pointer */
+/* Triangle pointer - positioned at left side above sidebar */
 .dropdown-mega-menu::before {
   content: '';
   position: absolute;
   top: -10px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 40px;
   width: 21px;
   height: 11px;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 21.5 10.75' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.75 0L0 10.75H21.5L10.75 0Z' fill='%23f4f4f4'/%3E%3C/svg%3E");
