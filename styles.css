@@ -864,6 +864,22 @@ section {
   position: relative;
 }
 
+/* Invisible bridge to keep dropdown open while moving cursor */
+.nav-dropdown::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: -29px;
+  width: 300px;
+  height: 35px;
+  background: transparent;
+  pointer-events: none;
+}
+
+.nav-dropdown:hover::after {
+  pointer-events: all;
+}
+
 .nav-dropdown-trigger {
   display: flex;
   align-items: center;
@@ -892,7 +908,7 @@ section {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: all 0.25s ease;
+  transition: opacity 0.2s ease 0.1s, visibility 0.2s ease 0.1s, transform 0.2s ease;
   z-index: 1000;
   overflow: visible;
 }
@@ -902,6 +918,7 @@ section {
   visibility: visible;
   pointer-events: all;
   transform: translateY(0);
+  transition-delay: 0s;
 }
 
 /* Triangle pointer - positioned at left side above sidebar */
