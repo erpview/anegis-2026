@@ -881,8 +881,8 @@ section {
 /* Mega Menu Container - Exact Figma Match */
 .dropdown-mega-menu {
   position: absolute;
-  top: calc(100% + 10px);
-  left: 0;
+  top: calc(100% + 25px);
+  left: -29px;
   transform: translateY(10px);
   background: #fafafa;
   border: 1px solid #f4f4f4;
