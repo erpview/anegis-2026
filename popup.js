@@ -5,22 +5,22 @@
 
 // Initialize popup when DOM is ready
 document.addEventListener('DOMContentLoaded', function () {
-    // Create popup HTML if not exists
-    if (!document.getElementById('popup-overlay')) {
-        createPopupHTML();
-    }
+  // Create popup HTML if not exists
+  if (!document.getElementById('popup-overlay')) {
+    createPopupHTML();
+  }
 
-    // Close popup on Escape key
-    document.addEventListener('keydown', function (e) {
-        if (e.key === 'Escape') {
-            closePopup();
-        }
-    });
+  // Close popup on Escape key
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      closePopup();
+    }
+  });
 });
 
 // Create popup HTML structure
 function createPopupHTML() {
-    const popupHTML = `
+  const popupHTML = `
     <div class="popup-overlay" id="popup-overlay" onclick="closePopup()"></div>
     <div class="popup-panel" id="popup-panel">
       <div class="popup-content">
@@ -46,11 +46,13 @@ function createPopupHTML() {
         </a>
       </div>
       
-      <div class="popup-gradient"></div>
+      <div class="popup-gradient">
+        <img src="assets/images/gradient-blur-multicolor.png" alt="">
+      </div>
     </div>
   `;
 
-    document.body.insertAdjacentHTML('beforeend', popupHTML);
+  document.body.insertAdjacentHTML('beforeend', popupHTML);
 }
 
 /**
@@ -63,53 +65,53 @@ function createPopupHTML() {
  * @param {string} options.ctaText - Text for CTA button (optional)
  */
 function openPopup(options) {
-    // Support both object and legacy arguments format
-    let title, description, icon, ctaLink, ctaText;
+  // Support both object and legacy arguments format
+  let title, description, icon, ctaLink, ctaText;
 
-    if (typeof options === 'object') {
-        title = options.title;
-        description = options.description;
-        icon = options.icon;
-        ctaLink = options.ctaLink;
-        ctaText = options.ctaText;
-    } else {
-        // Legacy format: openPopup(title, description, icon, ctaLink)
-        title = arguments[0];
-        description = arguments[1];
-        icon = arguments[2];
-        ctaLink = arguments[3];
+  if (typeof options === 'object') {
+    title = options.title;
+    description = options.description;
+    icon = options.icon;
+    ctaLink = options.ctaLink;
+    ctaText = options.ctaText;
+  } else {
+    // Legacy format: openPopup(title, description, icon, ctaLink)
+    title = arguments[0];
+    description = arguments[1];
+    icon = arguments[2];
+    ctaLink = arguments[3];
+  }
+
+  // Set content
+  const titleEl = document.getElementById('popup-title');
+  const descEl = document.getElementById('popup-description');
+  const iconEl = document.getElementById('popup-icon');
+  const ctaEl = document.getElementById('popup-cta');
+
+  if (titleEl) titleEl.textContent = title || '';
+  if (descEl) descEl.textContent = description || '';
+  if (iconEl && icon) iconEl.querySelector('img').src = icon;
+  if (ctaEl) {
+    ctaEl.href = ctaLink || '#';
+    if (ctaText) {
+      ctaEl.childNodes[0].textContent = ctaText + ' ';
     }
+  }
 
-    // Set content
-    const titleEl = document.getElementById('popup-title');
-    const descEl = document.getElementById('popup-description');
-    const iconEl = document.getElementById('popup-icon');
-    const ctaEl = document.getElementById('popup-cta');
-
-    if (titleEl) titleEl.textContent = title || '';
-    if (descEl) descEl.textContent = description || '';
-    if (iconEl && icon) iconEl.querySelector('img').src = icon;
-    if (ctaEl) {
-        ctaEl.href = ctaLink || '#';
-        if (ctaText) {
-            ctaEl.childNodes[0].textContent = ctaText + ' ';
-        }
-    }
-
-    // Show popup
-    document.getElementById('popup-overlay').classList.add('active');
-    document.getElementById('popup-panel').classList.add('active');
-    document.body.style.overflow = 'hidden';
+  // Show popup
+  document.getElementById('popup-overlay').classList.add('active');
+  document.getElementById('popup-panel').classList.add('active');
+  document.body.style.overflow = 'hidden';
 }
 
 /**
  * Close popup
  */
 function closePopup() {
-    const overlay = document.getElementById('popup-overlay');
-    const panel = document.getElementById('popup-panel');
+  const overlay = document.getElementById('popup-overlay');
+  const panel = document.getElementById('popup-panel');
 
-    if (overlay) overlay.classList.remove('active');
-    if (panel) panel.classList.remove('active');
-    document.body.style.overflow = '';
+  if (overlay) overlay.classList.remove('active');
+  if (panel) panel.classList.remove('active');
+  document.body.style.overflow = '';
 }
