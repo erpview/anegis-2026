@@ -14,6 +14,7 @@
 
   <!-- Styles -->
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="popup.css">
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml"
@@ -726,57 +727,68 @@
       <div
         style="display: flex; justify-content: center; gap: 32px; flex-wrap: wrap; align-items: center; padding-bottom: 40px;">
         <!-- 1. Dynamics 365 -->
-        <div class="product-icon">
+        <div class="product-icon"
+          onclick="openPopup('Dynamics 365', 'Kompleksowe rozwiązanie biznesowe Microsoft Dynamics 365 integruje wszystkie procesy w firmie. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.', 'assets/images/120799c8d7a168888baad518a8d1c44eb816b964.svg', '#')">
           <img src="assets/images/120799c8d7a168888baad518a8d1c44eb816b964.svg" alt="Dynamics 365">
           <span class="tooltip">Dynamics 365</span>
         </div>
         <!-- 2. Azure -->
-        <div class="product-icon">
+        <div class="product-icon"
+          onclick="openPopup('Azure', 'Platforma chmurowa Microsoft Azure oferuje kompleksowe usługi obliczeniowe, analityczne, magazynowania i sieciowe. Lorem ipsum dolor sit amet, consectetur adipiscing elit.', 'assets/images/c38c6eab9196aeaf50d7d42b40b991b5e8e357bf.svg', '#')">
           <img src="assets/images/c38c6eab9196aeaf50d7d42b40b991b5e8e357bf.svg" alt="Azure">
           <span class="tooltip">Azure</span>
         </div>
         <!-- 3. Power Apps -->
-        <div class="product-icon">
+        <div class="product-icon"
+          onclick="openPopup('Power Apps', 'Twórz aplikacje biznesowe bez kodowania z Microsoft Power Apps. Szybko buduj niestandardowe aplikacje odpowiadające potrzebom Twojej firmy.', 'assets/images/276e243b6bcc0ba3867c44c3842c36d96a12a823.svg', '#')">
           <img src="assets/images/276e243b6bcc0ba3867c44c3842c36d96a12a823.svg" alt="Power Apps">
           <span class="tooltip">Power Apps</span>
         </div>
         <!-- 4. Power Automate -->
-        <div class="product-icon">
+        <div class="product-icon"
+          onclick="openPopup('Power Automate', 'Automatyzuj powtarzalne procesy i workflows z Microsoft Power Automate. Oszczędzaj czas i zwiększ efektywność swojego zespołu.', 'assets/images/ec57612bb643197fb105328c519e87a6d47aff2a.svg', '#')">
           <img src="assets/images/ec57612bb643197fb105328c519e87a6d47aff2a.svg" alt="Power Automate">
           <span class="tooltip">Power Automate</span>
         </div>
         <!-- 5. Power BI -->
-        <div class="product-icon">
+        <div class="product-icon"
+          onclick="openPopup('Power BI', 'Przekształć dane w przydatne informacje z Microsoft Power BI. Twórz interaktywne raporty i dashboardy dla lepszych decyzji biznesowych.', 'assets/images/07a0ac580beffa7d2c2f2d51db86f98eee5be3bd.svg', '#')">
           <img src="assets/images/07a0ac580beffa7d2c2f2d51db86f98eee5be3bd.svg" alt="Power BI">
           <span class="tooltip">Power BI</span>
         </div>
         <!-- 6. Teams (larger, center) -->
-        <div class="product-icon large">
+        <div class="product-icon large"
+          onclick="openPopup('Microsoft Teams', 'Współpracuj bez granic z Microsoft Teams. Komunikacja, spotkania, pliki i aplikacje - wszystko w jednym miejscu.', 'assets/images/eb9e406204c673ec2013f8719a6d6775567a954d.svg', '#')">
           <img src="assets/images/eb9e406204c673ec2013f8719a6d6775567a954d.svg" alt="Microsoft Teams">
           <span class="tooltip">Microsoft Teams</span>
         </div>
         <!-- 7. OneDrive -->
-        <div class="product-icon">
+        <div class="product-icon"
+          onclick="openPopup('OneDrive', 'Bezpieczne przechowywanie i udostępnianie plików w chmurze. Microsoft OneDrive zapewnia dostęp do dokumentów z dowolnego miejsca.', 'assets/images/781fc8fe8a8e113764b973aab0a336b874fe89d9.svg', '#')">
           <img src="assets/images/781fc8fe8a8e113764b973aab0a336b874fe89d9.svg" alt="OneDrive">
           <span class="tooltip">OneDrive</span>
         </div>
         <!-- 8. Power Platform -->
-        <div class="product-icon">
+        <div class="product-icon"
+          onclick="openPopup('Power Platform', 'Zintegrowana platforma Microsoft Power Platform łączy Power BI, Power Apps, Power Automate i Power Virtual Agents w jedno potężne rozwiązanie.', 'assets/images/6f02593fb9922f889f4394ae81337ea74666bbdd.svg', '#')">
           <img src="assets/images/6f02593fb9922f889f4394ae81337ea74666bbdd.svg" alt="Power Platform">
           <span class="tooltip">Power Platform</span>
         </div>
         <!-- 9. Copilot -->
-        <div class="product-icon">
+        <div class="product-icon"
+          onclick="openPopup('Microsoft Copilot', 'Twój inteligentny asystent AI. Microsoft Copilot pomaga w codziennych zadaniach, generowaniu kodu i zwiększaniu produktywności.', 'assets/images/1217331c9ef415c5f7d5c24d60a0e6da68b2d2eb.svg', '#')">
           <img src="assets/images/1217331c9ef415c5f7d5c24d60a0e6da68b2d2eb.svg" alt="Copilot">
           <span class="tooltip">Copilot</span>
         </div>
         <!-- 10. Defender -->
-        <div class="product-icon">
+        <div class="product-icon"
+          onclick="openPopup('Microsoft Defender', 'Kompleksowe zabezpieczenia dla Twojej organizacji. Microsoft Defender chroni przed zagrożeniami w chmurze, na urządzeniach i w sieci.', 'assets/images/f25782042a32d6c642d33cfc0a56cf4c634af0bd.svg', '#')">
           <img src="assets/images/f25782042a32d6c642d33cfc0a56cf4c634af0bd.svg" alt="Microsoft Defender">
           <span class="tooltip">Microsoft Defender</span>
         </div>
         <!-- 11. Dataverse -->
-        <div class="product-icon">
+        <div class="product-icon"
+          onclick="openPopup('Dataverse', 'Bezpieczna i skalowalna platforma danych Microsoft Dataverse. Przechowuj i zarządzaj danymi biznesowymi w jednym miejscu.', 'assets/images/8c1229dafa214ace14f5495dc5532b52bb64e3ff.svg', '#')">
           <img src="assets/images/8c1229dafa214ace14f5495dc5532b52bb64e3ff.svg" alt="Dataverse">
           <span class="tooltip">Dataverse</span>
         </div>
@@ -1825,6 +1837,8 @@
 
   <!-- Scripts -->
   <script src="script.js"></script>
+
+  <script src="popup.js"></script>
 </body>
 
 </html>
