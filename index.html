@@ -1849,6 +1849,37 @@
         scrollBtn.classList.remove('visible');
       }
     });
+
+    // Triangle accents animation on scroll
+    document.addEventListener('DOMContentLoaded', function () {
+      const triangleContainer = document.getElementById('triangle-accents');
+      const triangles = document.querySelectorAll('.triangle-arrow');
+
+      if (triangleContainer && triangles.length > 0) {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              // Add animation with delay after scrolling into view
+              setTimeout(() => {
+                triangles.forEach(triangle => {
+                  triangle.classList.add('animate');
+                });
+              }, 300); // 300ms delay after section becomes visible
+            } else {
+              // Reset animation when leaving viewport
+              triangles.forEach(triangle => {
+                triangle.classList.remove('animate');
+              });
+            }
+          });
+        }, {
+          threshold: 0.1,
+          rootMargin: '0px 0px -100px 0px'
+        });
+
+        observer.observe(triangleContainer);
+      }
+    });
   </script>
 </body>
 
