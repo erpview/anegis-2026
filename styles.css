@@ -981,8 +981,8 @@ section {
 
 /* Active Tab - Exact Figma: #1a3574 */
 .dropdown-tab.active {
-  background: #1a3574;
-  color: #fafafa;
+  background: #0c0c0c;
+  color: #ffffff;
 }
 
 .dropdown-tab .tab-arrow {
