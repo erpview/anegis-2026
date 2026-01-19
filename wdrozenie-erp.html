@@ -595,7 +595,8 @@
                 style="backdrop-filter: blur(2px); background: rgba(250, 250, 250, 0.5); border: 1px solid #e5e7ea; padding: 100px 48px; position: relative; overflow: hidden;">
 
                 <!-- Content Grid -->
-                <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 80px;">
+                <div
+                    style="display: flex; justify-content: space-between; align-items: flex-start; gap: 80px; position: relative; z-index: 2;">
 
                     <!-- Left: Header -->
                     <div style="flex: 1;">
@@ -629,29 +630,25 @@
                     </div>
                 </div>
 
-                <!-- Arrow Graphics (decorative, bottom) -->
-                <div
-                    style="position: absolute; bottom: 0; left: 48px; right: 48px; height: 200px; pointer-events: none; display: flex; align-items: flex-end; justify-content: space-around; opacity: 0.3;">
-                    <!-- Arrow 1 (outline) -->
-                    <svg width="40" height="120" viewBox="0 0 40 120" fill="none" style="transform: translateY(20px);">
-                        <path d="M20 120V20M20 20L5 35M20 20L35 35" stroke="#0c0c0c" stroke-width="1" />
-                    </svg>
-                    <!-- Arrow 2 (outline, taller) -->
-                    <svg width="40" height="160" viewBox="0 0 40 160" fill="none" style="transform: translateY(10px);">
-                        <path d="M20 160V20M20 20L5 35M20 20L35 35" stroke="#0c0c0c" stroke-width="1" />
-                    </svg>
-                    <!-- Arrow 3 (filled green) -->
-                    <svg width="40" height="180" viewBox="0 0 40 180" fill="none">
-                        <path d="M20 180V20M20 20L5 35M20 20L35 35" stroke="#10b981" stroke-width="2" />
-                    </svg>
-                    <!-- Arrow 4 (outline, tallest) -->
-                    <svg width="40" height="200" viewBox="0 0 40 200" fill="none" style="transform: translateY(-10px);">
-                        <path d="M20 200V20M20 20L5 35M20 20L35 35" stroke="#10b981" stroke-width="2" />
-                    </svg>
-                    <!-- Arrow 5 (filled teal) -->
-                    <svg width="40" height="140" viewBox="0 0 40 140" fill="none" style="transform: translateY(30px);">
-                        <path d="M20 140V20M20 20L5 35M20 20L35 35" stroke="#14b8a6" stroke-width="2" />
-                    </svg>
+                <!-- Arrow Graphics (decorative, bottom) - Exact Figma match -->
+                <div id="metodyka-arrows"
+                    style="position: absolute; bottom: 0; left: 48px; right: 55%; height: 320px; pointer-events: none; display: flex; align-items: flex-end; justify-content: space-between; z-index: 1;">
+                    <!-- Arrow 1 (outline, dashed) - position: left -->
+                    <img src="assets/images/metodyka-arrow-outline-1.svg" alt="" class="metodyka-arrow"
+                        style="height: 0; width: 15px; transition: height 0.8s ease-out; transform-origin: bottom center;"
+                        data-height="137">
+                    <!-- Arrow 2 (outline, dashed) -->
+                    <img src="assets/images/metodyka-arrow-outline-2.svg" alt="" class="metodyka-arrow"
+                        style="height: 0; width: 15px; transition: height 0.8s ease-out 0.1s; transform-origin: bottom center;"
+                        data-height="137">
+                    <!-- Arrow 3 (double arrows with gradient fills) - taller, center-left -->
+                    <img src="assets/images/metodyka-arrow-double.svg" alt="" class="metodyka-arrow"
+                        style="height: 0; width: 93px; transition: height 0.8s ease-out 0.2s; transform-origin: bottom center;"
+                        data-height="302">
+                    <!-- Arrow 4 (filled gradient) - center -->
+                    <img src="assets/images/metodyka-arrow-filled-1.svg" alt="" class="metodyka-arrow"
+                        style="height: 0; width: 13px; transition: height 0.8s ease-out 0.3s; transform-origin: bottom center;"
+                        data-height="185">
                 </div>
             </div>
         </div>
@@ -1433,6 +1430,36 @@
                 scrollBtn.classList.add('visible');
             } else {
                 scrollBtn.classList.remove('visible');
+            }
+        });
+
+        // Metodyka arrows grow animation
+        document.addEventListener('DOMContentLoaded', function () {
+            const arrowsContainer = document.getElementById('metodyka-arrows');
+            const arrows = document.querySelectorAll('.metodyka-arrow');
+
+            if (arrowsContainer && arrows.length > 0) {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            // Grow arrows when section comes into view
+                            arrows.forEach(arrow => {
+                                const targetHeight = arrow.getAttribute('data-height');
+                                arrow.style.height = targetHeight + 'px';
+                            });
+                        } else {
+                            // Reset arrows when leaving viewport
+                            arrows.forEach(arrow => {
+                                arrow.style.height = '0';
+                            });
+                        }
+                    });
+                }, {
+                    threshold: 0.2,
+                    rootMargin: '0px 0px -50px 0px'
+                });
+
+                observer.observe(arrowsContainer);
             }
         });
     </script>
