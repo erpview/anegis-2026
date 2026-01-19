@@ -1,15 +1,15 @@
-<svg preserveAspectRatio="none" width="100%" height="100%" overflow="visible" style="display: block;" viewBox="0 0 33.3333 41.3303" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="33" height="41" viewBox="0 0 33.3333 41.3303" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="Group">
 <path id="Vector" d="M2 8.13802e-05L25.3334 8.33335V19.7749C25.3334 20.6969 24.42 21.3406 23.5517 21.0306L18.6667 19.2865V12.8081C18.6667 11.4194 17.8057 10.1762 16.5057 9.68775L14.2345 8.83438C13.7986 8.67061 13.3333 8.99281 13.3333 9.45845V17.381L2 13.3334V8.13802e-05Z" fill="url(#paint0_linear_54_2974)"/>
 <g id="Group_2" filter="url(#filter0_f_54_2974)">
-<path id="Vector_2" d="M25.3333 10.799C25.3333 12.1988 24.4588 13.452 23.144 13.9324L8 19.4657V32.7991L25.3333 26.4657V10.799Z" fill="var(--fill-0, black)" fill-opacity="0.24"/>
+<path id="Vector_2" d="M25.3333 10.799C25.3333 12.1988 24.4588 13.452 23.144 13.9324L8 19.4657V32.7991L25.3333 26.4657V10.799Z" fill="black" fill-opacity="0.24"/>
 </g>
 <g id="Group_3" filter="url(#filter1_f_54_2974)">
-<path id="Vector_3" d="M25.3333 11.3303C25.3333 12.7301 24.4588 13.9832 23.144 14.4636L8 19.997V33.3303L25.3333 26.997V11.3303Z" fill="var(--fill-0, black)" fill-opacity="0.32"/>
+<path id="Vector_3" d="M25.3333 11.3303C25.3333 12.7301 24.4588 13.9832 23.144 14.4636L8 19.997V33.3303L25.3333 26.997V11.3303Z" fill="black" fill-opacity="0.32"/>
 </g>
 <path id="Vector_4" d="M25.3333 10.6656C25.3333 12.0654 24.4588 13.3185 23.144 13.7989L8 19.3323V32.6656L25.3333 26.3322V10.6656Z" fill="url(#paint1_linear_54_2974)"/>
 <path id="Vector_5" opacity="0.5" d="M25.3333 10.6656C25.3333 12.0654 24.4588 13.3185 23.144 13.7989L8 19.3323V32.6656L25.3333 26.3322V10.6656Z" fill="url(#paint2_linear_54_2974)"/>
-<path id="Vector_6" opacity="0.5" d="M18.6661 15.439L13.3297 17.3912L13.3297 25.2106C13.3297 25.6764 13.7953 25.9986 14.2312 25.8345L16.507 24.9779C17.806 24.4889 18.6661 23.2462 18.6661 21.8582V15.439Z" fill="var(--fill-0, #B0ADFF)"/>
+<path id="Vector_6" opacity="0.5" d="M18.6661 15.439L13.3297 17.3912L13.3297 25.2106C13.3297 25.6764 13.7953 25.9986 14.2312 25.8345L16.507 24.9779C17.806 24.4889 18.6661 23.2462 18.6661 21.8582V15.439Z" fill="#B0ADFF"/>
 </g>
 <defs>
 <filter id="filter0_f_54_2974" x="7.2" y="9.99904" width="18.9333" height="23.6" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">

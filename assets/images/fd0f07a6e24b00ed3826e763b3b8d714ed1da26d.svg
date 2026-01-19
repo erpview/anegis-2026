@@ -1,6 +1,6 @@
-<svg preserveAspectRatio="none" width="100%" height="100%" overflow="visible" style="display: block;" viewBox="0 0 28.8333 28.8333" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="28" height="28" viewBox="0 0 28.8333 28.8333" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="Group" filter="url(#filter0_f_47_2240)">
-<path id="Vector" d="M20.7601 20.2763C20.8085 19.8576 20.8333 19.4317 20.8333 19C20.8333 12.9249 15.9085 8 9.83333 8C9.40163 8 8.97572 8.02487 8.55699 8.07325C8.22951 8.21309 8 8.53807 8 8.91667V20.8333H19.9167C20.2952 20.8333 20.6203 20.6038 20.7601 20.2763Z" fill="var(--fill-0, black)" fill-opacity="0.32"/>
+<path id="Vector" d="M20.7601 20.2763C20.8085 19.8576 20.8333 19.4317 20.8333 19C20.8333 12.9249 15.9085 8 9.83333 8C9.40163 8 8.97572 8.02487 8.55699 8.07325C8.22951 8.21309 8 8.53807 8 8.91667V20.8333H19.9167C20.2952 20.8333 20.6203 20.6038 20.7601 20.2763Z" fill="black" fill-opacity="0.32"/>
 </g>
 <defs>
 <filter id="filter0_f_47_2240" x="0" y="0" width="28.8333" height="28.8333" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">

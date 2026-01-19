@@ -1,6 +1,6 @@
-<svg preserveAspectRatio="none" width="100%" height="100%" overflow="visible" style="display: block;" viewBox="0 0 1440 374.902" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="1440" height="374" viewBox="0 0 1440 374.902" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="Rectangle 12" style="mix-blend-mode:multiply" filter="url(#filter0_n_48_2442)">
-<path d="M0 0H1440V374.902H0V0Z" fill="var(--fill-0, white)"/>
+<path d="M0 0H1440V374.902H0V0Z" fill="white"/>
 </g>
 <defs>
 <filter id="filter0_n_48_2442" x="0" y="0" width="1440" height="374.902" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
