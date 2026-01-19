@@ -1,0 +1,18 @@
+<svg width="93" height="302" viewBox="0 0 92.6333 301.763" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g>
+<defs>
+<linearGradient id="arrowGrad2a" x1="6.31665" y1="67.6523" x2="6.31665" y2="84.0461" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F1EB74"/>
+<stop offset="1" stop-color="#65AAAB"/>
+</linearGradient>
+<linearGradient id="arrowGrad2b" x1="86.3167" y1="0" x2="86.3167" y2="16.3938" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F1EB74"/>
+<stop offset="1" stop-color="#65AAAB"/>
+</linearGradient>
+</defs>
+<line x1="6.81641" y1="88.7168" x2="6.81642" y2="301.763" stroke="#E5E7EA"/>
+<line x1="86.8164" y1="20.2695" x2="86.8164" y2="301.763" stroke="#E5E7EA"/>
+<path d="M0 84.0461C2.07029 83.217 4.14035 82.8163 6.31638 82.8163C8.4924 82.8163 10.563 83.2114 12.6333 84.0461L6.31638 67.6523L0 84.0461Z" fill="url(#arrowGrad2a)"/>
+<path d="M80 16.3938C82.0703 15.5646 84.1404 15.164 86.3164 15.164C88.4924 15.164 90.563 15.5591 92.6333 16.3938L86.3164 0L80 16.3938Z" fill="url(#arrowGrad2b)"/>
+</g>
+</svg>

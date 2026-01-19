@@ -1,0 +1,12 @@
+<svg width="13" height="185" viewBox="0 0 12.6333 184.141" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g>
+<defs>
+<linearGradient id="arrowGrad1" x1="6.31665" y1="0" x2="6.31665" y2="16.3938" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F1EB74"/>
+<stop offset="1" stop-color="#65AAAB"/>
+</linearGradient>
+</defs>
+<path d="M0 16.3938C2.07029 15.5646 4.14035 15.164 6.31638 15.164C8.4924 15.164 10.563 15.5591 12.6333 16.3938L6.31638 0L0 16.3938Z" fill="url(#arrowGrad1)"/>
+<line x1="6.81641" y1="19.0742" x2="6.81642" y2="184.141" stroke="#E5E7EA"/>
+</g>
+</svg>
