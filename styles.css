@@ -1462,11 +1462,16 @@ section {
 
 .company-logo {
   height: 32px;
+  width: auto;
+  max-height: 32px;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
 .slider-card-image {
   flex: 0 0 50%;
   overflow: hidden;
+  align-self: stretch;
 }
 
 .slider-card-image img {
