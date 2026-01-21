@@ -239,210 +239,319 @@
         </div>
     </header>
 
-    <!-- Hero Section (from Figma Node 1:1845) -->
-    <section class="hero-industry" style="
-        display: flex;
-        min-height: 600px;
-        background: #0b0b0b;
-        position: relative;
-        overflow: hidden;
-        padding-bottom: 0;
-    ">
-        <!-- Navy Blur Background -->
-        <div style="
-            position: absolute;
-            left: 243px;
-            top: -675px;
-            width: 896px;
-            height: 1113px;
-            background: radial-gradient(ellipse at center, rgba(20, 30, 50, 0.8) 0%, transparent 70%);
-            pointer-events: none;
-            z-index: 0;
-        "></div>
-
-        <!-- Left Content Column -->
-        <div style="
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            padding: 0 80px 80px 205px;
-            position: relative;
-            z-index: 1;
-            max-width: 768px;
-        ">
+    <!-- Hero Section -->
+    <section class="hero-subpage">
+        <div class="hero-subpage-content">
             <!-- Breadcrumbs -->
-            <div style="position: absolute; top: 100px; left: 205px;">
-                <div style="display: flex; gap: 8px; align-items: center;">
-                    <a href="#"
-                        style="font-family: 'Inter', sans-serif; font-size: 14px; color: #b3b2b1; text-decoration: none;">Branże</a>
-                    <span style="color: #b3b2b1;">›</span>
-                    <span style="font-family: 'Inter', sans-serif; font-size: 14px; color: #65AAAB;">Przemysł</span>
-                </div>
+            <div class="breadcrumbs">
+                <a href="index.html">Rozwiązania</a>
+                <span class="breadcrumb-separator">›</span>
+                <span>Dynamics 365</span>
             </div>
 
-            <!-- Content -->
-            <div style="display: flex; flex-direction: column; gap: 24px;">
-                <!-- Title -->
-                <h1 style="
-                    font-family: 'Inter', sans-serif;
-                    font-size: 48px;
-                    font-weight: 600;
-                    line-height: 1.2;
-                    margin: 0;
-                    background: linear-gradient(90deg, #fbfbfb, #dfdfdf);
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    background-clip: text;
-                ">
-                    Cyfrowa Transformacja dla Przemysłu 4.0
-                </h1>
+            <!-- Hero Text -->
+            <h1 class="hero-subpage-title">
+                Dynamics 365
+            </h1>
+            <p class="hero-subpage-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+                tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae
+                erat.
+            </p>
 
-                <!-- Description -->
-                <p style="
-                    font-family: 'Inter', sans-serif;
-                    font-size: 18px;
-                    line-height: 1.5;
-                    color: #b3b2b1;
-                    margin: 0;
-                    max-width: 600px;
-                ">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
-                    tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero
-                    vitae erat.
-                </p>
-
-                <!-- CTA Buttons -->
-                <div style="display: flex; gap: 24px; align-items: center; margin-top: 8px;">
-                    <button class="btn btn-teal">
-                        Umów bezpłatną konsultację
-                        <div class="btn-icon-box">
-                            <img src="assets/images/chat-icon-nav.svg" alt="" style="width: 18px; height: 18px;">
-                        </div>
-                    </button>
-                    <button class="btn btn-outline">
-                        Dowiedz się więcej
-                    </button>
-                </div>
+            <!-- CTA Buttons -->
+            <div class="hero-subpage-actions">
+                <button class="btn btn-teal">
+                    Umów bezpłatną konsultację
+                    <div class="btn-icon-box">
+                        <img src="assets/images/chat-icon-nav.svg" alt="" style="width: 18px; height: 18px;">
+                    </div>
+                </button>
+                <button class="btn btn-outline">
+                    Dowiedz się więcej
+                </button>
             </div>
         </div>
 
-        <!-- Right Image Column -->
-        <div style="
-            flex: 1;
-            position: relative;
-            min-height: 600px;
-        ">
-            <img src="assets/images/416c3e75eff3c90c368603d9a90ebde2a4494086.png"
-                alt="Industrial buildings with orange tanks" style="
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            ">
+        <!-- Hero Decorations -->
+        <div class="hero-subpage-decorations">
+            <img src="assets/images/hero-cubes-decoration.svg" alt="" class="hero-cubes">
         </div>
     </section>
 
+    <!-- Wrapper for sections with shared background gradient -->
+    <div style="position: relative; background: #fafafa;">
+        <!-- Animated Morphing Gradient Blur - Background for both sections -->
+        <div class="animated-gradient"
+            style="position: absolute; right: -250px; top: calc(50% - 200px); transform: translateY(-35%); width: 700px; height: 700px; overflow: visible; pointer-events: none; z-index: 0;">
+            <img src="assets/images/86988ab2bc764f050a56e94bc50bb2e494642ef5.png" alt=""
+                style="width: 100%; height: 100%; object-fit: contain; animation: morphGradient 20s ease-in-out infinite, floatGradient 15s ease-in-out infinite;">
+        </div>
 
-    <!-- O produkcie Section (Styled like DLA KOGO) -->
-    <section class="section" style="background: #fafafa; padding: 112px 128px; position: relative;">
-        <div style="max-width: 1270px; margin: 0 auto; display: flex; flex-direction: column; gap: 120px;">
+        <!-- O produkcie Section (Styled like DLA KOGO) -->
+        <section class="section" style="background: transparent; padding: 112px 128px; position: relative; z-index: 1;">
+            <div
+                style="max-width: 1270px; margin: 0 auto; display: flex; flex-direction: column; gap: 120px; position: relative; z-index: 1;">
 
-            <!-- Item 1 (Image Left) -->
-            <div style="display: flex; gap: 80px; align-items: center;">
+                <!-- Item 1 (Image Left) -->
+                <div style="display: flex; gap: 80px; align-items: center;">
+                    <!-- Left: Image -->
+                    <div style="flex: 1; min-height: 500px; position: relative; overflow: hidden; border-radius: 0;">
+                        <img src="assets/images/d568b164c26b35eebe6a407c03f478bc8049c84b.png" alt="Screen z dashboardu"
+                            style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;">
+                    </div>
+                    <!-- Right: Content -->
+                    <div style="flex: 1; display: flex; flex-direction: column; gap: 24px;">
+                        <!-- Tag -->
+                        <div style="display: flex; gap: 10px; align-items: center; padding: 4px 0;">
+                            <span style="color: #0c0c0c;">▶</span>
+                            <span
+                                style="font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #0c0c0c;">O
+                                PRODUKCIE</span>
+                        </div>
+                        <!-- Title -->
+                        <h3
+                            style="font-family: 'Inter', sans-serif; font-size: 40px; font-weight: 600; line-height: 1.2; color: #0c0c0c; margin: 0;">
+                            Screen z dashboardu
+                        </h3>
+                        <!-- Description -->
+                        <p
+                            style="font-family: 'Inter', sans-serif; font-size: 18px; line-height: 1.5; color: #6b7280; margin: 0;">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                            elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+                            commodo
+                            diam libero vitae erat.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Download Ebook CTA Section (from Figma node 163:3984) -->
+        <section class="section" style="background: transparent; padding: 48px 128px; position: relative; z-index: 1;">
+            <div style="max-width: 1280px; margin: 0 auto; display: flex; overflow: hidden; position: relative;">
                 <!-- Left: Image -->
-                <div style="flex: 1; min-height: 500px; position: relative; overflow: hidden; border-radius: 0;">
-                    <img src="assets/images/d568b164c26b35eebe6a407c03f478bc8049c84b.png" alt="Screen z dashboardu"
+                <div style="flex: 1; min-height: 320px; position: relative;">
+                    <img src="assets/images/416c3e75eff3c90c368603d9a90ebde2a4494086.png"
+                        alt="Industrial buildings with orange tanks"
                         style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;">
                 </div>
-                <!-- Right: Content -->
-                <div style="flex: 1; display: flex; flex-direction: column; gap: 24px;">
-                    <!-- Tag -->
-                    <div style="display: flex; gap: 10px; align-items: center; padding: 4px 0;">
-                        <span style="color: #0c0c0c;">▶</span>
-                        <span
-                            style="font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #0c0c0c;">O
-                            PRODUKCIE</span>
+
+                <!-- Right: Black Content Area -->
+                <div
+                    style="flex: 1; background: #0b0b0b; padding: 64px; position: relative; overflow: hidden; display: flex; flex-direction: column; justify-content: center;">
+                    <!-- Background Blur Effects -->
+                    <div
+                        style="position: absolute; right: -100px; top: -100px; width: 400px; height: 400px; pointer-events: none; z-index: 0;">
+                        <img src="assets/images/c337dfdc450eb1401e7a797fdcefef4e15f66de6.png" alt=""
+                            style="width: 100%; height: 100%; object-fit: contain; opacity: 0.6;">
                     </div>
-                    <!-- Title -->
-                    <h3
-                        style="font-family: 'Inter', sans-serif; font-size: 40px; font-weight: 600; line-height: 1.2; color: #0c0c0c; margin: 0;">
-                        Screen z dashboardu
-                    </h3>
-                    <!-- Description -->
-                    <p
-                        style="font-family: 'Inter', sans-serif; font-size: 18px; line-height: 1.5; color: #6b7280; margin: 0;">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
-                        elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo
-                        diam libero vitae erat.
-                    </p>
+
+                    <!-- Decorative Dashed Line and Arrow -->
+                    <div
+                        style="position: absolute; right: 40px; top: 50%; transform: rotate(45deg); pointer-events: none; z-index: 1;">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                            <line x1="0" y1="0" x2="60" y2="60" stroke="#373c42" stroke-width="1"
+                                stroke-dasharray="4 4" />
+                        </svg>
+                    </div>
+                    <div
+                        style="position: absolute; right: 32px; top: calc(50% - 20px); pointer-events: none; z-index: 2;">
+                        <svg width="16" height="20" viewBox="0 0 16 20" fill="none">
+                            <path d="M8 0L16 20H0L8 0Z" fill="#3B82F6" />
+                        </svg>
+                    </div>
+
+                    <!-- Content -->
+                    <div style="position: relative; z-index: 3; max-width: 450px;">
+                        <!-- Title -->
+                        <h2
+                            style="font-family: 'Inter', sans-serif; font-size: 48px; font-weight: 600; line-height: 1.2; color: #ffffff; margin: 0 0 16px 0;">
+                            <span style="font-weight: 600;">Download</span> <span style="font-weight: 400;">Ebook</span>
+                        </h2>
+
+                        <!-- Description -->
+                        <p
+                            style="font-family: 'Inter', sans-serif; font-size: 16px; font-style: italic; line-height: 1.5; color: rgba(255, 255, 255, 0.7); margin: 0 0 32px 0;">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                            elementum tristique.
+                        </p>
+
+                        <!-- Email Form -->
+                        <div style="display: flex; gap: 12px; margin-bottom: 16px;">
+                            <input type="email" placeholder="Enter your email"
+                                style="flex: 1; background: transparent; border: 1px solid rgba(255, 255, 255, 0.3); padding: 12px 16px; font-family: 'Inter', sans-serif; font-size: 14px; color: #ffffff; outline: none;">
+                            <button
+                                style="background: #65AAAB; border: none; padding: 12px 24px; font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 500; color: #ffffff; cursor: pointer; white-space: nowrap;">
+                                Pobierz ebook
+                            </button>
+                        </div>
+
+                        <!-- Checkbox -->
+                        <label style="display: flex; gap: 12px; align-items: flex-start; cursor: pointer;">
+                            <input type="checkbox"
+                                style="width: 16px; height: 16px; margin-top: 2px; accent-color: #65AAAB; cursor: pointer;">
+                            <span
+                                style="font-family: 'Inter', sans-serif; font-size: 14px; line-height: 1.5; color: rgba(255, 255, 255, 0.7);">
+                                By clicking Sign Up you're confirming that you agree with our <a href="#"
+                                    style="color: #ffffff; text-decoration: underline;">Terms and Conditions</a>.
+                            </span>
+                        </label>
+                    </div>
                 </div>
             </div>
+        </section>
+    </div><!-- End of wrapper with gradient background -->
 
-            <!-- Item 2 (Image Right) -->
-            <div style="display: flex; gap: 80px; align-items: center; flex-direction: row-reverse;">
-                <!-- Image -->
-                <div style="flex: 1; min-height: 500px; position: relative; overflow: hidden; border-radius: 0;">
-                    <img src="assets/images/d568b164c26b35eebe6a407c03f478bc8049c84b.png" alt="Screen z dashboardu"
-                        style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;">
+    <!-- Overview Section (from Figma node 163:3985) -->
+    <section class="section" style="background: #fafafa; padding: 80px 156px 112px 156px; position: relative;">
+        <div
+            style="max-width: 1280px; margin: 0 auto; display: flex; flex-direction: column; gap: 48px; align-items: center;">
+
+            <!-- Section Header -->
+            <div
+                style="display: flex; flex-direction: column; gap: 16px; align-items: center; max-width: 768px; text-align: center;">
+                <!-- Tag -->
+                <div style="display: flex; gap: 10px; align-items: center; padding: 4px 0;">
+                    <span style="color: #0c0c0c;">▶</span>
+                    <span
+                        style="font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #0c0c0c;">OVERVIEW</span>
                 </div>
-                <!-- Content -->
-                <div style="flex: 1; display: flex; flex-direction: column; gap: 24px;">
-                    <!-- Tag -->
-                    <div style="display: flex; gap: 10px; align-items: center; padding: 4px 0;">
-                        <span style="color: #0c0c0c;">▶</span>
-                        <span
-                            style="font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #0c0c0c;">O
-                            PRODUKCIE</span>
-                    </div>
-                    <!-- Title -->
-                    <h3
-                        style="font-family: 'Inter', sans-serif; font-size: 40px; font-weight: 600; line-height: 1.2; color: #0c0c0c; margin: 0;">
-                        Screen z dashboardu
-                    </h3>
-                    <!-- Description -->
-                    <p
-                        style="font-family: 'Inter', sans-serif; font-size: 18px; line-height: 1.5; color: #6b7280; margin: 0;">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
-                        elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo
-                        diam libero vitae erat.
-                    </p>
-                </div>
+                <!-- Title -->
+                <h2
+                    style="font-family: 'Inter', sans-serif; font-size: 48px; font-weight: 600; line-height: 1.2; color: #0c0c0c; margin: 0;">
+                    <span style="font-weight: 600;">Keep pace with evolving</span><br>
+                    <span style="font-weight: 400; font-style: italic;">business needs</span>
+                </h2>
             </div>
 
-            <!-- Item 3 (Image Left) -->
-            <div style="display: flex; gap: 80px; align-items: center;">
-                <!-- Left: Image -->
-                <div style="flex: 1; min-height: 500px; position: relative; overflow: hidden; border-radius: 0;">
-                    <img src="assets/images/d568b164c26b35eebe6a407c03f478bc8049c84b.png" alt="Screen z dashboardu"
-                        style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;">
-                </div>
-                <!-- Right: Content -->
-                <div style="flex: 1; display: flex; flex-direction: column; gap: 24px;">
-                    <!-- Tag -->
-                    <div style="display: flex; gap: 10px; align-items: center; padding: 4px 0;">
-                        <span style="color: #0c0c0c;">▶</span>
-                        <span
-                            style="font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #0c0c0c;">O
-                            PRODUKCIE</span>
-                    </div>
-                    <!-- Title -->
-                    <h3
-                        style="font-family: 'Inter', sans-serif; font-size: 40px; font-weight: 600; line-height: 1.2; color: #0c0c0c; margin: 0;">
-                        Screen z dashboardu
-                    </h3>
-                    <!-- Description -->
-                    <p
-                        style="font-family: 'Inter', sans-serif; font-size: 18px; line-height: 1.5; color: #6b7280; margin: 0;">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
-                        elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo
-                        diam libero vitae erat.
-                    </p>
-                </div>
-            </div>
+            <!-- Content Blocks -->
+            <div style="display: flex; flex-direction: column; gap: 48px; width: 100%; position: relative;">
 
+                <!-- Block 1: Text Left, Image Right -->
+                <div
+                    style="display: flex; background: rgba(250, 250, 250, 0.5); backdrop-filter: blur(2px); -webkit-backdrop-filter: blur(2px); border: 1px solid #e5e7ea;">
+                    <!-- Content -->
+                    <div
+                        style="flex: 1; display: flex; flex-direction: column; gap: 24px; padding: 48px; justify-content: space-between;">
+                        <span
+                            style="font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 600; color: #0b0b0b; text-transform: uppercase;">01</span>
+                        <div style="display: flex; flex-direction: column; gap: 24px;">
+                            <h3
+                                style="font-family: 'Inter', sans-serif; font-size: 40px; font-weight: 600; line-height: 1.2; margin: 0; background: linear-gradient(to bottom, #0b0b0b 0%, #2e2e2e 60.44%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+                                Kolaboruj ze swoim teamem
+                            </h3>
+                            <p
+                                style="font-family: 'Inter', sans-serif; font-size: 16px; line-height: 1.5; color: #696a6b; margin: 0;">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                                elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+                                commodo diam libero vitae erat.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Image -->
+                    <div
+                        style="flex: 1; overflow: hidden; display: flex; align-items: center; justify-content: center; padding: 24px;">
+                        <img src="assets/images/58f8f209d577c5cc32dc625131ec1df6913deb26.png" alt="Dashboard screenshot"
+                            style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);">
+                    </div>
+                </div>
+
+                <!-- Morphing Gradient Animation - Between Blocks 1 and 2 on Left -->
+                <div class="animated-gradient"
+                    style="position: absolute; left: -400px; top: 150px; width: 500px; height: 500px; overflow: visible; pointer-events: none; z-index: 0;">
+                    <img src="assets/images/534598ff8693ad924539c42f1251fd705b055906.png" alt=""
+                        style="width: 100%; height: 100%; object-fit: contain; animation: morphGradient 20s ease-in-out infinite, floatGradient 15s ease-in-out infinite;">
+                </div>
+
+                <!-- Block 2: Image Left, Text Right -->
+                <div
+                    style="display: flex; flex-direction: row-reverse; background: rgba(250, 250, 250, 0.5); backdrop-filter: blur(2px); -webkit-backdrop-filter: blur(2px); border: 1px solid #e5e7ea;">
+                    <!-- Content -->
+                    <div
+                        style="flex: 1; display: flex; flex-direction: column; gap: 24px; padding: 48px; justify-content: space-between;">
+                        <span
+                            style="font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 600; color: #0b0b0b; text-transform: uppercase;">01</span>
+                        <div style="display: flex; flex-direction: column; gap: 24px;">
+                            <h3
+                                style="font-family: 'Inter', sans-serif; font-size: 40px; font-weight: 600; line-height: 1.2; margin: 0; background: linear-gradient(to bottom, #0b0b0b 0%, #2e2e2e 60.44%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+                                Kolaboruj ze swoim teamem
+                            </h3>
+                            <p
+                                style="font-family: 'Inter', sans-serif; font-size: 16px; line-height: 1.5; color: #696a6b; margin: 0;">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                                elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+                                commodo diam libero vitae erat.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Image -->
+                    <div
+                        style="flex: 1; overflow: hidden; display: flex; align-items: center; justify-content: center; padding: 24px;">
+                        <img src="assets/images/58f8f209d577c5cc32dc625131ec1df6913deb26.png" alt="Dashboard screenshot"
+                            style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);">
+                    </div>
+                </div>
+
+                <!-- Block 3: Text Left, Image Right -->
+                <div
+                    style="display: flex; background: rgba(250, 250, 250, 0.5); backdrop-filter: blur(2px); -webkit-backdrop-filter: blur(2px); border: 1px solid #e5e7ea;">
+                    <!-- Content -->
+                    <div
+                        style="flex: 1; display: flex; flex-direction: column; gap: 24px; padding: 48px; justify-content: space-between;">
+                        <span
+                            style="font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 600; color: #0b0b0b; text-transform: uppercase;">01</span>
+                        <div style="display: flex; flex-direction: column; gap: 24px;">
+                            <h3
+                                style="font-family: 'Inter', sans-serif; font-size: 40px; font-weight: 600; line-height: 1.2; margin: 0; background: linear-gradient(to bottom, #0b0b0b 0%, #2e2e2e 60.44%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+                                Kolaboruj ze swoim teamem
+                            </h3>
+                            <p
+                                style="font-family: 'Inter', sans-serif; font-size: 16px; line-height: 1.5; color: #696a6b; margin: 0;">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                                elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+                                commodo diam libero vitae erat.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Image -->
+                    <div
+                        style="flex: 1; overflow: hidden; display: flex; align-items: center; justify-content: center; padding: 24px;">
+                        <img src="assets/images/58f8f209d577c5cc32dc625131ec1df6913deb26.png" alt="Dashboard screenshot"
+                            style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);">
+                    </div>
+                </div>
+
+                <!-- Block 4: Image Left, Text Right -->
+                <div
+                    style="display: flex; flex-direction: row-reverse; background: rgba(250, 250, 250, 0.5); backdrop-filter: blur(2px); -webkit-backdrop-filter: blur(2px); border: 1px solid #e5e7ea;">
+                    <!-- Content -->
+                    <div
+                        style="flex: 1; display: flex; flex-direction: column; gap: 24px; padding: 48px; justify-content: space-between;">
+                        <span
+                            style="font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 600; color: #0b0b0b; text-transform: uppercase;">01</span>
+                        <div style="display: flex; flex-direction: column; gap: 24px;">
+                            <h3
+                                style="font-family: 'Inter', sans-serif; font-size: 40px; font-weight: 600; line-height: 1.2; margin: 0; background: linear-gradient(to bottom, #0b0b0b 0%, #2e2e2e 60.44%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+                                Kolaboruj ze swoim teamem
+                            </h3>
+                            <p
+                                style="font-family: 'Inter', sans-serif; font-size: 16px; line-height: 1.5; color: #696a6b; margin: 0;">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                                elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+                                commodo diam libero vitae erat.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Image -->
+                    <div
+                        style="flex: 1; overflow: hidden; display: flex; align-items: center; justify-content: center; padding: 24px;">
+                        <img src="assets/images/58f8f209d577c5cc32dc625131ec1df6913deb26.png" alt="Dashboard screenshot"
+                            style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);">
+                    </div>
+                </div>
+
+            </div>
         </div>
     </section>
 
@@ -579,8 +688,10 @@
                 <!-- Description -->
                 <p
                     style="font-family: 'Inter', sans-serif; font-size: 18px; line-height: 1.5; color: #6b7280; margin: 0;">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
-                    tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                    elementum
+                    tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam
+                    libero
                     vitae erat.
                 </p>
 
@@ -613,11 +724,13 @@
         <div class="products-grid-container">
             <div class="products-grid-content">
                 <h2 class="products-grid-title">
-                    Produkty, które pomagają nam <strong>realizować zmianę</strong>
+                    <strong>Możliwe</strong> integracje
                 </h2>
                 <p class="products-grid-description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
-                    tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                    elementum
+                    tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam
+                    libero
                     vitae erat.
                 </p>
             </div>
@@ -694,79 +807,6 @@
         </div>
     </section>
 
-    <!-- METODYKA Section (from Figma node 1:2890) -->
-    <section class="section" style="background: #fafafa; padding: 80px 128px 0 128px; position: relative;">
-        <!-- Teal Navy Gradient Blur (top right) - Animated -->
-        <div class="animated-gradient"
-            style="position: absolute; right: 0; top: -111px; width: 370px; height: 373px; overflow: visible; pointer-events: none; z-index: 0;">
-            <img src="assets/images/f86e24fcfad0378888c44a529e8167e4b987bca6.png" alt=""
-                style="width: 100%; height: 100%; object-fit: contain; animation: morphGradient 20s ease-in-out infinite, floatGradient 15s ease-in-out infinite;">
-        </div>
-
-        <!-- Main Container with Glassmorphism -->
-        <div style="max-width: 1280px; margin: 0 auto; position: relative; z-index: 1;">
-            <div
-                style="backdrop-filter: blur(2px); background: rgba(250, 250, 250, 0.5); border: 1px solid #e5e7ea; padding: 100px 48px; position: relative; overflow: hidden;">
-
-                <!-- Content Grid -->
-                <div
-                    style="display: flex; justify-content: space-between; align-items: flex-start; gap: 80px; position: relative; z-index: 2;">
-
-                    <!-- Left: Header -->
-                    <div style="flex: 1;">
-                        <!-- Tag -->
-                        <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 16px;">
-                            <span style="color: #0c0c0c;">▶</span>
-                            <span
-                                style="font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #0c0c0c;">METODYKA</span>
-                        </div>
-
-                        <!-- Heading -->
-                        <h2
-                            style="font-family: 'Inter', sans-serif; font-size: 48px; font-weight: 600; line-height: 1.2; color: #0c0c0c; margin: 0;">
-                            Sprawdzone działanie,<br>pewne rezultaty
-                        </h2>
-                    </div>
-
-                    <!-- Right: Description + Button -->
-                    <div style="flex: 1; display: flex; flex-direction: column; gap: 24px;">
-                        <p
-                            style="font-family: 'Inter', sans-serif; font-size: 18px; line-height: 1.5; color: #6b7280; margin: 0;">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
-                            elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
-                            commodo diam libero vitae erat.
-                        </p>
-
-                        <!-- Button -->
-                        <a href="#" class="simple-button">
-                            Więcej o naszej metodyce
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Arrow Graphics (decorative, bottom) - Exact Figma match -->
-                <div id="metodyka-arrows"
-                    style="position: absolute; bottom: 0; left: 48px; right: 55%; height: 320px; pointer-events: none; display: flex; align-items: flex-end; justify-content: space-between; z-index: 1;">
-                    <!-- Arrow 1 (outline, dashed) - position: left -->
-                    <img src="assets/images/metodyka-arrow-outline-1.svg" alt="" class="metodyka-arrow"
-                        style="height: 0; width: 15px; transition: height 0.8s ease-out; transform-origin: bottom center;"
-                        data-height="137">
-                    <!-- Arrow 2 (outline, dashed) -->
-                    <img src="assets/images/metodyka-arrow-outline-2.svg" alt="" class="metodyka-arrow"
-                        style="height: 0; width: 15px; transition: height 0.8s ease-out 0.1s; transform-origin: bottom center;"
-                        data-height="137">
-                    <!-- Arrow 3 (double arrows with gradient fills) - taller, center-left -->
-                    <img src="assets/images/metodyka-arrow-double.svg" alt="" class="metodyka-arrow"
-                        style="height: 0; width: 93px; transition: height 0.8s ease-out 0.2s; transform-origin: bottom center;"
-                        data-height="302">
-                    <!-- Arrow 4 (filled gradient) - center -->
-                    <img src="assets/images/metodyka-arrow-filled-1.svg" alt="" class="metodyka-arrow"
-                        style="height: 0; width: 13px; transition: height 0.8s ease-out 0.3s; transform-origin: bottom center;"
-                        data-height="185">
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Case Studies Section (Exact Match: Figma Node 1:1227) -->
     <section id="case-studies" class="section"
@@ -774,7 +814,7 @@
 
         <!-- Multicolor Gradient Blur (Figma Node 1:1090) - positioned at top-left, extends upward -->
         <div class="animated-gradient"
-            style="position: absolute; left: -100px; top: -250px; width: 450px; height: 550px; pointer-events: none; z-index: 0;">
+            style="position: absolute; left: -100px; top: 250px; width: 450px; height: 550px; pointer-events: none; z-index: 0;">
             <img src="assets/images/gradient-blur-multicolor.png" alt=""
                 style="width: 100%; height: 100%; object-fit: contain;">
         </div>
@@ -805,7 +845,8 @@
                         style="font-family: 'Inter', sans-serif; font-size: 16px; line-height: 1.5; color: #6b7280; margin: 0 0 24px 0;">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
                         elementum
-                        tristique. <em style="font-style: italic;">Duis cursus, mi quis viverra ornare, eros dolor</em>
+                        tristique. <em style="font-style: italic;">Duis cursus, mi quis viverra ornare, eros
+                            dolor</em>
                         interdum
                         nulla, ut commodo diam libero vitae erat.
                     </p>
@@ -833,7 +874,8 @@
                                 </div>
                                 <div class="slider-card-quote">
                                     <img src="assets/images/icon-quote.svg" alt="">
-                                    <p>Dzięki wdrożeniu Dynamics 365 zoptymalizowaliśmy procesy finansowe i operacyjne,
+                                    <p>Dzięki wdrożeniu Dynamics 365 zoptymalizowaliśmy procesy finansowe i
+                                        operacyjne,
                                         co przełożyło się
                                         na 40% wzrost efektywności zespołu.</p>
                                 </div>
@@ -912,7 +954,8 @@
                                 </div>
                                 <div class="slider-card-quote">
                                     <img src="assets/images/icon-quote.svg" alt="">
-                                    <p>ANEGIS pomógł nam zintegrować rozproszone systemy ERP w jedną spójną platformę
+                                    <p>ANEGIS pomógł nam zintegrować rozproszone systemy ERP w jedną spójną
+                                        platformę
                                         Microsoft,
                                         zapewniając pełną widoczność danych.</p>
                                 </div>
@@ -978,13 +1021,15 @@
                             style="font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #0c0c0c;">PROCES</span>
                     </div>
                     <h2 class="section-title section-title-gradient">
-                        <span class="title-bold">Jasny i klarowna ścieżka </span><span class="title-regular">zmiany w
+                        <span class="title-bold">Jasny i klarowna ścieżka </span><span class="title-regular">zmiany
+                            w
                             Twojej
                             firmie</span>
                     </h2>
                 </div>
                 <div class="process-header-right">
-                    <p class="process-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                    <p class="process-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Suspendisse
                         varius enim in eros elementum tristique.</p>
                 </div>
             </div>
@@ -999,7 +1044,8 @@
                     </div>
                     <div class="timeline-content">
                         <h3 class="step-title-gradient">Analiza potrzeb</h3>
-                        <p class="step-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                        <p class="step-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Suspendisse
                             varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.</p>
                     </div>
                 </div>
@@ -1012,7 +1058,8 @@
                     </div>
                     <div class="timeline-content">
                         <h3 class="step-title-gradient">Wybór odpowiednich rozwiązań</h3>
-                        <p class="step-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                        <p class="step-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Suspendisse
                             varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.</p>
                     </div>
                 </div>
@@ -1025,7 +1072,8 @@
                     </div>
                     <div class="timeline-content">
                         <h3 class="step-title-gradient">Plan zmian</h3>
-                        <p class="step-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                        <p class="step-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Suspendisse
                             varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.</p>
                     </div>
                 </div>
@@ -1037,7 +1085,8 @@
                     </div>
                     <div class="timeline-content">
                         <h3 class="step-title-gradient">Realizacja i monitorowanie wdrożenia</h3>
-                        <p class="step-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                        <p class="step-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Suspendisse
                             varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.</p>
                     </div>
                 </div>
@@ -1133,7 +1182,8 @@
     <section class="faq-section" id="faq">
         <div class="faq-container">
             <h2 class="faq-title">FAQs</h2>
-            <p class="faq-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
+            <p class="faq-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
+                enim
                 in eros elementum tristique.</p>
 
             <div class="accordion-container">
