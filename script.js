@@ -210,13 +210,16 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// Accordion Toggle Functionality
+// Accordion Toggle Functionality (for FAQ section - non-exclusive)
 document.addEventListener('DOMContentLoaded', () => {
-    const accordionHeaders = document.querySelectorAll('.accordion-header');
+    // Only select accordion items that DON'T have data-accordion attribute
+    // Items with data-accordion are handled by the exclusive accordion script
+    const accordionItems = document.querySelectorAll('.accordion-item:not([data-accordion])');
 
-    accordionHeaders.forEach(header => {
+    accordionItems.forEach(accordionItem => {
+        const header = accordionItem.querySelector('.accordion-header');
+
         header.addEventListener('click', function () {
-            const accordionItem = this.closest('.accordion-item');
             const content = accordionItem.querySelector('.accordion-content');
             const toggle = accordionItem.querySelector('.accordion-toggle');
             const icon = accordionItem.querySelector('.accordion-icon');
@@ -228,16 +231,20 @@ document.addEventListener('DOMContentLoaded', () => {
                 content.style.display = 'none';
                 icon.textContent = '+';
                 icon.style.color = '#0c0c0c';
-                toggle.style.background = 'transparent';
-                toggle.style.border = '1px solid #e5e7eb';
+                if (toggle) {
+                    toggle.style.background = 'transparent';
+                    toggle.style.border = '1px solid #e5e7eb';
+                }
             } else {
                 // Open this accordion
                 accordionItem.classList.add('active');
                 content.style.display = 'block';
                 icon.textContent = '−';
                 icon.style.color = 'white';
-                toggle.style.background = '#0c0c0c';
-                toggle.style.border = 'none';
+                if (toggle) {
+                    toggle.style.background = '#0c0c0c';
+                    toggle.style.border = 'none';
+                }
             }
         });
     });
