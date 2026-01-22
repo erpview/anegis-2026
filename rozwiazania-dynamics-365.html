@@ -645,62 +645,214 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Block 3: Text Left, Image Right -->
+                <!-- Block 3: Accordion Left, Image Right (Figma node 2014:5049) -->
                 <div
                     style="display: flex; background: rgba(250, 250, 250, 0.5); backdrop-filter: blur(2px); -webkit-backdrop-filter: blur(2px); border: 1px solid #e5e7ea;">
-                    <!-- Content -->
+                    <!-- Left: Content with Accordion -->
                     <div
-                        style="flex: 1; display: flex; flex-direction: column; gap: 24px; padding: 48px; justify-content: space-between;">
-                        <span
-                            style="font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 600; color: #0b0b0b; text-transform: uppercase;">01</span>
-                        <div style="display: flex; flex-direction: column; gap: 24px;">
+                        style="flex: 1; display: flex; flex-direction: column; padding: 48px; border-right: 1px solid #e5e7ea;">
+                        <!-- Title -->
+                        <div style="padding-bottom: 24px;">
                             <h3
                                 style="font-family: 'Inter', sans-serif; font-size: 40px; font-weight: 600; line-height: 1.2; margin: 0; background: linear-gradient(to bottom, #0b0b0b 0%, #2e2e2e 60.44%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
-                                Kolaboruj ze swoim teamem
+                                <span style="font-weight: 600;">Enhance</span> <span
+                                    style="font-style: italic; font-weight: 400;">Decision Making</span>
                             </h3>
-                            <p
-                                style="font-family: 'Inter', sans-serif; font-size: 16px; line-height: 1.5; color: #696a6b; margin: 0;">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
-                                elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
-                                commodo diam libero vitae erat.
-                            </p>
+                        </div>
+
+                        <!-- Accordion Items -->
+                        <div class="accordion-container" data-accordion-block="1">
+                            <!-- Accordion Item 1 - Active by default -->
+                            <div class="accordion-item active" data-accordion="1">
+                                <div class="accordion-header">
+                                    <span class="accordion-title">Accurate Project Flow</span>
+                                    <span class="accordion-icon">−</span>
+                                </div>
+                                <div class="accordion-content">
+                                    <p>Klient nie musi szukać różnych partnerów - wszystko może zamówić u nas Klient nie
+                                        musi szukać różnych partnerów - wszystko może zamówić u nas</p>
+                                </div>
+                            </div>
+
+                            <!-- Accordion Item 2 -->
+                            <div class="accordion-item" data-accordion="2">
+                                <div class="accordion-header">
+                                    <span class="accordion-title">Predict Customer Payment</span>
+                                    <span class="accordion-icon">+</span>
+                                </div>
+                                <div class="accordion-content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
+                                        in eros elementum tristique.</p>
+                                </div>
+                            </div>
+
+                            <!-- Accordion Item 3 -->
+                            <div class="accordion-item" data-accordion="3">
+                                <div class="accordion-header">
+                                    <span class="accordion-title">Understand Business Performance</span>
+                                    <span class="accordion-icon">+</span>
+                                </div>
+                                <div class="accordion-content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
+                                        in eros elementum tristique.</p>
+                                </div>
+                            </div>
+
+                            <!-- Accordion Item 4 -->
+                            <div class="accordion-item" data-accordion="4">
+                                <div class="accordion-header">
+                                    <span class="accordion-title">Close books with the support of an agent</span>
+                                    <span class="accordion-icon">+</span>
+                                </div>
+                                <div class="accordion-content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
+                                        in eros elementum tristique.</p>
+                                </div>
+                            </div>
+
+                            <!-- Accordion Item 5 -->
+                            <div class="accordion-item" data-accordion="5">
+                                <div class="accordion-header">
+                                    <span class="accordion-title">Make analytics accessible</span>
+                                    <span class="accordion-icon">+</span>
+                                </div>
+                                <div class="accordion-content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
+                                        in eros elementum tristique.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <!-- Image -->
-                    <div
-                        style="flex: 1; overflow: hidden; display: flex; align-items: center; justify-content: center; padding: 24px;">
-                        <img src="assets/images/58f8f209d577c5cc32dc625131ec1df6913deb26.png" alt="Dashboard screenshot"
-                            style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);">
+
+                    <!-- Right: Dynamic Image Container -->
+                    <div class="accordion-image-container" data-accordion-block="1"
+                        style="flex: 1; overflow: hidden; display: flex; align-items: center; justify-content: center; padding: 24px; position: relative;">
+                        <!-- Image for Accordion Item 1 -->
+                        <img src="assets/images/58f8f209d577c5cc32dc625131ec1df6913deb26.png"
+                            alt="Accurate Project Flow Dashboard" class="accordion-image active"
+                            data-accordion-image="1"
+                            style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1); transition: opacity 0.3s ease, transform 0.3s ease;">
+                        <!-- Image for Accordion Item 2 -->
+                        <img src="assets/images/1f826669ff49ccc58594d3ee7a36f16a67f6df12.png"
+                            alt="Predict Customer Payment Dashboard" class="accordion-image" data-accordion-image="2"
+                            style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1); position: absolute; opacity: 0; transform: scale(0.95); transition: opacity 0.3s ease, transform 0.3s ease;">
+                        <!-- Image for Accordion Item 3 -->
+                        <img src="assets/images/2b505dd0ccd4e3461eacca222a3989111afd02fd.png"
+                            alt="Business Performance Dashboard" class="accordion-image" data-accordion-image="3"
+                            style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1); position: absolute; opacity: 0; transform: scale(0.95); transition: opacity 0.3s ease, transform 0.3s ease;">
+                        <!-- Image for Accordion Item 4 -->
+                        <img src="assets/images/65a3dbd56ccc54415c2785bd65b938d2e6892b20.png"
+                            alt="Close Books Dashboard" class="accordion-image" data-accordion-image="4"
+                            style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1); position: absolute; opacity: 0; transform: scale(0.95); transition: opacity 0.3s ease, transform 0.3s ease;">
+                        <!-- Image for Accordion Item 5 -->
+                        <img src="assets/images/75a01962e043871a5d0e0fa62a2856afcd691754.png" alt="Analytics Dashboard"
+                            class="accordion-image" data-accordion-image="5"
+                            style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1); position: absolute; opacity: 0; transform: scale(0.95); transition: opacity 0.3s ease, transform 0.3s ease;">
                     </div>
                 </div>
 
-                <!-- Block 4: Image Left, Text Right -->
+                <!-- Block 4: Image Left, Accordion Right (Figma node 2014:5079) -->
                 <div
-                    style="display: flex; flex-direction: row-reverse; background: rgba(250, 250, 250, 0.5); backdrop-filter: blur(2px); -webkit-backdrop-filter: blur(2px); border: 1px solid #e5e7ea;">
-                    <!-- Content -->
-                    <div
-                        style="flex: 1; display: flex; flex-direction: column; gap: 24px; padding: 48px; justify-content: space-between;">
-                        <span
-                            style="font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 600; color: #0b0b0b; text-transform: uppercase;">01</span>
-                        <div style="display: flex; flex-direction: column; gap: 24px;">
+                    style="display: flex; background: rgba(250, 250, 250, 0.5); backdrop-filter: blur(2px); -webkit-backdrop-filter: blur(2px); border: 1px solid #e5e7ea;">
+                    <!-- Left: Dynamic Image Container with Gray Background -->
+                    <div class="accordion-image-container" data-accordion-block="2"
+                        style="flex: 1; overflow: hidden; display: flex; align-items: center; justify-content: center; padding: 24px; position: relative; background: #f5f5f5; border-right: 1px solid #e5e7ea;">
+                        <!-- Image for Accordion Item 1 -->
+                        <img src="assets/images/58f8f209d577c5cc32dc625131ec1df6913deb26.png"
+                            alt="Accurate Project Flow Dashboard" class="accordion-image active"
+                            data-accordion-image="1"
+                            style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1); transition: opacity 0.3s ease, transform 0.3s ease;">
+                        <!-- Image for Accordion Item 2 -->
+                        <img src="assets/images/1f826669ff49ccc58594d3ee7a36f16a67f6df12.png"
+                            alt="Predict Customer Payment Dashboard" class="accordion-image" data-accordion-image="2"
+                            style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1); position: absolute; opacity: 0; transform: scale(0.95); transition: opacity 0.3s ease, transform 0.3s ease;">
+                        <!-- Image for Accordion Item 3 -->
+                        <img src="assets/images/2b505dd0ccd4e3461eacca222a3989111afd02fd.png"
+                            alt="Business Performance Dashboard" class="accordion-image" data-accordion-image="3"
+                            style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1); position: absolute; opacity: 0; transform: scale(0.95); transition: opacity 0.3s ease, transform 0.3s ease;">
+                        <!-- Image for Accordion Item 4 -->
+                        <img src="assets/images/65a3dbd56ccc54415c2785bd65b938d2e6892b20.png"
+                            alt="Close Books Dashboard" class="accordion-image" data-accordion-image="4"
+                            style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1); position: absolute; opacity: 0; transform: scale(0.95); transition: opacity 0.3s ease, transform 0.3s ease;">
+                        <!-- Image for Accordion Item 5 -->
+                        <img src="assets/images/75a01962e043871a5d0e0fa62a2856afcd691754.png" alt="Analytics Dashboard"
+                            class="accordion-image" data-accordion-image="5"
+                            style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1); position: absolute; opacity: 0; transform: scale(0.95); transition: opacity 0.3s ease, transform 0.3s ease;">
+                    </div>
+
+                    <!-- Right: Content with Accordion -->
+                    <div style="flex: 1; display: flex; flex-direction: column; padding: 48px;">
+                        <!-- Title -->
+                        <div style="padding-bottom: 24px;">
                             <h3
                                 style="font-family: 'Inter', sans-serif; font-size: 40px; font-weight: 600; line-height: 1.2; margin: 0; background: linear-gradient(to bottom, #0b0b0b 0%, #2e2e2e 60.44%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
-                                Kolaboruj ze swoim teamem
+                                <span style="font-weight: 600;">Enhance</span> <span
+                                    style="font-style: italic; font-weight: 400;">Decision Making</span>
                             </h3>
-                            <p
-                                style="font-family: 'Inter', sans-serif; font-size: 16px; line-height: 1.5; color: #696a6b; margin: 0;">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
-                                elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
-                                commodo diam libero vitae erat.
-                            </p>
                         </div>
-                    </div>
-                    <!-- Image -->
-                    <div
-                        style="flex: 1; overflow: hidden; display: flex; align-items: center; justify-content: center; padding: 24px;">
-                        <img src="assets/images/58f8f209d577c5cc32dc625131ec1df6913deb26.png" alt="Dashboard screenshot"
-                            style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);">
+
+                        <!-- Accordion Items -->
+                        <div class="accordion-container" data-accordion-block="2">
+                            <!-- Accordion Item 1 - Active by default -->
+                            <div class="accordion-item active" data-accordion="1">
+                                <div class="accordion-header">
+                                    <span class="accordion-title">Accurate Project Flow</span>
+                                    <span class="accordion-icon">−</span>
+                                </div>
+                                <div class="accordion-content">
+                                    <p>Klient nie musi szukać różnych partnerów - wszystko może zamówić u nas Klient nie
+                                        musi szukać różnych partnerów - wszystko może zamówić u nas</p>
+                                </div>
+                            </div>
+
+                            <!-- Accordion Item 2 -->
+                            <div class="accordion-item" data-accordion="2">
+                                <div class="accordion-header">
+                                    <span class="accordion-title">Predict Customer Payment</span>
+                                    <span class="accordion-icon">+</span>
+                                </div>
+                                <div class="accordion-content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
+                                        in eros elementum tristique.</p>
+                                </div>
+                            </div>
+
+                            <!-- Accordion Item 3 -->
+                            <div class="accordion-item" data-accordion="3">
+                                <div class="accordion-header">
+                                    <span class="accordion-title">Understand Business Performance</span>
+                                    <span class="accordion-icon">+</span>
+                                </div>
+                                <div class="accordion-content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
+                                        in eros elementum tristique.</p>
+                                </div>
+                            </div>
+
+                            <!-- Accordion Item 4 -->
+                            <div class="accordion-item" data-accordion="4">
+                                <div class="accordion-header">
+                                    <span class="accordion-title">Close books with the support of an agent</span>
+                                    <span class="accordion-icon">+</span>
+                                </div>
+                                <div class="accordion-content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
+                                        in eros elementum tristique.</p>
+                                </div>
+                            </div>
+
+                            <!-- Accordion Item 5 -->
+                            <div class="accordion-item" data-accordion="5">
+                                <div class="accordion-header">
+                                    <span class="accordion-title">Make analytics accessible</span>
+                                    <span class="accordion-icon">+</span>
+                                </div>
+                                <div class="accordion-content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
+                                        in eros elementum tristique.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
