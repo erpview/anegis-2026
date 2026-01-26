@@ -1,3 +1,3 @@
-<svg width="32" height="42" viewBox="0 0 32.7065 42.4437" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path id="Vector" d="M0.878986 41.5497C5.95045 39.5185 11.0214 38.5371 16.3519 38.5371C21.6824 38.5371 26.7547 39.5049 31.8261 41.5497L16.3519 1.39066L0.878986 41.5497Z" stroke="#373C42" stroke-opacity="0.8" stroke-miterlimit="10" stroke-dasharray="5 5"/>
+<svg preserveAspectRatio="none" width="100%" height="100%" overflow="visible" style="display: block;" viewBox="0 0 32.7065 42.4437" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path id="Vector" d="M0.878986 41.5497C5.95045 39.5185 11.0214 38.5371 16.3519 38.5371C21.6824 38.5371 26.7547 39.5049 31.8261 41.5497L16.3519 1.39066L0.878986 41.5497Z" stroke="var(--stroke-0, #373C42)" stroke-opacity="0.8" stroke-miterlimit="10" stroke-dasharray="5 5"/>
 </svg>

@@ -1,9 +1,9 @@
-<svg width="24" height="21" viewBox="0 0 24 21.0024" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg preserveAspectRatio="none" width="100%" height="100%" overflow="visible" style="display: block;" viewBox="0 0 24 21.0024" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="Group">
-<path id="Vector" d="M1 0H7.37355C7.6612 0 7.93492 0.123867 8.12477 0.339955L12.0004 4.75098L15.8752 0.340027C16.0651 0.123895 16.3388 0 16.6265 0H23C23.5523 0 24 0.447715 24 1V7.22815C24 7.46768 23.914 7.69923 23.7577 7.8807L12.7577 20.6549C12.3588 21.1182 11.6412 21.1182 11.2422 20.6549L0.242228 7.8807C0.0859523 7.69923 0 7.46768 0 7.22818V1C0 0.447715 0.447715 0 1 0Z" fill="url(#paint0_linear_54_2895)"/>
+<path id="Vector" d="M1 0H7.37355C7.6612 0 7.93492 0.123867 8.12477 0.339955L12.0004 4.75098L15.8752 0.340027C16.0651 0.123895 16.3388 0 16.6265 0H23C23.5523 0 24 0.447715 24 1V7.22815C24 7.46768 23.914 7.69923 23.7577 7.8807L12.7577 20.6549C12.3588 21.1182 11.6412 21.1182 11.2422 20.6549L0.242228 7.8807C0.0859523 7.69923 0 7.46768 0 7.22818V1C0 0.447715 0.447715 0 1 0Z" fill="url(#paint0_linear_2058_8831)"/>
 </g>
 <defs>
-<linearGradient id="paint0_linear_54_2895" x1="-5.375" y1="-6.25" x2="12.7502" y2="14.5644" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint0_linear_2058_8831" x1="-5.375" y1="-6.25" x2="12.7502" y2="14.5644" gradientUnits="userSpaceOnUse">
 <stop stop-color="#EBC7FF"/>
 <stop offset="0.493452" stop-color="#E4B4FF"/>
 </linearGradient>

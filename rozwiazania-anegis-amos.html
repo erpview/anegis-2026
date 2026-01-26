@@ -1,0 +1,1865 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="ANEGIS - Finanse i Operacje - Zautomatyzuj procesy finansowe z Microsoft Dynamics 365">
+    <title>Finanse i Operacje | ANEGIS - Microsoft Dynamics 365</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="rozwiazania-dynamics-365.css">
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/images/logo-anegis.svg" alt="ANEGIS" style="height: 24px;">
+                </a>
+            </div>
+            <nav class="nav">
+                <!-- Co robimy Dropdown -->
+                <div class="nav-dropdown" id="co-robimy-dropdown">
+                    <a href="#co-robimy" class="nav-item nav-dropdown-trigger">
+                        Co robimy
+                        <img src="assets/images/icon-chevron-nav.svg" alt="" class="nav-chevron"
+                            style="width: 10px; height: 6px;">
+                    </a>
+                    <!-- Dropdown Mega Menu -->
+                    <div class="dropdown-mega-menu">
+                        <div class="dropdown-sidebar">
+                            <div class="dropdown-menu-list">
+                                <button class="dropdown-tab active" data-tab="rozwiazania">
+                                    Obszary
+                                    <svg class="tab-arrow" width="5" height="10" viewBox="0 0 5 10" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 0L5 5L0 10" fill="currentColor" />
+                                    </svg>
+                                </button>
+                                <button class="dropdown-tab" data-tab="rozwiazania-products">
+                                    Rozwiązania
+                                    <svg class="tab-arrow" width="5" height="10" viewBox="0 0 5 10" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 0L5 5L0 10" fill="currentColor" />
+                                    </svg>
+                                </button>
+                                <button class="dropdown-tab" data-tab="uslugi">
+                                    Usługi
+                                    <svg class="tab-arrow" width="5" height="10" viewBox="0 0 5 10" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 0L5 5L0 10" fill="currentColor" />
+                                    </svg>
+                                </button>
+                                <button class="dropdown-tab" data-tab="branze">
+                                    Branże
+                                    <svg class="tab-arrow" width="5" height="10" viewBox="0 0 5 10" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 0L5 5L0 10" fill="currentColor" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="dropdown-content">
+                            <div class="dropdown-tab-content active" id="tab-rozwiazania">
+                                <div class="dropdown-grid">
+                                    <a href="finanse.html" class="dropdown-item">
+                                        <div class="dropdown-item-icon">
+                                            <img src="assets/images/mega-menu-document-icon.svg" alt="">
+                                        </div>
+                                        <div class="dropdown-item-text">
+                                            <span class="dropdown-item-title">Finanse i Operacje</span>
+                                            <span class="dropdown-item-desc">Zautomatyzuj finanse i łańcuch
+                                                dostaw</span>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="dropdown-item">
+                                        <div class="dropdown-item-icon">
+                                            <img src="assets/images/mega-menu-document-icon.svg" alt="">
+                                        </div>
+                                        <div class="dropdown-item-text">
+                                            <span class="dropdown-item-title">Sprzedaż i Obsługa Klienta</span>
+                                            <span class="dropdown-item-desc">Lorem ipsum dolor sit amet</span>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="dropdown-item">
+                                        <div class="dropdown-item-icon">
+                                            <img src="assets/images/mega-menu-document-icon.svg" alt="">
+                                        </div>
+                                        <div class="dropdown-item-text">
+                                            <span class="dropdown-item-title">Analityka Biznesowa i AI</span>
+                                            <span class="dropdown-item-desc">Lorem ipsum dolor sit amet</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="dropdown-tab-content" id="tab-rozwiazania-products">
+                                <div style="display: flex; gap: 48px;">
+                                    <!-- Column 1: Microsoft -->
+                                    <div style="flex: 1;">
+                                        <span
+                                            style="font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #696a6b; margin-bottom: 16px; display: block;">MICROSOFT</span>
+                                        <div style="display: flex; flex-direction: column; gap: 12px;">
+                                            <a href="rozwiazania-dynamics-365.html" class="dropdown-item">
+                                                <div class="dropdown-item-icon">
+                                                    <img src="assets/images/mega-menu-document-icon.svg" alt="">
+                                                </div>
+                                                <div class="dropdown-item-text">
+                                                    <span class="dropdown-item-title">Dynamics 365</span>
+                                                    <span class="dropdown-item-desc">Kompleksowy system ERP</span>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="dropdown-item">
+                                                <div class="dropdown-item-icon">
+                                                    <img src="assets/images/mega-menu-document-icon.svg" alt="">
+                                                </div>
+                                                <div class="dropdown-item-text">
+                                                    <span class="dropdown-item-title">Power Platform</span>
+                                                    <span class="dropdown-item-desc">Low-code development</span>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="dropdown-item">
+                                                <div class="dropdown-item-icon">
+                                                    <img src="assets/images/mega-menu-document-icon.svg" alt="">
+                                                </div>
+                                                <div class="dropdown-item-text">
+                                                    <span class="dropdown-item-title">Azure</span>
+                                                    <span class="dropdown-item-desc">Usługi chmurowe</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <a href="#"
+                                            style="display: inline-flex; align-items: center; gap: 8px; margin-top: 16px; font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 500; color: #0b0b0b; text-decoration: none;">
+                                            Zobacz wszystkie
+                                            <span style="color: #65AAAB;">→</span>
+                                        </a>
+                                    </div>
+                                    <!-- Column 2: Autorskie -->
+                                    <div style="flex: 1;">
+                                        <span
+                                            style="font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #696a6b; margin-bottom: 16px; display: block;">AUTORSKIE</span>
+                                        <div style="display: flex; flex-direction: column; gap: 12px;">
+                                            <a href="rozwiazania-anegis-amos.html" class="dropdown-item">
+                                                <div class="dropdown-item-icon">
+                                                    <img src="assets/images/mega-menu-document-icon.svg" alt="">
+                                                </div>
+                                                <div class="dropdown-item-text">
+                                                    <span class="dropdown-item-title">AMOS</span>
+                                                    <span class="dropdown-item-desc">ANEGIS Motivation System</span>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="dropdown-item">
+                                                <div class="dropdown-item-icon">
+                                                    <img src="assets/images/mega-menu-document-icon.svg" alt="">
+                                                </div>
+                                                <div class="dropdown-item-text">
+                                                    <span class="dropdown-item-title">ANEGIS Analytics</span>
+                                                    <span class="dropdown-item-desc">Zaawansowana analityka</span>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="dropdown-item">
+                                                <div class="dropdown-item-icon">
+                                                    <img src="assets/images/mega-menu-document-icon.svg" alt="">
+                                                </div>
+                                                <div class="dropdown-item-text">
+                                                    <span class="dropdown-item-title">ANEGIS Mobile</span>
+                                                    <span class="dropdown-item-desc">Aplikacje mobilne</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <a href="#"
+                                            style="display: inline-flex; align-items: center; gap: 8px; margin-top: 16px; font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 500; color: #0b0b0b; text-decoration: none;">
+                                            Zobacz wszystkie
+                                            <span style="color: #65AAAB;">→</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown-tab-content" id="tab-uslugi">
+                                <div class="dropdown-grid">
+                                    <a href="wdrozenie-erp.html" class="dropdown-item">
+                                        <div class="dropdown-item-icon">
+                                            <img src="assets/images/mega-menu-document-icon.svg" alt="">
+                                        </div>
+                                        <div class="dropdown-item-text">
+                                            <span class="dropdown-item-title">Wdrożenia ERP</span>
+                                            <span class="dropdown-item-desc">Lorem ipsum dolor sit amet</span>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="dropdown-item">
+                                        <div class="dropdown-item-icon">
+                                            <img src="assets/images/mega-menu-document-icon.svg" alt="">
+                                        </div>
+                                        <div class="dropdown-item-text">
+                                            <span class="dropdown-item-title">Wsparcie i Rozwój</span>
+                                            <span class="dropdown-item-desc">Lorem ipsum dolor sit amet</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="dropdown-tab-content" id="tab-branze">
+                                <div class="dropdown-grid">
+                                    <a href="branza-produkcja.html" class="dropdown-item">
+                                        <div class="dropdown-item-icon">
+                                            <img src="assets/images/mega-menu-document-icon.svg" alt="">
+                                        </div>
+                                        <div class="dropdown-item-text">
+                                            <span class="dropdown-item-title">Produkcja</span>
+                                            <span class="dropdown-item-desc">Lorem ipsum dolor sit amet</span>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="dropdown-item">
+                                        <div class="dropdown-item-icon">
+                                            <img src="assets/images/mega-menu-document-icon.svg" alt="">
+                                        </div>
+                                        <div class="dropdown-item-text">
+                                            <span class="dropdown-item-title">Handel i Dystrybucja</span>
+                                            <span class="dropdown-item-desc">Lorem ipsum dolor sit amet</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#case-studies" class="nav-item">Case studies</a>
+                <!-- Wiedza Dropdown -->
+                <div class="nav-dropdown" id="wiedza-dropdown">
+                    <a href="#wiedza" class="nav-item nav-dropdown-trigger">
+                        Wiedza
+                        <img src="assets/images/icon-chevron-nav.svg" alt="" class="nav-chevron"
+                            style="width: 10px; height: 6px;">
+                    </a>
+                    <div class="dropdown-mega-menu dropdown-simple">
+                        <div class="dropdown-content dropdown-simple-content">
+                            <a href="#" class="dropdown-item">
+                                <div class="dropdown-item-icon">
+                                    <img src="assets/images/mega-menu-document-icon.svg" alt="">
+                                </div>
+                                <div class="dropdown-item-text">
+                                    <span class="dropdown-item-title">Artykuły</span>
+                                </div>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <div class="dropdown-item-icon">
+                                    <img src="assets/images/mega-menu-document-icon.svg" alt="">
+                                </div>
+                                <div class="dropdown-item-text">
+                                    <span class="dropdown-item-title">Ebooki</span>
+                                </div>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <div class="dropdown-item-icon">
+                                    <img src="assets/images/mega-menu-document-icon.svg" alt="">
+                                </div>
+                                <div class="dropdown-item-text">
+                                    <span class="dropdown-item-title">Wydarzenia</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- O nas Dropdown -->
+                <div class="nav-dropdown" id="onas-dropdown">
+                    <a href="#o-nas" class="nav-item nav-dropdown-trigger">
+                        O nas
+                        <img src="assets/images/icon-chevron-nav.svg" alt="" class="nav-chevron"
+                            style="width: 10px; height: 6px;">
+                    </a>
+                    <div class="dropdown-mega-menu dropdown-simple">
+                        <div class="dropdown-content dropdown-simple-content">
+                            <a href="#" class="dropdown-item">
+                                <div class="dropdown-item-icon">
+                                    <img src="assets/images/mega-menu-document-icon.svg" alt="">
+                                </div>
+                                <div class="dropdown-item-text">
+                                    <span class="dropdown-item-title">Nasza historia i misja</span>
+                                </div>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <div class="dropdown-item-icon">
+                                    <img src="assets/images/mega-menu-document-icon.svg" alt="">
+                                </div>
+                                <div class="dropdown-item-text">
+                                    <span class="dropdown-item-title">Zespół i eksperci</span>
+                                </div>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <div class="dropdown-item-icon">
+                                    <img src="assets/images/mega-menu-document-icon.svg" alt="">
+                                </div>
+                                <div class="dropdown-item-text">
+                                    <span class="dropdown-item-title">Kariera</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="header-right">
+                <div class="lang-selector">
+                    <img src="assets/images/icon-flag-pl-standard.svg" alt="PL" style="width: 20px; height: auto;">
+                    <span>PL</span>
+                    <img src="assets/images/icon-chevron-nav.svg" alt="" style="width: 10px; height: 6px;">
+                </div>
+                <button class="btn btn-teal">
+                    Umów bezpłatną konsultację
+                    <div class="btn-icon-box">
+                        <img src="assets/images/chat-icon-nav.svg" alt="" style="width: 18px; height: 18px;">
+                    </div>
+                </button>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-subpage">
+        <div class="hero-subpage-content">
+            <!-- Breadcrumbs -->
+            <div class="breadcrumbs">
+                <a href="index.html">Rozwiązania</a>
+                <span class="breadcrumb-separator">›</span>
+                <span style="color: rgba(255, 255, 255, 0.6);">Rozwiązania autorskie</span>
+                <span class="breadcrumb-separator">›</span>
+                <span>ANEGIS Motivation System</span>
+            </div>
+
+            <!-- Hero Text -->
+            <h1 class="hero-subpage-title">
+                ANEGIS Motivation System
+            </h1>
+            <p class="hero-subpage-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+                tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae
+                erat.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="hero-subpage-actions">
+                <button class="btn btn-teal">
+                    Umów bezpłatną konsultację
+                    <div class="btn-icon-box">
+                        <img src="assets/images/chat-icon-nav.svg" alt="" style="width: 18px; height: 18px;">
+                    </div>
+                </button>
+                <button class="btn btn-outline">
+                    Dowiedz się więcej
+                </button>
+            </div>
+        </div>
+
+        <!-- Hero Decorations -->
+        <div class="hero-subpage-decorations">
+            <!-- Large icon - bottom right -->
+            <img src="assets/images/amos-section/abfc3b41d1e21e140b1c2fbaa686c36f3da0c3d8.svg" alt=""
+                style="position: absolute; right: -100px; bottom: -50px; width: 400px; height: auto; opacity: 0.4;">
+
+            <!-- Medium icon - top right -->
+            <img src="assets/images/amos-section/abfc3b41d1e21e140b1c2fbaa686c36f3da0c3d8.svg" alt=""
+                style="position: absolute; right: 100px; top: -80px; width: 250px; height: auto; opacity: 0.3;">
+
+            <!-- Small icon - middle left -->
+            <img src="assets/images/amos-section/abfc3b41d1e21e140b1c2fbaa686c36f3da0c3d8.svg" alt=""
+                style="position: absolute; left: 250px; top: 30%; transform: translateY(100px); width: 150px; height: auto; opacity: 0.25;">
+
+            <!-- Tiny icon - top left -->
+            <img src="assets/images/amos-section/abfc3b41d1e21e140b1c2fbaa686c36f3da0c3d8.svg" alt=""
+                style="position: absolute; left: 400px; top: 10%; transform: translateY(100px); width: 100px; height: auto; opacity: 0.2;">
+        </div>
+    </section>
+
+    <!-- Problems Section -->
+    <!-- Problems-Solutions Slider Component -->
+    <section class="problems-slider-component" id="rozwiazanie">
+        <!-- Background blur effects -->
+        <div class="problems-blur-teal"></div>
+        <img src="assets/images/problems-blur-gradient.png" alt="" class="problems-blur-gradient">
+
+        <div class="problems-container">
+            <!-- Section Header -->
+            <h2 class="section-title-center">
+                Rozumiemy problemy<br>
+                <span class="text-regular">z którymi się mierzysz</span>
+            </h2>
+
+            <!-- Main Slider Grid -->
+            <div class="problems-slider-grid">
+
+                <!-- LEFT COLUMN: Problems Slider -->
+                <div class="problems-slider-wrapper">
+                    <!-- Up Arrow - FIXED POSITION -->
+                    <button class="slider-nav-arrow arrow-up" data-direction="up" aria-label="Previous problem">
+                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
+                            <path d="M1 5L5 1L9 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                        </svg>
+                    </button>
+
+                    <!-- Slider Track with 3 visible cards -->
+                    <div class="problems-slider-track">
+                        <!-- Card 1 -->
+                        <div class="problem-slide" data-slide="0">
+                            <div class="problem-card">
+                                <span class="problem-text">Brak wglądu w rentowność<br><strong>w czasie
+                                        rzeczywistym</strong></span>
+                                <div class="problem-connector">
+                                    <div class="connector-line"></div>
+                                    <span class="connector-badge">ANEGIS</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 - ACTIVE in middle with connector -->
+                        <div class="problem-slide active-slide" data-slide="1">
+                            <div class="problem-card active">
+                                <span class="problem-text active-text">Trudności w zarządzaniu<br><strong>wieloma
+                                        systemami</strong></span>
+                                <div class="problem-connector">
+                                    <div class="connector-line"></div>
+                                    <span class="connector-badge">ANEGIS</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="problem-slide" data-slide="2">
+                            <div class="problem-card">
+                                <span class="problem-text">Brak automatyzacji<br><strong>kluczowych
+                                        procesów</strong></span>
+                                <div class="problem-connector">
+                                    <div class="connector-line"></div>
+                                    <span class="connector-badge">ANEGIS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Down Arrow - FIXED POSITION -->
+                    <button class="slider-nav-arrow arrow-down" data-direction="down" aria-label="Next problem">
+                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
+                            <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- MIDDLE COLUMN: Solution Circle -->
+                <div class="solution-circle-wrapper">
+                    <div class="solution-circle-content">
+                        <span class="circle-tag">ROZWIĄZANIE</span>
+                        <h3 class="circle-title">Podejmuj decyzje w oparciu o dane dzięki <span>zintegrowanej
+                                analityce</span></h3>
+                        <div class="solution-icons">
+                            <img src="assets/images/product-icon-1.svg" alt="Power Apps">
+                            <img src="assets/images/product-icon-2.svg" alt="Power BI">
+                            <img src="assets/images/product-icon-3.svg" alt="Dynamics 365">
+                            <img src="assets/images/product-icon-4.svg" alt="Azure">
+                            <img src="assets/images/product-icon-5.svg" alt="Dataverse">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT COLUMN: Benefits Circle -->
+                <div class="benefits-circle-wrapper">
+                    <div class="benefits-circle-content">
+                        <span class="circle-tag">KORZYŚCI</span>
+                        <h3 class="circle-title">Podejmuj decyzje w oparciu o dane dzięki zintegrowanej analityce</h3>
+                        <div class="benefits-visualization">
+                            <img src="assets/images/benefits-arrows-pattern.svg" alt="" class="arrows-pattern">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Footer Text -->
+            <p class="problems-footer-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+                tristique. <strong>Duis cursus, mi quis viverra ornare.</strong>
+            </p>
+        </div>
+
+        <!-- Component Data Configuration -->
+        <script>
+            window.problemsSolutionsData = [
+                {
+                    id: 0,
+                    problem: { text: "Brak wglądu w rentowność", highlight: "w czasie rzeczywistym" },
+                    solution: {
+                        title: "Podejmuj decyzje w oparciu o dane dzięki",
+                        highlight: "zintegrowanej analityce",
+                        icons: [
+                            "assets/images/product-icon-1.svg",
+                            "assets/images/product-icon-2.svg",
+                            "assets/images/product-icon-3.svg",
+                            "assets/images/product-icon-4.svg",
+                            "assets/images/product-icon-5.svg"
+                        ]
+                    },
+                    benefits: {
+                        title: "Podejmuj decyzje w oparciu o dane dzięki zintegrowanej analityce",
+                        visualization: "assets/images/benefits-arrows-pattern.svg"
+                    }
+                },
+                {
+                    id: 1,
+                    problem: { text: "Trudności w zarządzaniu", highlight: "wieloma systemami" },
+                    solution: {
+                        title: "Zunifikuj wszystkie dane w",
+                        highlight: "jednym miejscu",
+                        icons: [
+                            "assets/images/product-icon-2.svg",
+                            "assets/images/product-icon-3.svg",
+                            "assets/images/product-icon-4.svg"
+                        ]
+                    },
+                    benefits: {
+                        title: "Oszczędź czas dzięki centralizacji systemów",
+                        visualization: "assets/images/benefits-arrows-pattern.svg"
+                    }
+                },
+                {
+                    id: 2,
+                    problem: { text: "Brak automatyzacji", highlight: "kluczowych procesów" },
+                    solution: {
+                        title: "Automatyzuj procesy dzięki",
+                        highlight: "zaawansowanym narzędziom",
+                        icons: [
+                            "assets/images/product-icon-1.svg",
+                            "assets/images/product-icon-3.svg",
+                            "assets/images/product-icon-5.svg"
+                        ]
+                    },
+                    benefits: {
+                        title: "Zwiększ efektywność poprzez automatyzację",
+                        visualization: "assets/images/benefits-arrows-pattern.svg"
+                    }
+                }
+            ];
+        </script>
+    </section>
+
+
+
+    <!-- Download Ebook CTA Section (from Figma node 2060-9247) -->
+    <section class="section" style="background: transparent; padding: 48px 128px; position: relative; z-index: 1;">
+        <div
+            style="max-width: 1280px; margin: 0 auto; background: #000000; padding: 48px; position: relative; overflow: hidden;">
+
+            <!-- Teal Blur Background Effect -->
+            <div
+                style="position: absolute; left: 330px; top: 42px; width: 400px; height: 422px; pointer-events: none; z-index: 0;">
+                <img src="assets/images/c337dfdc450eb1401e7a797fdcefef4e15f66de6.png" alt=""
+                    style="width: 100%; height: 100%; object-fit: contain;">
+            </div>
+
+            <!-- Mix Blend Container -->
+            <div
+                style="position: absolute; left: 0; top: 1px; width: 1440px; height: 652px; display: flex; align-items: center; justify-content: center; mix-blend-mode: multiply; pointer-events: none;">
+                <div style="background: #ffffff; width: 1440px; height: 652px; transform: scaleY(-1);"></div>
+            </div>
+
+            <!-- Content Container -->
+            <div style="display: flex; gap: 80px; align-items: start; position: relative; z-index: 1;">
+
+                <!-- Left Column: Text Content -->
+                <div style="flex: 1; display: flex; flex-direction: column; gap: 16px;">
+                    <h2
+                        style="font-family: 'Inter', sans-serif; font-size: 48px; font-weight: 600; line-height: 1.2; color: #ffffff; margin: 0;">
+                        Download Ebook
+                    </h2>
+                    <p
+                        style="font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 400; line-height: 1.5; color: rgba(255, 255, 255, 0.7); margin: 0;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                        elementum tristique.
+                    </p>
+                </div>
+
+                <!-- Right Column: Form -->
+                <div style="flex: 1; display: flex; flex-direction: column; gap: 16px; position: relative;">
+
+                    <!-- Email Input and Button -->
+                    <div style="display: flex; gap: 12px;">
+                        <input type="email" placeholder="Enter your email"
+                            style="flex: 1; background: transparent; border: 1px solid rgba(255, 255, 255, 0.3); padding: 12px 16px; font-family: 'Inter', sans-serif; font-size: 14px; color: #ffffff; outline: none;">
+                        <button
+                            style="background: #65AAAB; border: none; padding: 12px 24px; font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 500; color: #ffffff; cursor: pointer; white-space: nowrap;">
+                            Pobierz ebook
+                        </button>
+                    </div>
+
+                    <!-- Checkbox and Terms -->
+                    <label style="display: flex; gap: 12px; align-items: flex-start; cursor: pointer;">
+                        <input type="checkbox"
+                            style="width: 16px; height: 16px; margin-top: 2px; accent-color: #65AAAB; cursor: pointer;">
+                        <span
+                            style="font-family: 'Inter', sans-serif; font-size: 14px; line-height: 1.5; color: rgba(255, 255, 255, 0.7);">
+                            By clicking Sign Up you're confirming that you agree with our <a href="#"
+                                style="color: #ffffff; text-decoration: underline;">Terms and Conditions</a>.
+                        </span>
+                    </label>
+
+                    <!-- Decorative Arrow -->
+                    <div
+                        style="position: absolute; right: -120px; bottom: -60px; width: 31px; height: 202px; pointer-events: none;">
+                        <img src="assets/images/f4a523e299b3fdf4a82d91abc814316f545616b7.svg" alt=""
+                            style="width: 100%; height: 100%; object-fit: contain;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div><!-- End of wrapper with gradient background -->
+
+    <!-- Poznaj Rozwiązania ANEGIS Section (from Figma node 2014:7775) -->
+    <section class="section" style="background: #fafafa; padding: 80px 156px 112px 156px; position: relative;">
+        <!-- Decorative Gradient Blur (rotated) -->
+        <div
+            style="position: absolute; left: -225px; top: 355px; width: 621px; height: 619px; overflow: visible; pointer-events: none; z-index: 0;">
+            <div style="transform: rotate(60deg); width: 451px; height: 457px;">
+                <img src="assets/images/534598ff8693ad924539c42f1251fd705b055906.png" alt=""
+                    style="width: 100%; height: 100%; object-fit: contain;">
+            </div>
+        </div>
+
+        <div style="max-width: 1280px; margin: 0 auto; position: relative; z-index: 1;">
+            <!-- Section Header -->
+            <div
+                style="display: flex; flex-direction: column; gap: 16px; align-items: center; text-align: center; margin-bottom: 48px;">
+                <!-- Tag -->
+                <div style="display: flex; gap: 10px; align-items: center; padding: 4px 0;">
+                    <span style="color: #0c0c0c;">▶</span>
+                    <span
+                        style="font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #0c0c0c;">SPECYFIKA</span>
+                </div>
+                <!-- Title -->
+                <h2
+                    style="font-family: 'Inter', sans-serif; font-size: 48px; font-weight: 600; line-height: 1.2; color: #0c0c0c; margin: 0;">
+                    Poznaj Rozwiązania ANEGIS
+                </h2>
+            </div>
+
+            <!-- Product Containers -->
+            <div style="display: flex; flex-direction: column; gap: 48px;">
+
+                <!-- Container 1: ANEGIS Document Flow -->
+                <div
+                    style="display: flex; align-items: center; background: #ffffff; position: relative; overflow: hidden;">
+                    <!-- Left: Content -->
+                    <div style="flex: 1; display: flex; flex-direction: column; gap: 24px; padding: 48px;">
+                        <span
+                            style="font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 500; color: #6b7280;">01</span>
+                        <h3
+                            style="font-family: 'Inter', sans-serif; font-size: 40px; font-weight: 600; line-height: 1.2; color: #0c0c0c; margin: 0;">
+                            ANEGIS<br>Document Flow
+                        </h3>
+                        <p
+                            style="font-family: 'Inter', sans-serif; font-size: 16px; line-height: 1.5; color: #6b7280; margin: 0;">
+                            Elektroniczny Obieg Dokumentów to must-have każdej organizacji, której zależy na pełnej
+                            kontroli nad przepływem dokumentów i łatwym dostępie do ich repozytoriów, szybkiej i
+                            transparentnej wymianie informacji między pracownikami, bezpieczeństwie danych oraz jasnych
+                            i czytelnych procesach workflow, dzięki którym dokumenty sprawnie trafiają do właściwych
+                            osób.
+                        </p>
+                    </div>
+                    <!-- Right: Image -->
+                    <div style="flex: 1; position: relative; min-height: 400px;">
+                        <img src="assets/images/6ea8efd3170bafe411e2c7469b390f8f284e33d3.png" alt="ANEGIS Document Flow"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                        <!-- Icon overlay -->
+                        <div style="position: absolute; bottom: 24px; right: 24px; width: 70px; height: 78px;">
+                            <img src="assets/images/e8a0e725a76f51404cb8c930d44b465b89712fa9.svg" alt=""
+                                style="width: 100%; height: 100%;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Container 2: ANEGIS Motivation System -->
+                <div
+                    style="display: flex; align-items: center; background: #ffffff; position: relative; overflow: hidden;">
+                    <!-- Left: Image -->
+                    <div style="flex: 1; position: relative; min-height: 400px;">
+                        <img src="assets/images/c990d7ea03e60462b6546c1724ec185979ec49b4.png"
+                            alt="ANEGIS Motivation System" style="width: 100%; height: 100%; object-fit: cover;">
+                        <!-- Icon overlay -->
+                        <div style="position: absolute; bottom: 24px; right: 24px; width: 70px; height: 78px;">
+                            <img src="assets/images/b5bd2d73a5f966ad7bf2beacf9bc031a6eb2e613.svg" alt=""
+                                style="width: 100%; height: 100%;">
+                        </div>
+                    </div>
+                    <!-- Right: Content -->
+                    <div style="flex: 1; display: flex; flex-direction: column; gap: 24px; padding: 48px;">
+                        <span
+                            style="font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 500; color: #6b7280;">01</span>
+                        <h3
+                            style="font-family: 'Inter', sans-serif; font-size: 40px; font-weight: 600; line-height: 1.2; color: #0c0c0c; margin: 0;">
+                            ANEGIS<br>Motivation System
+                        </h3>
+                        <p
+                            style="font-family: 'Inter', sans-serif; font-size: 16px; line-height: 1.5; color: #6b7280; margin: 0;">
+                            ANEGIS Motivation System (AMOS) to nowoczesne narzędzie wspierające organizacje w jasnym
+                            definiowaniu celów strategicznych i ich przekazaniu na konkretne zadania zespołów oraz
+                            pracowników. System zapewnia pełną przejrzystość zasad rozliczeń i motywacji.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Container 3: ANEGIS Workforce Management -->
+                <div
+                    style="display: flex; align-items: center; background: #ffffff; position: relative; overflow: hidden;">
+                    <!-- Left: Content -->
+                    <div style="flex: 1; display: flex; flex-direction: column; gap: 24px; padding: 48px;">
+                        <span
+                            style="font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 500; color: #6b7280;">01</span>
+                        <h3
+                            style="font-family: 'Inter', sans-serif; font-size: 40px; font-weight: 600; line-height: 1.2; color: #0c0c0c; margin: 0;">
+                            ANEGIS<br>Workforce Management
+                        </h3>
+                        <p
+                            style="font-family: 'Inter', sans-serif; font-size: 16px; line-height: 1.5; color: #6b7280; margin: 0;">
+                            ANEGIS Workforce Management (AWM) to nowoczesny, kompleksowy system HR wspierający
+                            organizacje w zarządzaniu pełnym cyklem życia pracownika. Aplikacja porządkuje i
+                            automatyzuje kluczowe procesy kadrowe – od rekrutacji, przez onboarding i rozwój, aż po
+                            ocenę i offboarding.
+                        </p>
+                    </div>
+                    <!-- Right: Image -->
+                    <div style="flex: 1; position: relative; min-height: 400px;">
+                        <img src="assets/images/202657c9fdc852bd388060232ba9c91dfd7b3b3d.png"
+                            alt="ANEGIS Workforce Management" style="width: 100%; height: 100%; object-fit: cover;">
+                        <!-- Icon overlay -->
+                        <div style="position: absolute; bottom: 24px; right: 24px; width: 70px; height: 78px;">
+                            <img src="assets/images/5aa943b83cb47dd3fb3dab1b92cb1ebeb562fa2d.svg" alt=""
+                                style="width: 100%; height: 100%;">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Co zyskujesz Section (from Figma node 1:2506) -->
+    <section class="section" style="background: #fafafa; padding: 0 128px 80px 128px; position: relative;">
+        <div style="max-width: 1270px; margin: 0 auto;">
+            <!-- Section Header -->
+            <div style="display: flex; flex-direction: column; gap: 16px; margin-bottom: 48px;">
+                <!-- Tag -->
+                <div style="display: flex; gap: 10px; align-items: center; padding: 4px 0;">
+                    <span style="color: #0c0c0c;">▶</span>
+                    <span
+                        style="font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #0c0c0c;">CO
+                        ZYSKUJESZ</span>
+                </div>
+
+                <!-- Heading -->
+                <h2
+                    style="font-family: 'Inter', sans-serif; font-size: 48px; font-weight: 600; line-height: 1.2; color: #0c0c0c; margin: 0;">
+                    Tu będą elementy usługi
+                </h2>
+            </div>
+
+            <!-- Benefits Grid 3x2 -->
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border: 1px solid #e5e7eb;">
+
+                <!-- Row 1, Card 1 -->
+                <div style="padding: 32px; border-right: 1px solid #e5e7eb; border-bottom: 1px solid #e5e7eb;">
+                    <h3
+                        style="font-family: 'Inter', sans-serif; font-size: 18px; font-weight: 600; color: #0c0c0c; margin: 0 0 16px 0;">
+                        Wsparcie użytkowników po uruchomieniu systemu
+                    </h3>
+                    <p
+                        style="font-family: 'Inter', sans-serif; font-size: 14px; line-height: 1.5; color: #6b7280; margin: 0;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                        elementum tristique.
+                    </p>
+                </div>
+
+                <!-- Row 1, Card 2 -->
+                <div style="padding: 32px; border-right: 1px solid #e5e7eb; border-bottom: 1px solid #e5e7eb;">
+                    <h3
+                        style="font-family: 'Inter', sans-serif; font-size: 18px; font-weight: 600; color: #0c0c0c; margin: 0 0 16px 0;">
+                        Stabilizację systemu
+                    </h3>
+                    <p
+                        style="font-family: 'Inter', sans-serif; font-size: 14px; line-height: 1.5; color: #6b7280; margin: 0;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                        elementum tristique.
+                    </p>
+                </div>
+
+                <!-- Row 1, Card 3 -->
+                <div style="padding: 32px; border-bottom: 1px solid #e5e7eb;">
+                    <h3
+                        style="font-family: 'Inter', sans-serif; font-size: 18px; font-weight: 600; color: #0c0c0c; margin: 0 0 16px 0;">
+                        Usprawnienie wydajności
+                    </h3>
+                    <p
+                        style="font-family: 'Inter', sans-serif; font-size: 14px; line-height: 1.5; color: #6b7280; margin: 0;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                        elementum tristique.
+                    </p>
+                </div>
+
+                <!-- Row 2, Card 1 -->
+                <div style="padding: 32px; border-right: 1px solid #e5e7eb;">
+                    <h3
+                        style="font-family: 'Inter', sans-serif; font-size: 18px; font-weight: 600; color: #0c0c0c; margin: 0 0 16px 0;">
+                        Uporządkowanie procesu
+                    </h3>
+                    <p
+                        style="font-family: 'Inter', sans-serif; font-size: 14px; line-height: 1.5; color: #6b7280; margin: 0;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                        elementum tristique.
+                    </p>
+                </div>
+
+                <!-- Row 2, Card 2 -->
+                <div style="padding: 32px; border-right: 1px solid #e5e7eb;">
+                    <h3
+                        style="font-family: 'Inter', sans-serif; font-size: 18px; font-weight: 600; color: #0c0c0c; margin: 0 0 16px 0;">
+                        Uporządkowanie procesu
+                    </h3>
+                    <p
+                        style="font-family: 'Inter', sans-serif; font-size: 14px; line-height: 1.5; color: #6b7280; margin: 0;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                        elementum tristique.
+                    </p>
+                </div>
+
+                <!-- Row 2, Card 3 -->
+                <div style="padding: 32px;">
+                    <h3
+                        style="font-family: 'Inter', sans-serif; font-size: 18px; font-weight: 600; color: #0c0c0c; margin: 0 0 16px 0;">
+                        Body leasing
+                    </h3>
+                    <p
+                        style="font-family: 'Inter', sans-serif; font-size: 14px; line-height: 1.5; color: #6b7280; margin: 0;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                        elementum tristique.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- DLA KOGO Section (from Figma node 1:2556) -->
+    <section class="section" style="background: #fafafa; padding: 0 128px 80px 128px; position: relative;">
+        <div style="display: flex; gap: 80px; align-items: center; max-width: 1280px; margin: 0 auto;">
+            <!-- Left: 3D Layers Image -->
+            <div style="flex: 1; min-height: 400px; overflow: hidden; position: relative;">
+                <img src="assets/images/6c4dce71f3cf6bb46b4479054851bd0c68d9c002.png" alt="Rozwiązanie dla Ciebie"
+                    style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;">
+            </div>
+
+            <!-- Right: Content -->
+            <div style="flex: 1; display: flex; flex-direction: column; gap: 32px; padding: 48px 0;">
+                <!-- Tag -->
+                <div style="display: flex; gap: 10px; align-items: center; padding: 4px 0;">
+                    <span style="color: #0c0c0c;">▶</span>
+                    <span
+                        style="font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #0c0c0c;">DLA
+                        KOGO</span>
+                </div>
+
+                <!-- Heading -->
+                <h2
+                    style="font-family: 'Inter', sans-serif; font-size: 48px; font-weight: 600; line-height: 1.2; color: #0c0c0c; margin: 0;">
+                    Rozwiązanie dla Ciebie
+                </h2>
+
+                <!-- Description -->
+                <p
+                    style="font-family: 'Inter', sans-serif; font-size: 18px; line-height: 1.5; color: #6b7280; margin: 0;">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                    elementum
+                    tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam
+                    libero
+                    vitae erat.
+                </p>
+
+                <!-- Bullet List -->
+                <ul
+                    style="font-family: 'Inter', sans-serif; font-size: 16px; line-height: 2; color: #6b7280; margin: 0; padding-left: 0; list-style: none;">
+                    <li style="display: flex; align-items: center; gap: 12px;">
+                        <span
+                            style="width: 3px; height: 3px; background: #0c0c0c; border-radius: 50%; flex-shrink: 0;"></span>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </li>
+                    <li style="display: flex; align-items: center; gap: 12px;">
+                        <span
+                            style="width: 3px; height: 3px; background: #0c0c0c; border-radius: 50%; flex-shrink: 0;"></span>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </li>
+                    <li style="display: flex; align-items: center; gap: 12px;">
+                        <span
+                            style="width: 3px; height: 3px; background: #0c0c0c; border-radius: 50%; flex-shrink: 0;"></span>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid Section -->
+    <section class="products-grid-section">
+        <img src="assets/images/products-navy-blur.png" alt="" class="products-navy-blur">
+        <div class="products-grid-container">
+            <div class="products-grid-content">
+                <h2 class="products-grid-title">
+                    <strong>Możliwe</strong> integracje
+                </h2>
+                <p class="products-grid-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                    elementum
+                    tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam
+                    libero
+                    vitae erat.
+                </p>
+            </div>
+            <div class="products-grid-icons">
+                <!-- Row 1 -->
+                <div class="product-grid-item"
+                    onclick="openPopup('Dynamics 365 Finance', 'Zarządzaj finansami przedsiębiorstwa z Microsoft Dynamics 365 Finance. Automatyzacja procesów finansowych i raportowanie w czasie rzeczywistym.', 'assets/images/amos-section/ba4b840bc4836af02b0a401fa41bdc874d5021eb.svg', '#')">
+                    <img src="assets/images/amos-section/ba4b840bc4836af02b0a401fa41bdc874d5021eb.svg" alt="Product">
+                </div>
+                <div class="product-grid-item"
+                    onclick="openPopup('Dynamics 365 Supply Chain', 'Optymalizuj łańcuch dostaw z Microsoft Dynamics 365. Planowanie, produkcja i logistyka w jednym systemie.', 'assets/images/amos-section/701176bfe541d86ac840394b7d0221bcae76f786.svg', '#')">
+                    <img src="assets/images/amos-section/701176bfe541d86ac840394b7d0221bcae76f786.svg" alt="Product">
+                </div>
+                <div class="product-grid-item"
+                    onclick="openPopup('Dynamics 365 Commerce', 'Zunifikowane doświadczenia handlowe z Microsoft Dynamics 365 Commerce. Sprzedaż online i offline zintegrowane w jednym systemie.', 'assets/images/amos-section/abfc3b41d1e21e140b1c2fbaa686c36f3da0c3d8.svg', '#')">
+                    <img src="assets/images/amos-section/abfc3b41d1e21e140b1c2fbaa686c36f3da0c3d8.svg" alt="Product">
+                </div>
+                <div class="product-grid-item"
+                    onclick="openPopup('Dynamics 365 Human Resources', 'Zarządzanie zasobami ludzkimi z Microsoft Dynamics 365 HR. Rekrutacja, onboarding i rozwój pracowników.', 'assets/images/amos-section/89f8175dbc28544c1b9a16c93b7d14da073f678f.svg', '#')">
+                    <img src="assets/images/amos-section/89f8175dbc28544c1b9a16c93b7d14da073f678f.svg" alt="Product">
+                </div>
+                <!-- Row 2 -->
+                <div class="product-grid-item"
+                    onclick="openPopup('Dynamics 365 Project Operations', 'Zarządzanie projektami z Microsoft Dynamics 365. Planowanie zasobów, budżetowanie i fakturowanie projektów.', 'assets/images/4629962a401ca41580aeb05217377f840715fc79.svg', '#')">
+                    <img src="assets/images/4629962a401ca41580aeb05217377f840715fc79.svg" alt="Product">
+                </div>
+                <div class="product-grid-item"
+                    onclick="openPopup('Dynamics 365 Customer Insights', 'Poznaj swoich klientów z Microsoft Dynamics 365 Customer Insights. Analityka danych i personalizacja doświadczeń.', 'assets/images/4c1ce4c13beecfd5a620bbe5417862b3243b319b.svg', '#')">
+                    <img src="assets/images/4c1ce4c13beecfd5a620bbe5417862b3243b319b.svg" alt="Product">
+                </div>
+                <div class="product-grid-item"
+                    onclick="openPopup('Power BI', 'Przekształć dane w przydatne informacje z Microsoft Power BI. Twórz interaktywne raporty i dashboardy.', 'assets/images/6217e776abf0fcc4645f9083f836a8f6017bd97b.svg', '#')">
+                    <img src="assets/images/6217e776abf0fcc4645f9083f836a8f6017bd97b.svg" alt="Product">
+                </div>
+                <div class="product-grid-item"
+                    onclick="openPopup('Power Apps', 'Twórz aplikacje biznesowe bez kodowania z Microsoft Power Apps. Szybko buduj niestandardowe rozwiązania.', 'assets/images/78f8d8aaa10d190ab995bdc7df66cf7e2d0e9ba7.svg', '#')">
+                    <img src="assets/images/78f8d8aaa10d190ab995bdc7df66cf7e2d0e9ba7.svg" alt="Product">
+                </div>
+                <!-- Row 3 -->
+                <div class="product-grid-item"
+                    onclick="openPopup('Power Automate', 'Automatyzuj powtarzalne procesy z Microsoft Power Automate. Oszczędzaj czas i zwiększ efektywność.', 'assets/images/9625325a79594d10156371fceb9e560fa9be7c9e.svg', '#')">
+                    <img src="assets/images/9625325a79594d10156371fceb9e560fa9be7c9e.svg" alt="Product">
+                </div>
+                <div class="product-grid-item"
+                    onclick="openPopup('Azure', 'Platforma chmurowa Microsoft Azure. Usługi obliczeniowe, analityczne i magazynowania dla Twojej firmy.', 'assets/images/af6b253a120c012ea09d262e6e293aba8422936a.svg', '#')">
+                    <img src="assets/images/af6b253a120c012ea09d262e6e293aba8422936a.svg" alt="Product">
+                </div>
+                <div class="product-grid-item"
+                    onclick="openPopup('Microsoft 365', 'Zestaw aplikacji produktywności Microsoft 365. Word, Excel, PowerPoint, Teams i wiele więcej.', 'assets/images/de1d4633f2e39472328597e0ab0e48c45862688c.svg', '#')">
+                    <img src="assets/images/de1d4633f2e39472328597e0ab0e48c45862688c.svg" alt="Product">
+                </div>
+                <div class="product-grid-item"
+                    onclick="openPopup('Dynamics 365 Sales', 'Zwiększ sprzedaż z Microsoft Dynamics 365 Sales. Zarządzanie relacjami z klientami i pipeline sprzedaży.', 'assets/images/0376093237e53c5855d739d99596083b115d3715.svg', '#')">
+                    <img src="assets/images/0376093237e53c5855d739d99596083b115d3715.svg" alt="Product">
+                </div>
+                <!-- Row 4 -->
+                <div class="product-grid-item"
+                    onclick="openPopup('Dynamics 365 Marketing', 'Marketing automation z Microsoft Dynamics 365. Kampanie, lead scoring i customer journey.', 'assets/images/0b50e021bb7590a75b07b12f2378d58ef2b05583.svg', '#')">
+                    <img src="assets/images/0b50e021bb7590a75b07b12f2378d58ef2b05583.svg" alt="Product">
+                </div>
+                <div class="product-grid-item"
+                    onclick="openPopup('Dynamics 365 Customer Service', 'Obsługa klienta z Microsoft Dynamics 365. Wielokanałowe wsparcie i zarządzanie przypadkami.', 'assets/images/32c29e03c54ec654d7a9b9a5d99f016653d17425.svg', '#')">
+                    <img src="assets/images/32c29e03c54ec654d7a9b9a5d99f016653d17425.svg" alt="Product">
+                </div>
+                <div class="product-grid-item"
+                    onclick="openPopup('Dynamics 365 Field Service', 'Serwis terenowy z Microsoft Dynamics 365. Planowanie wizyt, zarządzanie zasobami i IoT.', 'assets/images/37e2894a3a59ad52947acce24e80fd2a7b9b2852.svg', '#')">
+                    <img src="assets/images/37e2894a3a59ad52947acce24e80fd2a7b9b2852.svg" alt="Product">
+                </div>
+                <div class="product-grid-item"
+                    onclick="openPopup('Dataverse', 'Bezpieczna platforma danych Microsoft Dataverse. Przechowuj i zarządzaj danymi biznesowymi.', 'assets/images/4629962a401ca41580aeb05217377f840715fc79.svg', '#')">
+                    <img src="assets/images/4629962a401ca41580aeb05217377f840715fc79.svg" alt="Product">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Timeline Section -->
+    <!-- Process Timeline Section -->
+    <section id="proces" class="process-section">
+
+
+        <!-- Teal Navy Gradient Blur (top right) - Animated -->
+        <div class="animated-gradient"
+            style="position: absolute; right: 0; top: -111px; width: 370px; height: 373px; overflow: visible; pointer-events: none; z-index: 0;">
+            <img src="assets/images/f86e24fcfad0378888c44a529e8167e4b987bca6.png" alt=""
+                style="width: 100%; height: 100%; object-fit: contain; animation: morphGradient 20s ease-in-out infinite, floatGradient 15s ease-in-out infinite;">
+        </div>
+
+        <div class="process-container">
+            <div class="process-header">
+                <div class="process-header-left">
+                    <div style="display: flex; gap: 8px; align-items: center; margin-bottom: 16px;">
+                        <span style="color: #0c0c0c;">▶</span>
+                        <span
+                            style="font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #0c0c0c;">PROCES</span>
+                    </div>
+                    <h2 class="section-title section-title-gradient">
+                        <span class="title-bold">Jasny i klarowna ścieżka </span><span class="title-regular">zmiany
+                            w
+                            Twojej
+                            firmie</span>
+                    </h2>
+                </div>
+                <div class="process-header-right">
+                    <p class="process-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Suspendisse
+                        varius enim in eros elementum tristique.</p>
+                </div>
+            </div>
+
+            <div class="process-timeline">
+
+                <!-- Step 1 -->
+                <div class="timeline-step">
+                    <div class="timeline-progress">
+                        <div class="progress-circle filled"></div>
+                        <div class="progress-line"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <h3 class="step-title-gradient">Analiza potrzeb</h3>
+                        <p class="step-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Suspendisse
+                            varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.</p>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="timeline-step">
+                    <div class="timeline-progress">
+                        <div class="progress-circle filled"></div>
+                        <div class="progress-line"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <h3 class="step-title-gradient">Wybór odpowiednich rozwiązań</h3>
+                        <p class="step-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Suspendisse
+                            varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.</p>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="timeline-step">
+                    <div class="timeline-progress">
+                        <div class="progress-circle filled"></div>
+                        <div class="progress-line"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <h3 class="step-title-gradient">Plan zmian</h3>
+                        <p class="step-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Suspendisse
+                            varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.</p>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="timeline-step">
+                    <div class="timeline-progress">
+                        <div class="progress-circle filled"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <h3 class="step-title-gradient">Realizacja i monitorowanie wdrożenia</h3>
+                        <p class="step-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Suspendisse
+                            varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Section (Exact Match: Figma Node 1:1227) -->
+    <section id="case-studies" class="section"
+        style="background: linear-gradient(to bottom, #ffffff 0%, #f3f3f4 100%); padding: 80px 64px; border-bottom: 1px solid #f1f2f3; position: relative; overflow: visible;">
+
+        <!-- Multicolor Gradient Blur (Figma Node 1:1090) - positioned at top-left, extends upward -->
+        <div class="animated-gradient"
+            style="position: absolute; left: -100px; top: 250px; width: 450px; height: 550px; pointer-events: none; z-index: 0;">
+            <img src="assets/images/gradient-blur-multicolor.png" alt=""
+                style="width: 100%; height: 100%; object-fit: contain;">
+        </div>
+
+        <div style="max-width: 1280px; margin: 0 auto; position: relative; z-index: 1;">
+
+            <!-- Section Header -->
+            <div
+                style="display: flex; justify-content: space-between; align-items: flex-start; gap: 48px; margin-bottom: 48px;">
+                <!-- Left Side -->
+                <div style="max-width: 500px;">
+                    <!-- Tag -->
+                    <div style="display: flex; gap: 8px; align-items: center; margin-bottom: 16px;">
+                        <span style="color: #0c0c0c;">▶</span>
+                        <span
+                            style="font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #0c0c0c;">CASE
+                            STUDIES</span>
+                    </div>
+                    <!-- Heading -->
+                    <h2
+                        style="font-family: 'Inter', sans-serif; font-size: 40px; font-weight: 600; line-height: 1.2; color: #0c0c0c; margin: 0;">
+                        Zobacz jak zmieniamy<br>firmy technologiczne
+                    </h2>
+                </div>
+                <!-- Right Side -->
+                <div style="max-width: 500px; padding-top: 40px;">
+                    <p
+                        style="font-family: 'Inter', sans-serif; font-size: 16px; line-height: 1.5; color: #6b7280; margin: 0 0 24px 0;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                        elementum
+                        tristique. <em style="font-style: italic;">Duis cursus, mi quis viverra ornare, eros
+                            dolor</em>
+                        interdum
+                        nulla, ut commodo diam libero vitae erat.
+                    </p>
+                    <a href="#" class="simple-button">
+                        Zobacz wszystkie case studies
+                    </a>
+                </div>
+            </div>
+
+            <!-- Case Study Slider -->
+            <div class="case-study-slider" id="case-study-slider">
+
+                <!-- Slider Track -->
+                <div class="slider-track">
+
+                    <!-- Slide 1 -->
+                    <div class="slider-slide active" data-slide="0">
+                        <div class="slider-card">
+                            <!-- Left Content -->
+                            <div class="slider-card-content">
+                                <h3 class="slider-card-title">Cyfrowa transformacja NCC</h3>
+                                <div class="slider-card-tags">
+                                    <span class="tag-filled">FINANSE I OPERACJE</span>
+                                    <span class="tag-outline">SPRZEDAŻ I OBSŁUGA KLIENTA</span>
+                                </div>
+                                <div class="slider-card-quote">
+                                    <img src="assets/images/icon-quote.svg" alt="">
+                                    <p>Dzięki wdrożeniu Dynamics 365 zoptymalizowaliśmy procesy finansowe i
+                                        operacyjne,
+                                        co przełożyło się
+                                        na 40% wzrost efektywności zespołu.</p>
+                                </div>
+                                <div class="slider-card-author">
+                                    <img src="assets/images/case-study-author.png" alt="John Doe">
+                                    <div>
+                                        <div class="author-name">John Doe</div>
+                                        <div class="author-title">CEO Facebook</div>
+                                    </div>
+                                </div>
+                                <div class="slider-card-footer">
+                                    <a href="#" class="solution-card-button">
+                                        Zobacz Case Study
+                                        <span>→</span>
+                                    </a>
+                                    <img src="assets/images/c569cd2da0573b88806b328433ff7ea7ebb8a284.svg" alt="BKK"
+                                        class="company-logo">
+                                </div>
+                            </div>
+                            <!-- Right Image -->
+                            <div class="slider-card-image">
+                                <img src="assets/images/1f826669ff49ccc58594d3ee7a36f16a67f6df12.png" alt="NCC Project">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="slider-slide" data-slide="1">
+                        <div class="slider-card">
+                            <!-- Left Content -->
+                            <div class="slider-card-content">
+                                <h3 class="slider-card-title">Automatyzacja procesów Budimex</h3>
+                                <div class="slider-card-tags">
+                                    <span class="tag-filled" style="background: #5B8DEF;">PRODUKCJA</span>
+                                    <span class="tag-outline">ZARZĄDZANIE PROJEKTAMI</span>
+                                </div>
+                                <div class="slider-card-quote">
+                                    <img src="assets/images/icon-quote.svg" alt="">
+                                    <p>Implementacja Power Platform pozwoliła nam zautomatyzować kluczowe procesy
+                                        biznesowe i zaoszczędzić
+                                        setki godzin pracy miesięcznie.</p>
+                                </div>
+                                <div class="slider-card-author">
+                                    <img src="assets/images/case-study-author.png" alt="Anna Kowalska">
+                                    <div>
+                                        <div class="author-name">Anna Kowalska</div>
+                                        <div class="author-title">CTO Budimex</div>
+                                    </div>
+                                </div>
+                                <div class="slider-card-footer">
+                                    <a href="#" class="solution-card-button">
+                                        Zobacz Case Study
+                                        <span>→</span>
+                                    </a>
+                                    <img src="assets/images/f26bc9815961aaba8294da1ba407de6974dde07b.svg" alt="BUUK"
+                                        class="company-logo">
+                                </div>
+                            </div>
+                            <!-- Right Image -->
+                            <div class="slider-card-image">
+                                <img src="assets/images/feabd5b47ab87ff87491018bbd7f7c39299f4861.png"
+                                    alt="Budimex Project">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="slider-slide" data-slide="2">
+                        <div class="slider-card">
+                            <!-- Left Content -->
+                            <div class="slider-card-content">
+                                <h3 class="slider-card-title">Integracja systemów Orlen</h3>
+                                <div class="slider-card-tags">
+                                    <span class="tag-filled" style="background: #E94E1B;">ENERGIA</span>
+                                    <span class="tag-outline">ANALITYKA I RAPORTOWANIE</span>
+                                </div>
+                                <div class="slider-card-quote">
+                                    <img src="assets/images/icon-quote.svg" alt="">
+                                    <p>ANEGIS pomógł nam zintegrować rozproszone systemy ERP w jedną spójną
+                                        platformę
+                                        Microsoft,
+                                        zapewniając pełną widoczność danych.</p>
+                                </div>
+                                <div class="slider-card-author">
+                                    <img src="assets/images/case-study-author.png" alt="Piotr Nowak">
+                                    <div>
+                                        <div class="author-name">Piotr Nowak</div>
+                                        <div class="author-title">Dyrektor IT Orlen</div>
+                                    </div>
+                                </div>
+                                <div class="slider-card-footer">
+                                    <a href="#" class="solution-card-button">
+                                        Zobacz Case Study
+                                        <span>→</span>
+                                    </a>
+                                    <img src="assets/images/e60fe51c24eb0cb8d0f6233d5e09c2500fcc7f4f.png" alt="CTDI"
+                                        class="company-logo">
+                                </div>
+                            </div>
+                            <!-- Right Image -->
+                            <div class="slider-card-image">
+                                <img src="assets/images/5d985f162ce5ac2294d90de7f3e99fc24520f2e8.png"
+                                    alt="Orlen Project">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Carousel Navigation -->
+                <div class="slider-nav">
+                    <button class="slider-prev" id="slider-prev">←</button>
+                    <div class="slider-progress">
+                        <div class="slider-progress-bar" id="slider-progress-bar"></div>
+                    </div>
+                    <button class="slider-next" id="slider-next">→</button>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CTA Banner Section (Exact Match: Figma Node 1:1241) -->
+    <section class="section"
+        style="background: #0b0b0b; color: white; padding: 80px 64px; position: relative; overflow: hidden;">
+
+        <!-- Background Vector Lines - Triangular Arrow Outlines (Figma Node 41:487) -->
+        <div
+            style="position: absolute; top: -4px; left: -269px; width: 827px; height: 695px; pointer-events: none; z-index: 1;">
+            <img src="assets/images/cta-banner-vectors.png" alt=""
+                style="width: 100%; height: 100%; object-fit: cover; opacity: 0.8;">
+        </div>
+
+        <!-- Orange Blur (Left Side) - Animated -->
+        <div class="animated-gradient"
+            style="position: absolute; top: -83px; left: 147px; width: 207px; height: 261px; pointer-events: none; overflow: visible; z-index: 0;">
+            <img src="assets/images/cta-banner-blur-orange.png" alt=""
+                style="width: 100%; height: 100%; object-fit: contain; opacity: 0.5; animation: morphGradient 18s ease-in-out infinite, floatGradient 12s ease-in-out infinite;">
+        </div>
+
+        <!-- Teal Blur (Right Side) - Animated -->
+        <div class="animated-gradient"
+            style="position: absolute; bottom: 0; right: -100px; width: 500px; height: 400px; pointer-events: none; overflow: visible; z-index: 0;">
+            <img src="assets/images/cta-banner-blur-teal.png" alt=""
+                style="width: 100%; height: 100%; object-fit: contain; animation: morphGradient 20s ease-in-out infinite, floatGradient 15s ease-in-out infinite;">
+        </div>
+
+        <!-- Decorative Diagonal Dashed Line (Figma Node 1:686) - spans from top-left to bottom-right -->
+        <div
+            style="position: absolute; left: calc(50% + 50px); top: calc(50% - 120px); transform: rotate(45deg); transform-origin: left top; pointer-events: none; z-index: 0; width: 700px; height: 2px;">
+            <img src="assets/images/cta-diagonal-line.svg" alt="" style="width: 100%; height: 100%;">
+        </div>
+
+        <!-- Decorative Blue Arrow/Cursor (Figma Node 41:495) - solid blue filled arrow at top of diagonal line -->
+        <div
+            style="position: absolute; left: calc(50% + 23px); top: calc(50% - 149px); pointer-events: none; z-index: 0; transform: rotate(312deg);">
+            <img src="assets/images/cta-blue-arrow-solid.svg" alt="" style="width: 30px; height: 36px;">
+        </div>
+
+        <div class="container" style="position: relative; z-index: 1; max-width: 1270px; margin: 0 auto;">
+            <div
+                style="text-align: center; max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 24px; align-items: center;">
+
+                <!-- Heading (Exact Match: Figma Node 1:1241) -->
+                <h2
+                    style="font-family: 'Inter', sans-serif; font-size: 48px; font-weight: 600; line-height: 1.2; color: white; margin: 0;">
+                    <span style="font-weight: 600;">Wprowadź swoją firmę</span>
+                    <span style="font-weight: 400;"> do XXI wieku</span>
+                </h2>
+
+                <!-- Description -->
+                <p
+                    style="font-family: 'Inter', sans-serif; font-size: 14px; line-height: 1.5; color: rgba(255,255,255,0.7); margin: 0; max-width: 600px;">
+                    Specjalizujemy się we wdrożeniach ERP i CRM dla firm produkcyjnych i <em
+                        style="font-style: italic;">usługowych, optymalizując procesy i napędzając wzrost.</em>
+                </p>
+
+                <!-- CTA Button -->
+                <a href="#kontakt"
+                    style="display: inline-flex; align-items: center; gap: 20px; background: #65AAAB; border: 1px solid #65AAAB; color: #fafafa; padding: 4px 4px 4px 20px; text-decoration: none; font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 500; margin-top: 16px; line-height: 1.5;">
+                    Umów bezpłatną konsultację
+                    <span
+                        style="width: 32px; height: 32px; background: #fafafa; display: flex; align-items: center; justify-content: center;">
+                        <img src="assets/images/icon-chat.svg" alt="" style="width: 20px; height: 20px;">
+                    </span>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Trusted By Section -->
+    <section class="trusted-section">
+        <div class="container">
+            <div class="trusted-content">
+                <div class="trusted-label">Zaufali nam:</div>
+                <div class="trusted-logos">
+                    <img src="assets/images/trusted-logos-full.svg" alt="Trusted Partners"
+                        style="height: 27px; width: auto; max-width: none;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="faq-container">
+            <h2 class="faq-title">FAQs</h2>
+            <p class="faq-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
+                enim
+                in eros elementum tristique.</p>
+
+            <div class="accordion-container">
+                <div class="accordion-item active">
+                    <button class="accordion-header">
+                        <span>Question text goes here</span>
+                        <span class="accordion-icon">−</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                            elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+                            commodo diam libero vitae erat.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>Question text goes here</span>
+                        <span class="accordion-icon">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>Question text goes here</span>
+                        <span class="accordion-icon">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>Question text goes here</span>
+                        <span class="accordion-icon">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>Question text goes here</span>
+                        <span class="accordion-icon">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section (Exact Match: Figma Node 1:1228) -->
+    <section id="kontakt"
+        style="background: #fafafa; padding: 120px 64px; display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+
+        <!-- Decorative Arrow Pattern (Background) -->
+        <div
+            style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, calc(-50% + 40px)); width: 594px; height: 594px; pointer-events: none;">
+            <img src="assets/images/cta-arrow-pattern.svg" alt="" style="width: 100%; height: 100%; opacity: 0.15;">
+        </div>
+
+        <!-- Interactive Cursor Arrow (Figma Node 1:1237) -->
+        <div id="cursor-arrow-container"
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 5;">
+            <!-- SVG Canvas for dashed trail line -->
+            <svg id="cursor-trail-svg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+                <path id="cursor-trail-path" fill="none" stroke="#1a4a6e" stroke-width="2" stroke-dasharray="6,6"
+                    stroke-linecap="round" />
+            </svg>
+            <!-- Arrow head -->
+            <div id="cursor-arrow"
+                style="position: absolute; width: 24px; height: 24px; opacity: 0; transition: opacity 0.3s ease;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 12L22 2L18 12L22 22L2 12Z" fill="#1a4a6e" />
+                </svg>
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div
+            style="display: flex; flex-direction: column; align-items: center; gap: 25px; position: relative; z-index: 1;">
+            <!-- Heading -->
+            <div style="text-align: center;">
+                <h2
+                    style="font-family: 'Inter', sans-serif; font-size: 48px; font-weight: 600; line-height: 1.2; color: #0b0b0b; margin: 0;">
+                    <span style="font-weight: 600;">Wprowadź swoją firmę</span><br>
+                    <span style="font-weight: 400;">do XXI wieku</span>
+                </h2>
+            </div>
+
+            <!-- CTA Button (Exact Match: Figma Node 1:1235) -->
+            <a href="#"
+                style="display: inline-flex; align-items: center; gap: 20px; background: #65AAAB; border: 1px solid #65AAAB; color: #fafafa; padding: 4px 4px 4px 20px; text-decoration: none; font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 500; line-height: 1.5;">
+                Umów bezpłatną konsultację
+                <span
+                    style="width: 32px; height: 32px; background: #fafafa; display: flex; align-items: center; justify-content: center;">
+                    <img src="assets/images/icon-chat.svg" alt="" style="width: 20px; height: 20px;">
+                </span>
+            </a>
+        </div>
+
+        <!-- Cursor Arrow Animation Script -->
+        <script>
+            (function () {
+                const section = document.getElementById('kontakt');
+                const arrow = document.getElementById('cursor-arrow');
+                const trailPath = document.getElementById('cursor-trail-path');
+
+                let isInSection = false;
+
+                // Store trail points (tail follows behind arrow)
+                const trailPoints = [];
+                const maxPoints = 30; // Length of the tail
+                const smoothing = 0.15; // How smoothly tail follows (0-1)
+
+                section.addEventListener('mouseenter', function () {
+                    isInSection = true;
+                    arrow.style.opacity = '1';
+                    trailPoints.length = 0; // Clear trail on enter
+                });
+
+                section.addEventListener('mouseleave', function () {
+                    isInSection = false;
+                    arrow.style.opacity = '0';
+                    trailPath.setAttribute('d', '');
+                    trailPoints.length = 0;
+                });
+
+                section.addEventListener('mousemove', function (e) {
+                    if (!isInSection) return;
+
+                    const rect = section.getBoundingClientRect();
+                    const cursorX = e.clientX - rect.left;
+                    const cursorY = e.clientY - rect.top;
+
+                    // Update arrow position (follows cursor)
+                    arrow.style.left = (cursorX - 12) + 'px';
+                    arrow.style.top = (cursorY - 12) + 'px';
+
+                    // Calculate arrow rotation based on movement direction
+                    if (trailPoints.length > 0) {
+                        const lastPoint = trailPoints[trailPoints.length - 1];
+                        const dx = cursorX - lastPoint.x;
+                        const dy = cursorY - lastPoint.y;
+                        if (Math.abs(dx) > 2 || Math.abs(dy) > 2) {
+                            const rotation = Math.atan2(dy, dx) * (180 / Math.PI);
+                            arrow.style.transform = `rotate(${rotation - 180}deg)`;
+                        }
+                    }
+
+                    // Add current cursor position to trail
+                    trailPoints.push({ x: cursorX, y: cursorY });
+
+                    // Keep trail at max length
+                    while (trailPoints.length > maxPoints) {
+                        trailPoints.shift();
+                    }
+
+                    // Generate smooth curve path through trail points
+                    if (trailPoints.length >= 2) {
+                        let pathData = `M ${trailPoints[0].x} ${trailPoints[0].y}`;
+
+                        for (let i = 1; i < trailPoints.length; i++) {
+                            const prev = trailPoints[i - 1];
+                            const curr = trailPoints[i];
+
+                            // Use quadratic curves for smoothness
+                            const midX = (prev.x + curr.x) / 2;
+                            const midY = (prev.y + curr.y) / 2;
+
+                            pathData += ` Q ${prev.x} ${prev.y}, ${midX} ${midY}`;
+                        }
+
+                        // Connect to last point
+                        const last = trailPoints[trailPoints.length - 1];
+                        pathData += ` L ${last.x} ${last.y}`;
+
+                        trailPath.setAttribute('d', pathData);
+                    }
+                });
+            })();
+        </script>
+
+    </section>
+
+    <!-- Footer (Exact Match: Figma Node 1:1236) -->
+    <footer style="background: #0b0b0b; position: relative; overflow: hidden; padding: 80px 64px 40px;">
+
+        <!-- Teal Blur Background -->
+        <div style="position: absolute; top: 78px; right: -100px; width: 447px; height: 472px; pointer-events: none;">
+            <img src="assets/images/footer-teal-blur.png" alt=""
+                style="width: 100%; height: 100%; object-fit: contain;">
+        </div>
+
+        <!-- Main Footer Content -->
+        <div style="max-width: 1312px; margin: 0 auto; position: relative; z-index: 1;">
+            <div style="display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 48px;">
+
+                <!-- Column 1: ANEGIS -->
+                <div>
+                    <div
+                        style="font-family: 'Inter', sans-serif; font-size: 24px; font-weight: 600; color: #f6f8fc; letter-spacing: 0.15em; margin-bottom: 24px;">
+                        ANEGIS</div>
+                    <p
+                        style="font-family: 'Inter', sans-serif; font-size: 14px; line-height: 1.5; color: rgba(246,248,252,0.5); margin: 0 0 24px 0; max-width: 280px;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                        elementum
+                        tristique.
+                    </p>
+                    <div
+                        style="font-family: 'Inter', sans-serif; font-size: 12px; letter-spacing: 0.1em; color: rgba(246,248,252,0.4); text-transform: uppercase;">
+                        LONDYN &nbsp;•&nbsp; WARSZAWA &nbsp;•&nbsp; WROCŁAW &nbsp;•&nbsp; SIERADZ
+                    </div>
+
+                    <!-- Contact Section -->
+                    <div style="margin-top: 48px;">
+                        <div
+                            style="font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 500; color: #f6f8fc; margin-bottom: 16px;">
+                            Kontakt</div>
+                        <div style="display: flex; flex-direction: column; gap: 12px;">
+                            <a href="tel:+47716619025"
+                                style="display: flex; align-items: center; gap: 12px; color: rgba(246,248,252,0.7); text-decoration: none; font-family: 'Inter', sans-serif; font-size: 14px;">
+                                <img src="assets/images/icon-phone.svg" alt=""
+                                    style="width: 16px; height: 16px; opacity: 0.7;">
+                                +47 71 661 9025
+                            </a>
+                            <a href="mailto:Sales@anegis.com"
+                                style="display: flex; align-items: center; gap: 12px; color: rgba(246,248,252,0.7); text-decoration: none; font-family: 'Inter', sans-serif; font-size: 14px;">
+                                <img src="assets/images/icon-email.svg" alt=""
+                                    style="width: 16px; height: 16px; opacity: 0.7;">
+                                Sales@anegis.com
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2: Co robimy -->
+                <div>
+                    <div
+                        style="font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 500; color: #f6f8fc; margin-bottom: 24px;">
+                        Co robimy</div>
+                    <div style="display: flex; flex-direction: column; gap: 16px;">
+                        <a href="#"
+                            style="font-family: 'Inter', sans-serif; font-size: 14px; color: rgba(246,248,252,0.7); text-decoration: none;">Rozwiązania</a>
+                        <a href="#"
+                            style="font-family: 'Inter', sans-serif; font-size: 14px; color: rgba(246,248,252,0.7); text-decoration: none;">Branże</a>
+                        <a href="#"
+                            style="font-family: 'Inter', sans-serif; font-size: 14px; color: rgba(246,248,252,0.7); text-decoration: none;">Usługi</a>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div style="margin-top: 48px;">
+                        <div
+                            style="font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 500; color: #f6f8fc; margin-bottom: 16px;">
+                            Śledź nas</div>
+                        <div style="display: flex; gap: 16px;">
+                            <a href="#"
+                                style="display: flex; align-items: center; justify-content: center; width: 32px; height: 32px;">
+                                <img src="assets/images/icon-youtube.svg" alt="YouTube"
+                                    style="width: 20px; height: 20px;">
+                            </a>
+                            <a href="#"
+                                style="display: flex; align-items: center; justify-content: center; width: 32px; height: 32px;">
+                                <img src="assets/images/icon-linkedin.svg" alt="LinkedIn"
+                                    style="width: 20px; height: 20px;">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 3: Wiedza -->
+                <div>
+                    <div
+                        style="font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 500; color: #f6f8fc; margin-bottom: 24px;">
+                        Wiedza</div>
+                    <div style="display: flex; flex-direction: column; gap: 16px;">
+                        <a href="#"
+                            style="font-family: 'Inter', sans-serif; font-size: 14px; color: rgba(246,248,252,0.7); text-decoration: none;">Artykuły</a>
+                        <a href="#"
+                            style="font-family: 'Inter', sans-serif; font-size: 14px; color: rgba(246,248,252,0.7); text-decoration: none;">Raporty</a>
+                        <a href="#"
+                            style="font-family: 'Inter', sans-serif; font-size: 14px; color: rgba(246,248,252,0.7); text-decoration: none;">Ebooki</a>
+                        <a href="#"
+                            style="font-family: 'Inter', sans-serif; font-size: 14px; color: rgba(246,248,252,0.7); text-decoration: none;">Wydarzenia</a>
+                    </div>
+                </div>
+
+                <!-- Column 4: O nas -->
+                <div>
+                    <div
+                        style="font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 500; color: #f6f8fc; margin-bottom: 24px;">
+                        O nas</div>
+                    <div style="display: flex; flex-direction: column; gap: 16px;">
+                        <a href="#"
+                            style="font-family: 'Inter', sans-serif; font-size: 14px; color: rgba(246,248,252,0.7); text-decoration: none;">Nasza
+                            historia i misja</a>
+                        <a href="#"
+                            style="font-family: 'Inter', sans-serif; font-size: 14px; color: rgba(246,248,252,0.7); text-decoration: none;">Zespół
+                            i eksperci</a>
+                        <a href="#"
+                            style="font-family: 'Inter', sans-serif; font-size: 14px; color: rgba(246,248,252,0.7); text-decoration: none;">Partnerstwa
+                            i certyfikaty</a>
+                        <a href="#"
+                            style="font-family: 'Inter', sans-serif; font-size: 14px; color: rgba(246,248,252,0.7); text-decoration: none;">Kariera</a>
+                        <a href="#"
+                            style="font-family: 'Inter', sans-serif; font-size: 14px; color: rgba(246,248,252,0.7); text-decoration: none;">Komunikaty
+                            prasowe</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Footer Bottom -->
+            <div
+                style="border-top: 1px solid rgba(246,248,252,0.1); padding-top: 24px; display: flex; justify-content: space-between; align-items: center;">
+                <div style="display: flex; align-items: center; gap: 24px;">
+                    <span style="font-family: 'Inter', sans-serif; font-size: 12px; color: rgba(246,248,252,0.4);">©
+                        2025
+                        ANEGIS. All rights reserved.</span>
+                    <span
+                        style="font-family: 'Inter', sans-serif; font-size: 12px; color: rgba(246,248,252,0.4);">•</span>
+                    <span style="font-family: 'Inter', sans-serif; font-size: 12px; color: rgba(246,248,252,0.4);">Made
+                        by
+                        zu.agency</span>
+                </div>
+                <div style="display: flex; gap: 32px;">
+                    <a href="#"
+                        style="font-family: 'Inter', sans-serif; font-size: 12px; color: rgba(246,248,252,0.4); text-decoration: none;">Polityka
+                        prywatności</a>
+                    <a href="#"
+                        style="font-family: 'Inter', sans-serif; font-size: 12px; color: rgba(246,248,252,0.4); text-decoration: none;">Regulamin</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+    <script src="slider-logic.js"></script>
+    <script src="script.js"></script>
+    <script src="popup.js"></script>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+        title="Przewiń do góry">
+        <img src="assets/images/arrow-up.svg" alt="Scroll to top">
+    </button>
+
+    <script>
+        // Show/hide scroll to top button
+        window.addEventListener('scroll', function () {
+            const scrollBtn = document.getElementById('scrollToTop');
+            if (window.scrollY > 500) {
+                scrollBtn.classList.add('visible');
+            } else {
+                scrollBtn.classList.remove('visible');
+            }
+        });
+
+        // Metodyka arrows grow animation
+        document.addEventListener('DOMContentLoaded', function () {
+            const arrowsContainer = document.getElementById('metodyka-arrows');
+            const arrows = document.querySelectorAll('.metodyka-arrow');
+
+            if (arrowsContainer && arrows.length > 0) {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            // Grow arrows when section comes into view
+                            arrows.forEach(arrow => {
+                                const targetHeight = arrow.getAttribute('data-height');
+                                arrow.style.height = targetHeight + 'px';
+                            });
+                        } else {
+                            // Reset arrows when leaving viewport
+                            arrows.forEach(arrow => {
+                                arrow.style.height = '0';
+                            });
+                        }
+                    });
+                }, {
+                    threshold: 0.2,
+                    rootMargin: '0px 0px -50px 0px'
+                });
+
+                observer.observe(arrowsContainer);
+            }
+        });
+
+        // Timeline scroll animation
+        document.addEventListener('DOMContentLoaded', function () {
+            const timeline = document.querySelector('.process-timeline');
+            const timelineSteps = document.querySelectorAll('.timeline-step');
+
+            if (timeline && timelineSteps.length > 0) {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            // Add animation class to all steps when timeline comes into view
+                            timelineSteps.forEach(step => {
+                                step.classList.add('animate-reveal');
+                            });
+                        } else {
+                            // Remove animation class when leaving viewport (reset for next scroll)
+                            timelineSteps.forEach(step => {
+                                step.classList.remove('animate-reveal');
+                            });
+                        }
+                    });
+                }, {
+                    threshold: 0.2, // Trigger when 20% of timeline is visible
+                    rootMargin: '0px 0px -50px 0px'
+                });
+
+                observer.observe(timeline);
+            }
+        });
+
+        // Exclusive Accordion with Dynamic Image Switching (supports multiple blocks)
+        document.addEventListener('DOMContentLoaded', function () {
+            // Find all accordion containers with data-accordion-block attribute
+            const accordionContainers = document.querySelectorAll('.accordion-container[data-accordion-block]');
+
+            accordionContainers.forEach(container => {
+                const blockId = container.getAttribute('data-accordion-block');
+                const accordionItems = container.querySelectorAll('.accordion-item[data-accordion]');
+                // Find the corresponding image container for this block
+                const imageContainer = document.querySelector(`.accordion-image-container[data-accordion-block="${blockId}"]`);
+                const accordionImages = imageContainer ? imageContainer.querySelectorAll('.accordion-image[data-accordion-image]') : [];
+
+                if (accordionItems.length > 0) {
+                    accordionItems.forEach(item => {
+                        const header = item.querySelector('.accordion-header');
+
+                        header.addEventListener('click', function () {
+                            const accordionId = item.getAttribute('data-accordion');
+                            const isActive = item.classList.contains('active');
+
+                            // If clicking on already active item, do nothing (keep it open)
+                            if (isActive) return;
+
+                            // Close all accordion items in THIS block only
+                            accordionItems.forEach(otherItem => {
+                                otherItem.classList.remove('active');
+                                const otherIcon = otherItem.querySelector('.accordion-icon');
+                                if (otherIcon) otherIcon.textContent = '+';
+                            });
+
+                            // Open clicked accordion item
+                            item.classList.add('active');
+                            const icon = item.querySelector('.accordion-icon');
+                            if (icon) icon.textContent = '−';
+
+                            // Switch images in THIS block only
+                            accordionImages.forEach(img => {
+                                const imgId = img.getAttribute('data-accordion-image');
+                                if (imgId === accordionId) {
+                                    img.classList.add('active');
+                                    img.style.opacity = '1';
+                                    img.style.transform = 'scale(1)';
+                                    img.style.position = 'relative';
+                                } else {
+                                    img.classList.remove('active');
+                                    img.style.opacity = '0';
+                                    img.style.transform = 'scale(0.95)';
+                                    img.style.position = 'absolute';
+                                }
+                            });
+                        });
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
