@@ -301,6 +301,35 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+// Testimonial Triangle Arrow Scroll Animation (for case-studies.html)
+document.addEventListener('DOMContentLoaded', () => {
+    const testimonialTriangleContainer = document.getElementById('testimonial-triangle-accents');
+
+    if (testimonialTriangleContainer) {
+        const triangles = testimonialTriangleContainer.querySelectorAll('.triangle-arrow');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Add animate class when section comes into view
+                    triangles.forEach(triangle => {
+                        triangle.classList.add('animate');
+                    });
+                } else {
+                    // Remove animate class when section leaves view
+                    triangles.forEach(triangle => {
+                        triangle.classList.remove('animate');
+                    });
+                }
+            });
+        }, {
+            threshold: 0.3
+        });
+
+        observer.observe(testimonialTriangleContainer);
+    }
+});
+
 // ===== Case Study Slider =====
 document.addEventListener('DOMContentLoaded', () => {
     const slider = document.getElementById('case-study-slider');
